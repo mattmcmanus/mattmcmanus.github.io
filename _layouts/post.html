@@ -1,0 +1,33 @@
+---
+layout: default
+single: true
+type: post
+---
+
+{% if page.cover %}
+  <style>
+    #header .background-image { background-image:url({{page.cover}}) }
+    {% if page.coverHeight %}
+      #header .background-image-foreground { height: {{page.coverHeight}}px }
+    {% endif %}
+  </style>
+{% endif %}
+
+<div class="large-10 large-offset-1 columns">
+  <article class="hentry" role="article">
+    <header>
+        <h2 class="entry-title"> {{ page.title | titlecase }} </h2>
+        {% if page.subtitle %}
+          <h4 class="subheader">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</h4>
+        {% endif %}
+    </header>
+
+    <div class="entry-content">{{ content }}</div>
+
+
+    <p class="meta">
+     {{ post.date }}
+      <time class="ss-calendar" datetime="{{ post.date }}">{{ post.date }}</time>
+    </p>
+  </article>
+</div>

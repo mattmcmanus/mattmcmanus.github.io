@@ -1,0 +1,51 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+@import "pygments";
+
+// General
+
+p, .nav-bar a, li, time {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, header * {
+  font-family: 'Jubilat', Serif;
+  color: #444;
+}
+
+.accelerated {
+  position: relative;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+@import 'header';
+
+@import 'article';
+
+@import 'homepage';
+
+.pagination { margin-top: 1.5em; }
+
+// Footer
+
+#footer {
+  background: $primary;
+  color: #f6f6f6;
+  padding-top: 21px;
+  margin-top: 12px;
+  h4, a, li {
+    color: #f6f6f6;
+  }
+  p { color: rgba(255,255,255,.5) }
+  ul li {
+    a:before {color:white; font-size:1.1em;}
+  }
+  .copyright { font-size: .8em; margin-top: 5px; }
+  a { display: inline-block; padding: 0 5px; }
+}
