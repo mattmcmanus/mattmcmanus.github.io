@@ -1,21 +1,66 @@
 ---
 layout: homepage
 ---
-<h2>Articles</h2>
-<div class="blog-index large-12 columns">
-  {% for post in site.posts limit:10 %}
-    <article class="{{post.layout}} row">
-      <div class="large-3 columns">
-        <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
+<!-- header -->
+<header id="header" class="home accelerated" role="banner">
+  <div class="background-image"></div>
+  <div class="background-image-foreground">
+    <div class="row">
+      <hgroup class="large-6 columns">
+        <h1><a href="{{ root_url }}/">
+          <small>Hey friend, my name is</small>
+          Matt McManus
+        </a></h1>
+      </hgroup>
+      {% include navigation.html %}
+    </div>
+
+    <div class="row">
+      <div class="large-10 large-offset-1 columns section-tagline lettering">
+        <p>I advocate for humans in a world of bytes &amp; pixels</p>
       </div>
-      <div class="large-9 columns">
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns section-history">
+        <p>For over a decade I’ve been honing my skills in user experience design, web development and system administration</p>
+      <div>
+    </div>
+
+    <div class="row">
+      <div class="large-4 columns">
+        <h3>User Experience Design</h3>
+        <p>I love diving into big, complicated systems to design natural and intuitive system. My experience building apps for large corporations, international non-profits and national universities has tested my my skills</p>
+      </div>
+
+      <div class="large-4 columns">
+        <h3>Web Development</h3>
+        <p>Those in the know call it Full Stack. All it means is I like to do front &amp; back end development</p>
+      </div>
+
+      <div class="large-4 columns">
+        <h3>System Administration</h3>
+        <p>Scripts. Configurations. Installation. Deployment. Puppet. Chef. Anisible. Oh my! I love it all.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- main -->
+<div id="main" class="row">
+  <h2>Words are important. I'm learning how to use them.</h2>
+  <ul class="block-index large-block-grid-3 small-block-grid-1">
+    {% for post in site.posts limit:6 %}
+      <li class="article {{post.layout}}">
+        <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
         <h2 class="entry-title">
           <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
         </h2>
         {% if post.subtitle %}
           <h4 class="subheader">{{ post.subtitle | titlecase }}</h4>
         {% endif %}
-      </div>
-    </article>
-  {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>
+

@@ -2,8 +2,8 @@
   padding: 0;
   margin-bottom:20px;
   border-bottom: 1px solid $divider;
-  background-color: #243745;
-  background-color: rgba(36, 55, 69, .5);
+  background-color: $primary;
+  background-color: rgba($primary, .5);
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -17,11 +17,11 @@
     z-index: -1;
   }
   .background-image-foreground {
-    background: rgba(36,55,69,.7);
+    background: rgba($primary,.7);
     padding: 30px 0 20px;
   }
 
-  h1, h1 a, h2, h3, p {
+  h1, h1 a, h2, h3, p, p span{
     color: #fff;
     text-shadow: 1px 1px 2px rgba(20,20,20,.4)
   }
@@ -46,6 +46,7 @@
   .button {
     border: none;
     background: transparent;
+    padding: .25em 1em;
   }
 }
 

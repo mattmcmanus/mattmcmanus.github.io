@@ -1,33 +1,6 @@
 {% include head.html %}
 
-  <!-- header -->
-  <header id="header" class="home accelerated" role="banner">
-    <div class="background-image"></div>
-    <div class="background-image-foreground">
-    <div class="row">
-      <hgroup class="large-6 columns">
-        <h1><a href="{{ root_url }}/">
-          <small>Hey friend, my name is</small>
-          Matt McManus
-        </a></h1>
-        <p class="subtitle">I'm an independent web developer, interface designer &amp; technical advocate</p>
-      </hgroup>
-      {% include navigation.html %}
-    </div>
-
-    <div class="row">
-      <div class="large-10 large-offset-1 columns quote">
-        <p>In all that I do, I work towards to good of those that I work with and that work with the tools that I create.</p>
-      </div>
-    </div>
-
-    </div>
-  </header>
-
-  <!-- main -->
-  <div id="main" class="row">
-    {{ content }}
-  </div>
+  {{ content }}
 
 {% include footer.html %}
 
