@@ -8,7 +8,7 @@
 // General
 
 p, .nav-bar a, li, time {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   color: #222;
 }
 
@@ -35,16 +35,13 @@ h1, h2, h3, h4, h5, header * {
 // Footer
 
 #footer {
-  background: $primary;
-  color: #f6f6f6;
+  color: $primary;
   padding-top: 21px;
   margin-top: 12px;
-  h4, a, li {
-    color: #f6f6f6;
-  }
-  p { color: rgba(255,255,255,.5) }
+  h4, a, li { }
+  p { }
   ul li {
-    a:before {color:white; font-size:1.1em;}
+    a:before { font-size:1.1em;}
   }
   .copyright { font-size: .8em; margin-top: 5px; }
   a { display: inline-block; padding: 0 5px; }

@@ -1,8 +1,4 @@
 article {
-  margin-bottom:36px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid $divider;
 
   time.post-date {
     margin-top:20px;
@@ -106,6 +102,10 @@ article {
 
 .blog-index {
   article {
+    border-bottom: 1px solid $divider;
+    margin-bottom:36px;
+    padding-top: 14px;
+    padding-bottom: 12px;
     h2 { font-size: 2rem; }
     h4 { font-size: 1.3rem; }
   }

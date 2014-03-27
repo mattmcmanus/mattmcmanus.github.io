@@ -8102,7 +8102,7 @@ th.hide-for-touch {
 /* Literal.Number.Integer.Long */
 /* line 10, ../_scss/app.scss */
 p, .nav-bar a, li, time {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   color: #222;
 }
 
@@ -8180,14 +8180,7 @@ h1, h2, h3, h4, h5, header * {
   margin-top: 1em;
 }
 
-/* line 1, ../_scss/_article.scss */
-article {
-  margin-bottom: 36px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #e6e6e6;
-}
-/* line 7, ../_scss/_article.scss */
+/* line 3, ../_scss/_article.scss */
 article time.post-date {
   margin-top: 20px;
   padding: 5px 0;
@@ -8201,102 +8194,109 @@ article time.post-date {
   text-transform: uppercase;
   text-rendering: optimizelegibility;
 }
-/* line 21, ../_scss/_article.scss */
+/* line 17, ../_scss/_article.scss */
 article h2, article h3, article h4 {
   font-weight: 600;
   line-height: 1.1em;
   color: #555;
 }
-/* line 26, ../_scss/_article.scss */
+/* line 22, ../_scss/_article.scss */
 article h2 a, article h3 a, article h4 a {
   color: #444;
 }
-/* line 29, ../_scss/_article.scss */
+/* line 25, ../_scss/_article.scss */
 article h2 {
   font-size: 2.75rem;
 }
-/* line 32, ../_scss/_article.scss */
+/* line 28, ../_scss/_article.scss */
 article h4.subheader {
   font-size: 1.5rem;
   font-weight: 400;
   color: #999;
   margin-bottom: 1.25rem;
 }
-/* line 38, ../_scss/_article.scss */
+/* line 34, ../_scss/_article.scss */
 article h3 {
   font-size: 2rem;
 }
-/* line 41, ../_scss/_article.scss */
+/* line 37, ../_scss/_article.scss */
 article h4 {
   font-size: 1.5rem;
 }
-/* line 45, ../_scss/_article.scss */
+/* line 41, ../_scss/_article.scss */
 article .meta {
   color: #777;
   font-size: .9em;
   margin: 30px 0 0;
   text-align: center;
 }
-/* line 51, ../_scss/_article.scss */
+/* line 47, ../_scss/_article.scss */
 article .meta a:link {
   text-decoration: none;
 }
-/* line 54, ../_scss/_article.scss */
+/* line 50, ../_scss/_article.scss */
 article .right {
   margin-left: 12px;
 }
-/* line 58, ../_scss/_article.scss */
+/* line 54, ../_scss/_article.scss */
 article p, article li {
   letter-spacing: .01rem;
   font-style: normal;
   color: #444;
 }
-/* line 63, ../_scss/_article.scss */
+/* line 59, ../_scss/_article.scss */
 article p a:link, article li a:link {
   text-decoration: underline;
 }
-/* line 67, ../_scss/_article.scss */
+/* line 63, ../_scss/_article.scss */
 article p img, article li img {
   margin: 0;
   width: 100%;
 }
-/* line 70, ../_scss/_article.scss */
+/* line 66, ../_scss/_article.scss */
 article p img.full, article li img.full {
   border-radius: 4px;
 }
-/* line 74, ../_scss/_article.scss */
+/* line 70, ../_scss/_article.scss */
 article p img.right, article li img.right {
   width: 20%;
   margin-top: -10px;
 }
-/* line 80, ../_scss/_article.scss */
+/* line 76, ../_scss/_article.scss */
 article p code, article li code {
   font-size: .9em;
 }
-/* line 86, ../_scss/_article.scss */
+/* line 82, ../_scss/_article.scss */
 article blockquote p {
   color: #444;
   font-style: normal;
 }
-/* line 91, ../_scss/_article.scss */
+/* line 87, ../_scss/_article.scss */
 article blockquote footer {
   padding-bottom: 10px;
 }
-/* line 93, ../_scss/_article.scss */
+/* line 89, ../_scss/_article.scss */
 article blockquote footer strong {
   color: #333;
   font-style: normal;
 }
-/* line 98, ../_scss/_article.scss */
+/* line 94, ../_scss/_article.scss */
 article blockquote footer cite {
   display: inline;
   font-size: 16px;
 }
-/* line 101, ../_scss/_article.scss */
+/* line 97, ../_scss/_article.scss */
 article blockquote footer cite a {
   text-decoration: underline;
 }
 
+/* line 104, ../_scss/_article.scss */
+.blog-index article {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 36px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
 /* line 109, ../_scss/_article.scss */
 .blog-index article h2 {
   font-size: 2rem;
@@ -8348,30 +8348,20 @@ body.homepage #header .background-image-foreground {
 
 /* line 37, ../_scss/app.scss */
 #footer {
-  background: #243745;
-  color: #f6f6f6;
+  color: #243745;
   padding-top: 21px;
   margin-top: 12px;
 }
-/* line 42, ../_scss/app.scss */
-#footer h4, #footer a, #footer li {
-  color: #f6f6f6;
-}
-/* line 45, ../_scss/app.scss */
-#footer p {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* line 47, ../_scss/app.scss */
+/* line 44, ../_scss/app.scss */
 #footer ul li a:before {
-  color: white;
   font-size: 1.1em;
 }
-/* line 49, ../_scss/app.scss */
+/* line 46, ../_scss/app.scss */
 #footer .copyright {
   font-size: .8em;
   margin-top: 5px;
 }
-/* line 50, ../_scss/app.scss */
+/* line 47, ../_scss/app.scss */
 #footer a {
   display: inline-block;
   padding: 0 5px;

@@ -8,12 +8,15 @@ type: post
   <style>
     #header .background-image { background-image:url({{page.cover}}) }
     {% if page.coverHeight %}
+      #header .background-image { height: {{page.coverHeight}}px }
       #header .background-image-foreground { height: {{page.coverHeight}}px }
+      article header { margin-top: -76px; }
+      .entry-title { color: #fff; }
     {% endif %}
   </style>
 {% endif %}
 
-<div class="large-10 large-offset-1 columns">
+<div class="medium-8 medium-offset-2 columns">
   <article class="hentry" role="article">
     <header>
         <h2 class="entry-title"> {{ page.title | titlecase }} </h2>
