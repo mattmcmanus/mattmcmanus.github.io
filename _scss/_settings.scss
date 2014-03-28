@@ -1,11 +1,40 @@
+@import "foundation/functions";
+
 $divider: #e6e6e6;
 $primary: #243745;
 $primary-color: #243745;
-$highlight: #467;
+//$highlight: #467;
+$highlight: #968E62;
 $gray: #888;
 
-$paragraph-font-family: inherit;
-$paragraph-font-weight: 300;
+$serif: 'Jubilat', serif;
+$sans-serif: "ff-tisa-sans-web-pro", sans-serif;
+
+$header-font-family: $serif;
+$header-font-weight: bold;
+$header-font-style: normal;
+$header-font-color: #444;
+$header-line-height: 1.4;
+$header-top-margin: .2rem;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(37);
+$h3-font-size: rem-calc(27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
+$subheader-line-height: 1.4;
+$subheader-font-color: scale-color($header-font-color, $lightness: 35%);
+$subheader-font-weight: 300;
+$subheader-top-margin: .2rem;
+$subheader-bottom-margin: 1rem;
+
+$paragraph-font-family: $sans-serif;
+$paragraph-font-weight: normal;
 $paragraph-font-size: 1.1rem;
 $paragraph-line-height: 1.6;
 $paragraph-aside-font-size: rem-calc(14);

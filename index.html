@@ -23,24 +23,24 @@ layout: homepage
 
     <div class="row">
       <div class="large-12 columns section-history">
-        <p>For over a decade I’ve been honing my skills in user experience design, web development and system administration</p>
-      <div>
+        <p>For over a decade I’ve been honing my skills in</p>
+      </div>
     </div>
 
-    <div class="row">
-      <div class="large-4 columns">
+    <div class="row skills">
+      <div class="large-4 columns ux">
         <h3>User Experience Design</h3>
-        <p>I love diving into big, complicated systems to design natural and intuitive system. My experience building apps for large corporations, international non-profits and national universities has tested my my skills</p>
+        <p>My experience designing interfaces for large corporations, international non-profits and national universities has honed my skills in reducing big, complicated systems into natural, intuitive interfaces.</p>
       </div>
 
       <div class="large-4 columns">
-        <h3>Web Development</h3>
-        <p>Those in the know call it Full Stack. All it means is I like to do front &amp; back end development</p>
+        <h3>Full Stack Web Development</h3>
+        <p>Full stack is just a fancy way of saying I'm capable and enjoy tweaking css for perfect typography, writing rich, interactive javascript interfaces and programming the backend application in node.js, ruby or php</p>
       </div>
 
       <div class="large-4 columns">
-        <h3>System Administration</h3>
-        <p>Scripts. Configurations. Installation. Deployment. Puppet. Chef. Anisible. Oh my! I love it all.</p>
+        <h3>DevOps System Administration</h3>
+        <p>All that code isn't very useful without a server to run it on. I love writing and using code to setup and maintain infrastructures. </p>
       </div>
     </div>
   </div>
@@ -48,19 +48,29 @@ layout: homepage
 
 <!-- main -->
 <div id="main" class="row">
-  <h2>Words are important. I'm learning how to use them.</h2>
-  <ul class="block-index large-block-grid-3 small-block-grid-1">
-    {% for post in site.posts limit:6 %}
-      <li class="article {{post.layout}}">
-        <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
-        <h2 class="entry-title">
-          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-        </h2>
-        {% if post.subtitle %}
-          <h4 class="subheader">{{ post.subtitle | titlecase }}</h4>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-3 columns">
+        <a href="">Github</a>
+      </div>
+    </div>
+    <div class="row blog">
+      <div class="large-12 columns">
+        <h2>Words are important. I'm learning how to use them.</h2>
+        <ul class="block-index large-block-grid-3 small-block-grid-1">
+          {% for post in site.posts limit:6 %}
+            <li class="article {{post.layout}}">
+              <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
+              <h2 class="entry-title">
+                <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+              </h2>
+              {% if post.subtitle %}
+                <h4 class="subheader">{{ post.subtitle | titlecase }}</h4>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-

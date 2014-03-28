@@ -8175,8 +8175,8 @@ a img {
 /* Default paragraph styles */
 /* line 299, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p {
-  font-family: inherit;
-  font-weight: 300;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  font-weight: normal;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
@@ -8189,7 +8189,7 @@ p.lead {
 }
 /* line 309, ../bower_components/foundation/scss/foundation/components/_type.scss */
 p aside {
-  font-size: rem-calc(14);
+  font-size: 0.875rem;
   line-height: 1.35;
   font-style: italic;
 }
@@ -8197,10 +8197,10 @@ p aside {
 /* Default header styles */
 /* line 317, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Jubilat", serif;
+  font-weight: bold;
   font-style: normal;
-  color: #222222;
+  color: #444444;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8209,7 +8209,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 327, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #858585;
   line-height: 0;
 }
 
@@ -8246,10 +8246,10 @@ h6 {
 /* line 341, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
-  font-weight: normal;
+  color: #858585;
+  font-weight: 300;
   margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* line 343, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8298,7 +8298,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
-  font-family: inherit;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
 /* line 386, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8398,7 +8398,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: #6f6f6f;
 }
 /* line 466, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -8407,14 +8407,14 @@ blockquote cite:before {
 /* line 471, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #6f6f6f;
 }
 
 /* line 477, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #858585;
 }
 
 /* Microformats */
@@ -9898,19 +9898,7 @@ th.hide-for-touch {
 }
 
 /* Literal.Number.Integer.Long */
-/* line 10, ../_scss/app.scss */
-p, .nav-bar a, li, time {
-  font-family: "ff-tisa-sans-web-pro", sans-serif;
-  color: #222;
-}
-
-/* line 15, ../_scss/app.scss */
-h1, h2, h3, h4, h5, header * {
-  font-family: 'Jubilat', Serif;
-  color: #444;
-}
-
-/* line 20, ../_scss/app.scss */
+/* line 8, ../_scss/app.scss */
 .accelerated {
   position: relative;
   -moz-transform: translate3d(0px, 0px, 0px);
@@ -9994,192 +9982,188 @@ article time.post-date {
   text-rendering: optimizelegibility;
 }
 /* line 17, ../_scss/_article.scss */
-article h2, article h3, article h4 {
-  font-weight: 600;
-  line-height: 1.1em;
-  color: #444;
-}
-/* line 22, ../_scss/_article.scss */
-article h2 a, article h3 a, article h4 a {
-  color: #444;
-}
-/* line 25, ../_scss/_article.scss */
-article h2 {
-  font-size: 2.75rem;
-}
-/* line 28, ../_scss/_article.scss */
-article h4.subheader {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #999;
-  margin-bottom: 1.25rem;
-}
-/* line 34, ../_scss/_article.scss */
-article h3 {
-  font-size: 2.2rem;
-  margin: 1.1em 0 0.4em;
-}
-/* line 38, ../_scss/_article.scss */
-article h4 {
-  font-size: 1.5rem;
-}
-/* line 42, ../_scss/_article.scss */
 article .meta {
   color: #777;
   font-size: .9em;
   margin: 30px 0 0;
   text-align: center;
 }
-/* line 48, ../_scss/_article.scss */
+/* line 23, ../_scss/_article.scss */
 article .meta a:link {
   text-decoration: none;
 }
-/* line 51, ../_scss/_article.scss */
+/* line 26, ../_scss/_article.scss */
 article .right {
   margin-left: 12px;
 }
-/* line 55, ../_scss/_article.scss */
+/* line 30, ../_scss/_article.scss */
 article p, article li {
   letter-spacing: .01rem;
   font-style: normal;
   color: #555;
 }
-/* line 60, ../_scss/_article.scss */
+/* line 35, ../_scss/_article.scss */
 article p a:link, article li a:link {
   text-decoration: underline;
 }
-/* line 64, ../_scss/_article.scss */
+/* line 39, ../_scss/_article.scss */
 article p img, article li img {
   margin: 0;
   width: 100%;
 }
-/* line 67, ../_scss/_article.scss */
+/* line 42, ../_scss/_article.scss */
 article p img.full, article li img.full {
   border-radius: 4px;
 }
-/* line 71, ../_scss/_article.scss */
+/* line 46, ../_scss/_article.scss */
 article p img.right, article li img.right {
   width: 20%;
   margin-top: -10px;
 }
-/* line 77, ../_scss/_article.scss */
+/* line 52, ../_scss/_article.scss */
 article p code, article li code {
   font-size: .9em;
 }
-/* line 83, ../_scss/_article.scss */
+/* line 58, ../_scss/_article.scss */
 article blockquote p {
   color: #444;
   font-style: normal;
 }
-/* line 88, ../_scss/_article.scss */
+/* line 63, ../_scss/_article.scss */
 article blockquote footer {
   padding-bottom: 10px;
 }
-/* line 90, ../_scss/_article.scss */
+/* line 65, ../_scss/_article.scss */
 article blockquote footer strong {
   color: #333;
   font-style: normal;
 }
-/* line 95, ../_scss/_article.scss */
+/* line 70, ../_scss/_article.scss */
 article blockquote footer cite {
   display: inline;
   font-size: 16px;
 }
-/* line 98, ../_scss/_article.scss */
+/* line 73, ../_scss/_article.scss */
 article blockquote footer cite a {
   text-decoration: underline;
 }
 
-/* line 105, ../_scss/_article.scss */
+/* line 80, ../_scss/_article.scss */
 .blog-index article {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 36px;
   padding-top: 14px;
   padding-bottom: 12px;
 }
-/* line 110, ../_scss/_article.scss */
+/* line 85, ../_scss/_article.scss */
 .blog-index article h2 {
   font-size: 2rem;
 }
-/* line 111, ../_scss/_article.scss */
+/* line 86, ../_scss/_article.scss */
 .blog-index article h4 {
   font-size: 1.3rem;
 }
 
-/* line 116, ../_scss/_article.scss */
+/* line 91, ../_scss/_article.scss */
 .highlight {
   font-size: 1.1rem;
   margin: 1.25rem 0;
 }
 
-/* line 121, ../_scss/_article.scss */
+/* line 96, ../_scss/_article.scss */
 p code {
   background: #eee;
 }
 
-/* line 3, ../_scss/_homepage.scss */
+/* line 5, ../_scss/_homepage.scss */
 body.homepage #header .subtitle {
   font-weight: 100;
   color: #fff;
   font-size: 1.3em;
   margin: 0;
 }
-/* line 10, ../_scss/_homepage.scss */
+/* line 11, ../_scss/_homepage.scss */
+body.homepage #header .background-image {
+  height: 750px;
+  background: transparent url(/images/mattmcmanus-background.jpg) no-repeat center 40%;
+  background-size: cover;
+}
+/* line 16, ../_scss/_homepage.scss */
+body.homepage #header .background-image-foreground {
+  padding: 80px 0 40px;
+  background: rgba(36, 55, 69, 0.6);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(36, 55, 69, 0.5)), color-stop(100%, rgba(150, 142, 98, 0.5)));
+  background-image: -webkit-linear-gradient(rgba(36, 55, 69, 0.5), rgba(150, 142, 98, 0.5));
+  background-image: -moz-linear-gradient(rgba(36, 55, 69, 0.5), rgba(150, 142, 98, 0.5));
+  background-image: -o-linear-gradient(rgba(36, 55, 69, 0.5), rgba(150, 142, 98, 0.5));
+  background-image: linear-gradient(rgba(36, 55, 69, 0.5), rgba(150, 142, 98, 0.5));
+}
+/* line 22, ../_scss/_homepage.scss */
 body.homepage #header .section-tagline p {
   font-size: 2em;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 1em 0;
+  margin: 4em 0 1em;
   padding: .6em 0;
+  font-family: "Jubilat", serif;
+  color: #444;
 }
-/* line 17, ../_scss/_homepage.scss */
-body.homepage #header .background-image {
-  height: 700px;
-  background: transparent url(/images/mattmcmanus-background.jpg) no-repeat center 40%;
-  background-size: cover;
+/* line 32, ../_scss/_homepage.scss */
+body.homepage #header .section-history p {
+  font-size: 1.1em;
+  text-align: center;
 }
-/* line 22, ../_scss/_homepage.scss */
-body.homepage #header .background-image-foreground {
-  padding: 80px 0 40px;
-  background: rgba(36, 55, 69, 0.5);
+/* line 37, ../_scss/_homepage.scss */
+body.homepage #header .skills {
+  margin-top: 1em;
 }
-/* line 29, ../_scss/_homepage.scss */
+/* line 40, ../_scss/_homepage.scss */
+body.homepage #header .skills h3 {
+  font-size: 2em;
+  line-height: 1em;
+}
+/* line 45, ../_scss/_homepage.scss */
+body.homepage #header .skills .ux .word1 {
+  display: block;
+}
+/* line 50, ../_scss/_homepage.scss */
 body.homepage #main .article time {
   font-size: .7em;
   color: #888888;
 }
-/* line 33, ../_scss/_homepage.scss */
+/* line 54, ../_scss/_homepage.scss */
 body.homepage #main .article h2 {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: 700;
 }
-/* line 38, ../_scss/_homepage.scss */
+/* line 59, ../_scss/_homepage.scss */
 body.homepage #main .article h4 {
   font-size: 1em;
 }
 
-/* line 33, ../_scss/app.scss */
+/* line 21, ../_scss/app.scss */
 .pagination {
   margin-top: 1.5em;
 }
 
-/* line 37, ../_scss/app.scss */
+/* line 25, ../_scss/app.scss */
 #footer {
   color: #243745;
   padding-top: 21px;
   margin-top: 12px;
 }
-/* line 44, ../_scss/app.scss */
+/* line 32, ../_scss/app.scss */
 #footer ul li a:before {
   font-size: 1.1em;
 }
-/* line 46, ../_scss/app.scss */
+/* line 34, ../_scss/app.scss */
 #footer .copyright {
   font-size: .8em;
-  margin-top: 5px;
+  margin-top: 2em;
+  color: #888888;
 }
-/* line 47, ../_scss/app.scss */
+/* line 35, ../_scss/app.scss */
 #footer a {
   display: inline-block;
   padding: 0 5px;

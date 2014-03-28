@@ -5,18 +5,6 @@
 @import "foundation";
 @import "pygments";
 
-// General
-
-p, .nav-bar a, li, time {
-  font-family: "ff-tisa-sans-web-pro", sans-serif;
-  color: #222;
-}
-
-h1, h2, h3, h4, h5, header * {
-  font-family: 'Jubilat', Serif;
-  color: #444;
-}
-
 .accelerated {
   position: relative;
   -moz-transform: translate3d(0px, 0px, 0px);
@@ -43,6 +31,6 @@ h1, h2, h3, h4, h5, header * {
   ul li {
     a:before { font-size:1.1em;}
   }
-  .copyright { font-size: .8em; margin-top: 5px; }
+  .copyright { font-size: .8em; margin-top: 2em; color: $gray; }
   a { display: inline-block; padding: 0 5px; }
 }
