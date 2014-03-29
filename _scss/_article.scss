@@ -14,6 +14,10 @@ article {
     text-rendering: optimizelegibility;
   }
 
+  header {
+
+  }
+
   .meta {
     color: #777;
     font-size:.9em;
@@ -74,6 +78,11 @@ article {
       }
     }
   }
+}
+
+article.withCover {
+  header { margin-top: -76px; }
+  .entry-title { color: #fff; }
 }
 
 .blog-index {

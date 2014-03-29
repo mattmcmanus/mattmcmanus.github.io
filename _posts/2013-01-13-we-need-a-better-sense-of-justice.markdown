@@ -19,7 +19,7 @@ Fifty years in jail, charges our government. Somehow, we need to get beyond the 
 One word, and endless tears.
 
 <footer><strong>Lawrence Lessig,</strong>
-<cite><a href="http://lessig.tumblr.com/post/40347463044/prosecutor-as-bully"></a></cite></footer>
+<cite><a href="http://lessig.tumblr.com/post/40347463044/prosecutor-as-bully">Prosecutor as Bully</a></cite></footer>
 </blockquote>
 
 Like many people, I'm filled with a sense of sadness and outrage in response to the news of Aaron Swartz' suicide. Sadness for a man without hope for the future and outrage at a system who pushed him so recklessly to that point. 35-50 years in jail for a crime that could *easily* be argued, in the context of his life, was for the greater good and not personal gain? I understand this argument, blindly applied, can be a dangerous one. Not here though. Not now.

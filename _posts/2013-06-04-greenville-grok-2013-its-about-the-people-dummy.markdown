@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Greenville Grok 2013"
+title: Greenville Grok 2013
+subtitle: Reflections on a couple days with some amazing folks in Greenville, South Carolina
 date: 2013-06-04 21:56
 comments: true
 categories: Life
@@ -32,5 +33,3 @@ Grok provided me so many opportunities to talk to people who have started succes
 ### Srsly, You should go
 
 Grok was just awesome. I'm inspired and excited about my work and its potential - but that's normal for right after a conference. Grok is different because it offers information in the context of relationships. I've learned real lessons from real people, and these are lessons (and people) I can go back to again and again. That is flipp'n awesome.
-
-

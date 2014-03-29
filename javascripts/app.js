@@ -12,17 +12,17 @@ $(document).ready(function() {
   window.onscroll = function(e) {
     if (window.scrollY < 700) {
       // note: most browsers presently use prefixes: webkitTransform, mozTransform etc.
-      var translate3d = 'translate3d(0px,' + (window.scrollY/1.5) + 'px, 0px)';
+      var translate3d = 'translate3d(0px,' + (window.scrollY/2) + 'px, 0px)';
       parallax.style.webkitTransform = translate3d;
       parallax.style.transform = translate3d;
       var opacity = 1-(window.scrollY*0.0009);
-      if (opacity <= 1) {
-        content.each(function(x,f){
-          f.style.opacity = opacity;
-        });
-      } else {
+      if (opacity > 1) {
         foreground.style.opacity = 1-((opacity-1)*20);
       }
+
+      // content.each(function(x,f){
+      //   f.style.opacity = opacity;
+      // });
     }
   };
 

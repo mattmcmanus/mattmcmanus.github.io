@@ -64,7 +64,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1610,7 +1610,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 1rem;
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
@@ -3479,7 +3479,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5309,7 +5309,7 @@ kbd {
 /* line 91, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -5970,7 +5970,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 /* line 143, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .price {
@@ -5980,7 +5980,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 /* line 144, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .description {
@@ -6324,7 +6324,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 /* line 62, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
@@ -6344,7 +6344,7 @@ dialog[open] {
 .side-nav li.active > a:first-child:not(.button) {
   color: #4e7795;
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 /* line 79, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -6513,7 +6513,7 @@ dialog[open] {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -6855,7 +6855,7 @@ table tfoot tr td {
   background: #efefef;
   color: #222222;
   padding: 1rem 2rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 1rem;
 }
 /* line 43, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -7291,7 +7291,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   text-transform: none;
@@ -9981,96 +9981,105 @@ article time.post-date {
   text-transform: uppercase;
   text-rendering: optimizelegibility;
 }
-/* line 17, ../_scss/_article.scss */
+/* line 21, ../_scss/_article.scss */
 article .meta {
   color: #777;
   font-size: .9em;
   margin: 30px 0 0;
   text-align: center;
 }
-/* line 23, ../_scss/_article.scss */
+/* line 27, ../_scss/_article.scss */
 article .meta a:link {
   text-decoration: none;
 }
-/* line 26, ../_scss/_article.scss */
+/* line 30, ../_scss/_article.scss */
 article .right {
   margin-left: 12px;
 }
-/* line 30, ../_scss/_article.scss */
+/* line 34, ../_scss/_article.scss */
 article p, article li {
   letter-spacing: .01rem;
   font-style: normal;
   color: #555;
 }
-/* line 35, ../_scss/_article.scss */
+/* line 39, ../_scss/_article.scss */
 article p a:link, article li a:link {
   text-decoration: underline;
 }
-/* line 39, ../_scss/_article.scss */
+/* line 43, ../_scss/_article.scss */
 article p img, article li img {
   margin: 0;
   width: 100%;
 }
-/* line 42, ../_scss/_article.scss */
+/* line 46, ../_scss/_article.scss */
 article p img.full, article li img.full {
   border-radius: 4px;
 }
-/* line 46, ../_scss/_article.scss */
+/* line 50, ../_scss/_article.scss */
 article p img.right, article li img.right {
   width: 20%;
   margin-top: -10px;
 }
-/* line 52, ../_scss/_article.scss */
+/* line 56, ../_scss/_article.scss */
 article p code, article li code {
   font-size: .9em;
 }
-/* line 58, ../_scss/_article.scss */
+/* line 62, ../_scss/_article.scss */
 article blockquote p {
   color: #444;
   font-style: normal;
 }
-/* line 63, ../_scss/_article.scss */
+/* line 67, ../_scss/_article.scss */
 article blockquote footer {
   padding-bottom: 10px;
 }
-/* line 65, ../_scss/_article.scss */
+/* line 69, ../_scss/_article.scss */
 article blockquote footer strong {
   color: #333;
   font-style: normal;
 }
-/* line 70, ../_scss/_article.scss */
+/* line 74, ../_scss/_article.scss */
 article blockquote footer cite {
   display: inline;
   font-size: 16px;
 }
-/* line 73, ../_scss/_article.scss */
+/* line 77, ../_scss/_article.scss */
 article blockquote footer cite a {
   text-decoration: underline;
 }
 
-/* line 80, ../_scss/_article.scss */
+/* line 84, ../_scss/_article.scss */
+article.withCover header {
+  margin-top: -76px;
+}
+/* line 85, ../_scss/_article.scss */
+article.withCover .entry-title {
+  color: #fff;
+}
+
+/* line 89, ../_scss/_article.scss */
 .blog-index article {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 36px;
   padding-top: 14px;
   padding-bottom: 12px;
 }
-/* line 85, ../_scss/_article.scss */
+/* line 94, ../_scss/_article.scss */
 .blog-index article h2 {
   font-size: 2rem;
 }
-/* line 86, ../_scss/_article.scss */
+/* line 95, ../_scss/_article.scss */
 .blog-index article h4 {
   font-size: 1.3rem;
 }
 
-/* line 91, ../_scss/_article.scss */
+/* line 100, ../_scss/_article.scss */
 .highlight {
   font-size: 1.1rem;
   margin: 1.25rem 0;
 }
 
-/* line 96, ../_scss/_article.scss */
+/* line 105, ../_scss/_article.scss */
 p code {
   background: #eee;
 }
