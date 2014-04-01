@@ -1,3 +1,321 @@
+@charset "UTF-8";
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-social-regular.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSSocialRegular";
+  src: url("/webfonts/ss-social/ss-social-regular.eot");
+  src: url("/webfonts/ss-social/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/webfonts/ss-social/ss-social-regular.woff") format("woff"), url("/webfonts/ss-social/ss-social-regular.ttf") format("truetype"), url("/webfonts/ss-social/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+/* line 25, ../_scss/_webfonts.scss */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1;
+}
+
+/* line 31, ../_scss/_webfonts.scss */
+.ss-icon, .ss-icon.ss-social-regular,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-social-regular:before, [class*=" ss-"].ss-social-regular:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-social-regular.right:after, [class*=" ss-"].ss-social-regular.right:after {
+  font-family: "SSSocialRegular";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 48, ../_scss/_webfonts.scss */
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before {
+  display: none;
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-facebook:before, .ss-facebook.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-twitter:before, .ss-twitter.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-linkedin:before, .ss-linkedin.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-googleplus:before, .ss-googleplus.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-appdotnet:before, .ss-appdotnet.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-zerply:before, .ss-zerply.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-reddit:before, .ss-reddit.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-steam:before, .ss-steam.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-tumblr:before, .ss-tumblr.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-wordpress:before, .ss-wordpress.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-blogger:before, .ss-blogger.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-posterous:before, .ss-posterous.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-quora:before, .ss-quora.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-youtube:before, .ss-youtube.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-vimeo:before, .ss-vimeo.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-vine:before, .ss-vine.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-letterboxd:before, .ss-letterboxd.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-flickr:before, .ss-flickr.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-instagram:before, .ss-instagram.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-500px:before, .ss-500px.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-etsy:before, .ss-etsy.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-pinterest:before, .ss-pinterest.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-svpply:before, .ss-svpply.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-readmill:before, .ss-readmill.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-dropbox:before, .ss-dropbox.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-pinboard:before, .ss-pinboard.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-delicious:before, .ss-delicious.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-dribbble:before, .ss-dribbble.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-behance:before, .ss-behance.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-github:before, .ss-github.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-octocat:before, .ss-octocat.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-stackoverflow:before, .ss-stackoverflow.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-paypal:before, .ss-paypal.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-kickstarter:before, .ss-kickstarter.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-foursquare:before, .ss-foursquare.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-yelp:before, .ss-yelp.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-skype:before, .ss-skype.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-rdio:before, .ss-rdio.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-spotify:before, .ss-spotify.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-lastfm:before, .ss-lastfm.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-soundcloud:before, .ss-soundcloud.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-link:before, .ss-link.right:after {
+  content: '🔗';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-phone:before, .ss-phone.right:after {
+  content: '📞';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-mail:before, .ss-mail.right:after {
+  content: '✉';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-like:before, .ss-like.right:after {
+  content: '👍';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-rss:before, .ss-rss.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-share:before, .ss-share.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-apple:before, .ss-apple.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-microsoft:before, .ss-microsoft.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-windows:before, .ss-windows.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-android:before, .ss-android.right:after {
+  content: '';
+}
+
+/* line 50, ../_scss/_webfonts.scss */
+.ss-blackberry:before, .ss-blackberry.right:after {
+  content: '';
+}
+
+/* Legacy */
+/* line 53, ../_scss/_webfonts.scss */
+.ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
+  content: '';
+}
+
 /* line 300, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.1/";
@@ -8392,12 +8710,12 @@ abbr {
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #dddddd;
+  border-left: none;
 }
 /* line 462, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   color: #6f6f6f;
 }
 /* line 466, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8414,7 +8732,7 @@ blockquote cite a:visited {
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #858585;
+  color: #606060;
 }
 
 /* Microformats */
@@ -9898,12 +10216,18 @@ th.hide-for-touch {
 }
 
 /* Literal.Number.Integer.Long */
-/* line 8, ../_scss/app.scss */
+/* line 10, ../_scss/app.scss */
 .accelerated {
   position: relative;
   -moz-transform: translate3d(0px, 0px, 0px);
   -ms-transform: translate3d(0px, 0px, 0px);
   -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 17, ../_scss/app.scss */
+h3 {
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  font-weight: 700;
 }
 
 /* line 1, ../_scss/_header.scss */
@@ -9981,105 +10305,111 @@ article time.post-date {
   text-transform: uppercase;
   text-rendering: optimizelegibility;
 }
-/* line 21, ../_scss/_article.scss */
+/* line 17, ../_scss/_article.scss */
+article header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+/* line 22, ../_scss/_article.scss */
 article .meta {
   color: #777;
   font-size: .9em;
-  margin: 30px 0 0;
+  margin: 1em 0 -.7em;
   text-align: center;
 }
-/* line 27, ../_scss/_article.scss */
-article .meta a:link {
-  text-decoration: none;
+/* line 28, ../_scss/_article.scss */
+article .meta time {
+  padding: 0 1em;
+  background: white;
 }
-/* line 30, ../_scss/_article.scss */
+/* line 36, ../_scss/_article.scss */
 article .right {
   margin-left: 12px;
 }
-/* line 34, ../_scss/_article.scss */
+/* line 40, ../_scss/_article.scss */
 article p, article li {
   letter-spacing: .01rem;
   font-style: normal;
   color: #555;
 }
-/* line 39, ../_scss/_article.scss */
+/* line 45, ../_scss/_article.scss */
 article p a:link, article li a:link {
   text-decoration: underline;
 }
-/* line 43, ../_scss/_article.scss */
+/* line 49, ../_scss/_article.scss */
 article p img, article li img {
   margin: 0;
   width: 100%;
 }
-/* line 46, ../_scss/_article.scss */
+/* line 52, ../_scss/_article.scss */
 article p img.full, article li img.full {
   border-radius: 4px;
 }
-/* line 50, ../_scss/_article.scss */
+/* line 56, ../_scss/_article.scss */
 article p img.right, article li img.right {
   width: 20%;
   margin-top: -10px;
 }
-/* line 56, ../_scss/_article.scss */
+/* line 62, ../_scss/_article.scss */
 article p code, article li code {
   font-size: .9em;
 }
-/* line 62, ../_scss/_article.scss */
+/* line 68, ../_scss/_article.scss */
 article blockquote p {
   color: #444;
   font-style: normal;
 }
-/* line 67, ../_scss/_article.scss */
+/* line 73, ../_scss/_article.scss */
 article blockquote footer {
   padding-bottom: 10px;
 }
-/* line 69, ../_scss/_article.scss */
+/* line 75, ../_scss/_article.scss */
 article blockquote footer strong {
   color: #333;
   font-style: normal;
 }
-/* line 74, ../_scss/_article.scss */
+/* line 80, ../_scss/_article.scss */
 article blockquote footer cite {
   display: inline;
   font-size: 16px;
 }
-/* line 77, ../_scss/_article.scss */
+/* line 83, ../_scss/_article.scss */
 article blockquote footer cite a {
   text-decoration: underline;
 }
 
-/* line 84, ../_scss/_article.scss */
+/* line 90, ../_scss/_article.scss */
 article.withCover header {
   margin-top: -76px;
 }
-/* line 85, ../_scss/_article.scss */
+/* line 91, ../_scss/_article.scss */
 article.withCover .entry-title {
   color: #fff;
 }
 
-/* line 89, ../_scss/_article.scss */
+/* line 95, ../_scss/_article.scss */
 .blog-index article {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 36px;
   padding-top: 14px;
   padding-bottom: 12px;
 }
-/* line 94, ../_scss/_article.scss */
+/* line 100, ../_scss/_article.scss */
 .blog-index article h2 {
   font-size: 2rem;
 }
-/* line 95, ../_scss/_article.scss */
+/* line 101, ../_scss/_article.scss */
 .blog-index article h4 {
   font-size: 1.3rem;
 }
 
-/* line 100, ../_scss/_article.scss */
+/* line 106, ../_scss/_article.scss */
 .highlight {
   font-size: 1.1rem;
   margin: 1.25rem 0;
 }
 
-/* line 105, ../_scss/_article.scss */
+/* line 111, ../_scss/_article.scss */
 p code {
   background: #eee;
 }
@@ -10115,65 +10445,97 @@ body.homepage #header .section-tagline p {
   margin: 4em 0 1em;
   padding: .6em 0;
   font-family: "Jubilat", serif;
-  color: #444;
-}
-/* line 32, ../_scss/_homepage.scss */
-body.homepage #header .section-history p {
-  font-size: 1.1em;
   text-align: center;
+  font-weight: 700;
 }
-/* line 37, ../_scss/_homepage.scss */
+/* line 31, ../_scss/_homepage.scss */
+body.homepage #header .section-tagline p small {
+  display: block;
+  font-weight: 400;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  color: #ccc;
+}
+/* line 39, ../_scss/_homepage.scss */
 body.homepage #header .skills {
   margin-top: 1em;
 }
-/* line 40, ../_scss/_homepage.scss */
+/* line 42, ../_scss/_homepage.scss */
 body.homepage #header .skills h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1em;
 }
-/* line 45, ../_scss/_homepage.scss */
+/* line 47, ../_scss/_homepage.scss */
 body.homepage #header .skills .ux .word1 {
   display: block;
 }
-/* line 50, ../_scss/_homepage.scss */
+/* line 51, ../_scss/_homepage.scss */
+body.homepage .testimonials {
+  padding: 2em 0;
+}
+/* line 54, ../_scss/_homepage.scss */
+body.homepage .testimonials p {
+  font-size: 1.3em;
+}
+/* line 55, ../_scss/_homepage.scss */
+body.homepage .testimonials cite {
+  text-align: right;
+  padding: .5em 2em;
+}
+/* line 59, ../_scss/_homepage.scss */
 body.homepage #main .article time {
   font-size: .7em;
   color: #888888;
 }
-/* line 54, ../_scss/_homepage.scss */
+/* line 63, ../_scss/_homepage.scss */
 body.homepage #main .article h2 {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: 700;
 }
-/* line 59, ../_scss/_homepage.scss */
+/* line 68, ../_scss/_homepage.scss */
 body.homepage #main .article h4 {
   font-size: 1em;
 }
 
-/* line 21, ../_scss/app.scss */
+/* line 29, ../_scss/app.scss */
 .pagination {
   margin-top: 1.5em;
 }
 
-/* line 25, ../_scss/app.scss */
+/* line 33, ../_scss/app.scss */
 #footer {
   color: #243745;
   padding-top: 21px;
   margin-top: 12px;
+  border-top: 1px solid #eee;
 }
-/* line 32, ../_scss/app.scss */
+/* line 40, ../_scss/app.scss */
 #footer ul li a:before {
   font-size: 1.1em;
 }
-/* line 34, ../_scss/app.scss */
+/* line 42, ../_scss/app.scss */
 #footer .copyright {
   font-size: .8em;
   margin-top: 2em;
   color: #888888;
 }
-/* line 35, ../_scss/app.scss */
+/* line 43, ../_scss/app.scss */
 #footer a {
   display: inline-block;
   padding: 0 5px;
+}
+/* line 45, ../_scss/app.scss */
+#footer .social {
+  text-align: center;
+  font-size: 3em;
+}
+/* line 48, ../_scss/app.scss */
+#footer .social a {
+  display: inline-block;
+  width: 100px;
+  margin: 1em 1em .5em;
+}
+/* line 52, ../_scss/app.scss */
+#footer .social a:hover {
+  color: #968e62;
 }

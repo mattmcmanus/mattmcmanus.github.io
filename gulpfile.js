@@ -16,17 +16,17 @@ var gulp = require('gulp'),
 
 //styles
 gulp.task('styles', function() {
-	return gulp.src(['src/scss/**/*.scss'])
+	return gulp.src(['_scss/**/*.scss'])
 		.pipe(compass({
-			css: 'html/css',
-			sass: 'src/scss',
-			image: 'html/images'
+			css: 'stylesheets',
+			sass: '_scss',
+			image: 'images'
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest('html/css'))
+		.pipe(gulp.dest('stylesheets'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(minifycss())
-		.pipe(gulp.dest('html/css'))
+		.pipe(gulp.dest('stylesheets'))
 		.pipe(refresh(server));
 });
 
@@ -36,25 +36,19 @@ gulp.task('scripts', function() {
 		//.pipe(jshint('.jshintrc'))
 		//.pipe(jshint.reporter('default'))
 		.pipe(concat('main.js'))
-		.pipe(gulp.dest('html/js'))
+		.pipe(gulp.dest('javascripts'))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(uglify())
-		.pipe(gulp.dest('html/js'))
-		.pipe(refresh(server));
-});
-
-//html
-gulp.task('html', function() {
-	return gulp.src('templates/**/*.html')
+		.pipe(gulp.dest('javascripts'))
 		.pipe(refresh(server));
 });
 
 //images
 gulp.task('images', function() {
-	return gulp.src('html/images/**/*')
+	return gulp.src('images/**/*')
 		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
 		.pipe(refresh(server))
-		.pipe(gulp.dest('html/images'));
+		.pipe(gulp.dest('images'));
 });
 
 //default task
@@ -73,23 +67,12 @@ gulp.task('live', function() {
 	gulp.run('livereload', 'styles');
 
 	//watch .scss files
-	gulp.watch('src/scss/**/*.scss', function(event) {
+	gulp.watch('_scss/**/*.scss', function(event) {
 		gulp.run('styles');
 	});
 
 	//watch .js files
-	gulp.watch('src/js/**/*.js', function(event) {
+	gulp.watch('javascripts/**/*.js', function(event) {
 		gulp.run('scripts');
-	});
-
-	//watch image files
-	//gulp.watch('html/images/**/*', function(event) {
-	//	console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-	//	gulp.run('images');
-	//});
-
-	//watch template files
-	gulp.watch('templates/**/*.html', function(event) {
-		gulp.run('html');
 	});
 });

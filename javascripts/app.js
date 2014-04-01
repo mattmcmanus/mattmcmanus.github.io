@@ -26,5 +26,5 @@ $(document).ready(function() {
     }
   };
 
-  $(".lettering p, .skills h3").lettering('words');
+  //$(".lettering p, .skills h3").lettering('words');
 });

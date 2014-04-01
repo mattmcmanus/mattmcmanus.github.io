@@ -5,6 +5,7 @@ $primary: #243745;
 $primary-color: #243745;
 //$highlight: #467;
 $highlight: #968E62;
+$light-highlight: scale-color($highlight, $lightness: 15%);
 $gray: #888;
 
 $serif: 'Jubilat', serif;
@@ -47,3 +48,10 @@ $paragraph-text-rendering: optimizeLegibility;
 $code-color: #333;
 $code-font-family: Consolas, Liberation Mono, Courier, monospace;
 $code-font-weight: normal;
+
+$blockquote-font-color: scale-color($header-font-color, $lightness: 15%);
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: none;
+$blockquote-cite-font-size: rem-calc(16);
+$blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
+$blockquote-cite-link-color: $blockquote-cite-font-color;

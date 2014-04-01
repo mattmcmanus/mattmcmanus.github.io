@@ -15,17 +15,23 @@ article {
   }
 
   header {
-
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
   }
 
   .meta {
     color: #777;
     font-size:.9em;
-    margin:30px 0 0;
+    margin:1em 0 -.7em;
     text-align: center;
 
-    a:link { text-decoration:none;}
+    time {
+      padding: 0 1em;
+      background: white;
+    }
+
   }
+
 
   .right {
     margin-left: 12px;

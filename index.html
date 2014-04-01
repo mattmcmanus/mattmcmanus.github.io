@@ -17,13 +17,8 @@ layout: homepage
 
     <div class="row">
       <div class="large-10 large-offset-1 columns section-tagline lettering">
-        <p>I advocate for humans in a world of bytes &amp; pixels</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns section-history">
-        <p>For over a decade I’ve been honing my skills in</p>
+        <p><small>For over a decade I’ve been</small>
+        Advocating for humans in a world of bytes &amp; pixels</p>
       </div>
     </div>
 
@@ -35,12 +30,12 @@ layout: homepage
 
       <div class="large-4 columns">
         <h3>Full Stack Web Development</h3>
-        <p>Full stack is just a fancy way of saying I'm capable and enjoy tweaking css for perfect typography, writing rich, interactive javascript interfaces and programming the backend application in node.js, ruby or php</p>
+        <p>Just a fancy way of saying I enjoy tweaking css for pixel perfect typography, writing rich, interactive javascript interfaces and programming the backend application in node.js, ruby or php</p>
       </div>
 
       <div class="large-4 columns">
         <h3>DevOps System Administration</h3>
-        <p>All that code isn't very useful without a server to run it on. I love writing and using code to setup and maintain infrastructures. </p>
+        <p>I love using code to deploy applications and their infrastructure to the cloud in scalable, secure, and reliable way.</p>
       </div>
     </div>
   </div>
@@ -49,16 +44,21 @@ layout: homepage
 <!-- main -->
 <div id="main" class="row">
   <div class="large-12 columns">
-<!--     <div class="row">
-      <div class="large-3 columns">
-        <a href="">Github</a>
+
+    <div class="row testimonials">
+      <div class="large-12 columns">
+        <blockquote>
+          <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project" <cite>Joshua Smith</cite></p>
+        </blockquote>
       </div>
-    </div> -->
+    </div>
+
     <div class="row blog">
       <div class="large-12 columns">
-        <h2>Words are important. I'm learning how to use them.</h2>
+
+        <h3>Recent blog posts <small><a href="/blog" >See all of them</a></small></h3>
         <ul class="block-index large-block-grid-3 small-block-grid-1">
-          {% for post in site.posts limit:6 %}
+          {% for post in site.posts limit:3 %}
             <li class="article {{post.layout}}">
               <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
               <h2 class="entry-title">

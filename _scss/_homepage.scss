@@ -26,24 +26,33 @@ body.homepage {
       margin:4em 0 1em;
       padding:.6em 0;
       font-family: $serif;
-      color: #444;
-    }
-
-    .section-history p {
-      font-size: 1.1em;
       text-align: center;
+      font-weight: 700;
+      small {
+        display: block;
+        font-weight: 400;
+        font-family: $sans-serif;
+        color: #ccc;
+      }
     }
 
     .skills {
       margin-top: 1em;
 
       h3 {
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: 1em;
       }
 
       .ux .word1 { display: block; }
     }
+  }
+
+  .testimonials {
+    padding: 2em 0;
+
+    p { font-size: 1.3em; }
+    cite { text-align: right; padding: .5em 2em}
   }
 
   #main .article {

@@ -1,3 +1,5 @@
+@import 'webfonts';
+
 // Global Foundation Settings
 @import "settings";
 
@@ -12,11 +14,17 @@
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
+h3 {
+  font-family: $sans-serif;
+  font-weight: 700;
+}
+
 @import 'header';
 
 @import 'article';
 
 @import 'homepage';
+
 
 .pagination { margin-top: 1.5em; }
 
@@ -26,11 +34,22 @@
   color: $primary;
   padding-top: 21px;
   margin-top: 12px;
-  h4, a, li { }
-  p { }
+  border-top: 1px solid #eee;
+
   ul li {
     a:before { font-size:1.1em;}
   }
   .copyright { font-size: .8em; margin-top: 2em; color: $gray; }
   a { display: inline-block; padding: 0 5px; }
+
+  .social {
+    text-align: center;
+    font-size: 3em;
+    a {
+      display: inline-block;
+      width: 100px;
+      margin: 1em 1em .5em;
+      &:hover { color: $highlight; }
+    }
+  }
 }
