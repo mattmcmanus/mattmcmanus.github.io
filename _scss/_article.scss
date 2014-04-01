@@ -4,7 +4,7 @@ article {
     margin-top:20px;
     padding: 5px 0;
     display: block;
-    color: #ccc;
+    color: #aaa;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -16,7 +16,7 @@ article {
 
   header {
     border-bottom: 1px solid #ddd;
-    margin-bottom: 1em;
+    margin-bottom: 1.8em;
   }
 
   .meta {
@@ -32,6 +32,9 @@ article {
 
   }
 
+ .entry-content a:link {
+    text-decoration:underline;
+  }
 
   .right {
     margin-left: 12px;
@@ -41,10 +44,6 @@ article {
     letter-spacing: .01rem;
     font-style: normal;
     color: #555;
-
-    a:link {
-      text-decoration:underline;
-    }
 
     img {
       margin: 0;
@@ -65,30 +64,27 @@ article {
   }
 
   blockquote {
+    font-size:1.3em;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1em 1em 1.2em 1em;
+    font-style: italic;
+
     p {
-      color: #444;
-      font-style: normal;
     }
-
-    footer {
-      padding-bottom: 10px;
-      strong {
-        color: #333;
-        font-style: normal;
-      }
-
-      cite {
-        display: inline;
-        font-size: 16px;
-        a { text-decoration:underline;}
-      }
+    cite {
+      text-align:right;
+      margin-top: .5em;
     }
   }
 }
 
+body.post.withCover #header {
+  .background-image { height: 220px }
+  .background-image-foreground { height: 200px }
+  div > .row { margin-top: 56px }
+}
 article.withCover {
-  header { margin-top: -76px; }
-  .entry-title { color: #fff; }
 }
 
 .blog-index {

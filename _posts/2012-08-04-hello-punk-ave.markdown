@@ -5,7 +5,6 @@ subtitle: "It's time to make some websites"
 date: 2012-08-04 11:02
 comments: true
 cover: /images/posts/punkave.jpg
-coverHeight: 200
 categories:
  - Life
 ---

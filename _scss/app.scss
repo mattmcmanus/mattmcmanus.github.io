@@ -19,6 +19,14 @@ h3 {
   font-weight: 700;
 }
 
+a {
+  transition: all 150ms ease-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @import 'header';
 
 @import 'article';
@@ -36,17 +44,18 @@ h3 {
   margin-top: 12px;
   border-top: 1px solid #eee;
 
-  ul li {
-    a:before { font-size:1.1em;}
+  .hello {
+    font-size: 1.3em;
   }
+
   .copyright { font-size: .8em; margin-top: 2em; color: $gray; }
+
   a { display: inline-block; padding: 0 5px; }
 
   .social {
     text-align: center;
     font-size: 3em;
     a {
-      display: inline-block;
       width: 100px;
       margin: 1em 1em .5em;
       &:hover { color: $highlight; }

@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="blog-index large-12 columns">
-  <h2>Articles</h2>
+  <h2>Words are important</h2>
 
   {% for post in paginator.posts %}
     <article class="{{post.layout}} row">
@@ -26,7 +26,7 @@ layout: default
       {% if paginator.previous_page %}
         <li class="arrow"> <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">&laquo; Previous</a> </li>
       {% else %}
-        <li class="arrow unavailable">&laquo; Previous</li>
+        <li class="arrow unavailable"><a href="#">&laquo; Previous</a></li>
       {% endif %}
 
       {% for page in (1..paginator.total_pages) %}
@@ -42,7 +42,7 @@ layout: default
       {% if paginator.next_page %}
         <li class="arrow"> <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next &raquo;</a> </li>
       {% else %}
-        <li class="arrow unavailable">Next &raquo;</li>
+        <li class="arrow unavailable"><a href="#">Next &raquo;</a></li>
       {% endif %}
     </ul>
   </div>

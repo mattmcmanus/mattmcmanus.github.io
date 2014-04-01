@@ -55,6 +55,10 @@ body.homepage {
     cite { text-align: right; padding: .5em 2em}
   }
 
+  .blog {
+    small a { color: $gray; margin: 0 1em;}
+  }
+
   #main .article {
     time {
       font-size: .7em;
