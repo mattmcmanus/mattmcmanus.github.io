@@ -1,0 +1,42 @@
+---
+layout: default
+single: true
+type: post
+---
+{% if page.cover %}
+  <style>
+    #header .background-image { background-image:url({{page.cover}}) }
+    {% if page.coverHeight %}
+      #header .background-image { height: {{page.coverHeight | plus: 30 }}px }
+      #header .background-image-foreground { height: {{page.coverHeight}}px }
+    {% endif %}
+  </style>
+{% endif %}
+
+<div class="medium-10 medium-offset-1 columns">
+  <article class="hentry {%if page.cover%}withCover{%endif%}" role="article">
+
+    <header>
+      <h2 class="entry-title"> {{ page.title | titlecase }} </h2>
+      {% if page.subtitle %}
+        <h4 class="subheader">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</h4>
+      {% endif %}
+
+      <p class="meta">
+        <time class="ss-calendar" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+      </p>
+    </header>
+
+    <div class="entry-content">{{ content }}</div>
+  </article>
+</div>
+
+<!--
+{% if page.next %}
+  <a class="relative-post next-post" href="{{ page.next.url }}">{{ page.next.title}}</a>
+{% endif %}
+
+{% if page.previous %}
+  <a class="relative-post previous-post" href="{{ page.previous.url }}">{{ page.previous.title}}</a>
+{% endif %}
+-->
