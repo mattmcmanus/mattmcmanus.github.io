@@ -8,9 +8,9 @@ compress-js:
 
 compress-css:
 	compass compile -c config.rb --force
-	autoprefixer style.css
-	cleancss --s1 -o style.min.css style.css
-	uncss style.min.css
+	autoprefixer stylesheets/app.css
+	cleancss --s1 -o stylesheets/app.min.css stylesheets/app.css
+	mv stylesheets/app.min.css stylesheets/app.css
 
 commit:
 	git add *
