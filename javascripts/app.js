@@ -3,7 +3,6 @@
 
 
 $(document).ready(function() {
-  $(document).foundation();
 
   var parallax = document.getElementsByClassName('background-image')[0];
   var foreground = document.getElementsByClassName('background-image-foreground')[0];

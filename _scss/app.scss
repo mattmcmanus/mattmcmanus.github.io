@@ -4,7 +4,23 @@
 @import "settings";
 
 // Comment out this import if you are customizing you imports below
-@import "foundation";
+@import
+  "foundation/components/grid",
+  "foundation/components/block-grid",
+  //"foundation/components/button-groups",
+  "foundation/components/buttons",
+  //"foundation/components/clearing",
+  //"foundation/components/flex-video",
+  //"foundation/components/forms",
+  "foundation/components/inline-lists",
+  "foundation/components/pagination",
+  //"foundation/components/side-nav",
+  //"foundation/components/sub-nav",
+  //"foundation/components/tables",
+  //"foundation/components/tabs",
+  //"foundation/components/top-bar",
+  "foundation/components/type";
+  //"foundation/components/visibility";
 @import "pygments";
 
 .accelerated {
