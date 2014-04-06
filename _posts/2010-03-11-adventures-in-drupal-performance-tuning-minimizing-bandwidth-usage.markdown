@@ -4,7 +4,9 @@ title: "Adventures in Drupal performance tuning: Minimizing bandwidth usage"
 subtitle: "Drupal and Apache configuration tips to give your site a slimmer figure"
 date: 2010-03-11 17:12
 comments: true
-alias: [/article/adventures-drupal-performance-tuning-minimizing-bandwidth-usage]
+redirect_from:
+  - /article/adventures-drupal-performance-tuning-minimizing-bandwidth-usage
+  - /2010/03/adventures-in-drupal-performance-tuning-minimizing-bandwidth-usage/
 categories:
  - Drupal
 ---

@@ -3,7 +3,9 @@ layout: post
 title: "Bulk node cloning with drush and a little bit of elbow grease"
 date: 2010-09-07 13:47
 comments: true
-alias: [/article/bulk-node-cloning-drush-and-little-bit-elbow-grease]
+redirect_from:
+  -  /article/bulk-node-cloning-drush-and-little-bit-elbow-grease
+  - /2010/09/bulk-node-cloning-with-drush-and-a-little-bit-of-elbow-grease/
 categories:
   - Web Development
   - Drupal

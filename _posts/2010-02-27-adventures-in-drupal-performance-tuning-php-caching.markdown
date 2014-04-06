@@ -4,7 +4,9 @@ title: "Adventures in Drupal performance tuning: PHP caching"
 subtitle: "Setting up PHP APC for some serious speed increases"
 date: 2010-02-27 17:13
 comments: true
-alias: [/article/adventures-drupal-performance-tuning-php-caching]
+redirect_from:
+  - /article/adventures-drupal-performance-tuning-php-caching
+  - /2010/02/adventures-in-drupal-performance-tuning-php-caching/
 categories:
  - Drupal
 ---
