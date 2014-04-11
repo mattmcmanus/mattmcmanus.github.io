@@ -1,5 +1,14 @@
 deploy: compress-css commit deploy-production
 
+run:
+	bundle exec jekyll serve --watch --drafts --trace
+
+install:
+	bundle install
+
+update:
+	bundle update
+
 compress-images:
 	imagemin ...
 
@@ -19,4 +28,4 @@ commit:
 deploy-production:
 	git push origin
 
-.PHONY: deploy deploy-production compress-css compress-js compress-images commit-css
+.PHONY: run install update deploy deploy-production compress-css compress-js compress-images commit-css
