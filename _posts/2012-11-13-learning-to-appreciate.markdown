@@ -4,6 +4,7 @@ title: "Learning to appreciate"
 subtitle: "Or learning how not to be a mountain of overbearing expectations"
 date: 2012-11-13 11:24
 comments: true
+redirect_from: "/2012/11/learning-to-appreciate/"
 categories:
   - Life
   - Note to Self
