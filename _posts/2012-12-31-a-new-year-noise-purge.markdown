@@ -4,6 +4,7 @@ title: "A New Year Noise Purge"
 subtitle: "Starting off the year working to increase the signal in the noise"
 date: 2012-12-31 17:35
 comments: true
+redirect_from: "/2012/12/a-new-year-noise-purge/"
 categories: 
   - Technology
   - SlowTech
