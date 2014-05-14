@@ -5,6 +5,7 @@ subtitle: "Thoughts on our perspective, the beginning and the end of life"
 date: 2012-09-29 15:37
 comments: true
 categories: Life
+redirect_from: "/2012/09/reflecting-on-intermingled-extremes/"
 ---
 I'm thankful that there are times that are so atypical and acute that they hit you like a ton of bricks. They snap you out of your day-to-day haze of planned events and expectations to remind you of how much we have to be thankful for and how fragile the balance is between plenty and loss.
 
