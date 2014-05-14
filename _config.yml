@@ -11,8 +11,8 @@ kramdown:
   input: GFM
 
 gems:
-- jekyll-redirect-from
-
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 prose:
   siteurl: 'http://www.mcmanus.io'
