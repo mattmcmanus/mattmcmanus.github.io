@@ -23,11 +23,11 @@ type: post
       {% endif %}
 
       <p class="meta">
-        <time class="ss-calendar" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+        <time class="ss-calendar dt-published" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
       </p>
     </header>
 
-    <div class="entry-content">{{ content }}</div>
+    <div class="entry-content e-content">{{ content }}</div>
   </article>
 </div>
 
