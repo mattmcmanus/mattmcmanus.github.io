@@ -1,6 +1,6 @@
 title: Matt McManus
 author: Matt McManus
-pygments: true
+highlighter: pygments
 
 permalink: /:title
 paginate: 10
