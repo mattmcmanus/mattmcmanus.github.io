@@ -2,6 +2,7 @@ title: Matt McManus
 author: Matt McManus
 highlighter: pygments
 
+url: http://www.mcmanus.io
 permalink: /:title
 paginate: 10
 paginate_path: "blog/page:num"
