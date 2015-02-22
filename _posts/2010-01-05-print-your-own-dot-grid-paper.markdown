@@ -9,7 +9,7 @@ redirect_from:
  - /2010/01/print-your-own-dot-grid-paper
 categories:
 ---
-<img src="full" class="/images/posts/dotgrid-in-action.jpg" />
+<img class="full" src="/images/posts/dotgrid-in-action.jpg" />
 
 When I came across [Behance's Action Method paper products](http://www.creativesoutfitter.com/#cat1) I loved them. They have a beautiful dot grid that I found much nicer than the standard squared rule of my [moleskine](http://www.moleskine.com/catalogue/classic/hard_black_cover/squared_notebook__large.php). The problem with the Action Method papers is that it's not exactly what I need. I don't need the action steps and  I wanted loose papers that I could easily throw on a wall or spread out on a desk.
 <!-- more -->
@@ -17,7 +17,7 @@ After some searching around for something I decided I'd make one myself. Why not
 
 ### A quick sample
 
-<img src="full" class="/images/posts/theDotGrid.png" />
+<img class="full" src="/images/posts/theDotGrid.png" />
 
 ### Download and print it for yourself!
 
