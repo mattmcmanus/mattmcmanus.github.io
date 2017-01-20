@@ -17,13 +17,13 @@ compress-js:
 
 compress-css:
 	compass compile -c config.rb --force
-	autoprefixer stylesheets/app.css
+	postcss --use autoprefixer stylesheets/app.css
 	cleancss --s1 -o stylesheets/app.min.css stylesheets/app.css
 	mv stylesheets/app.min.css stylesheets/app.css
 
 commit:
 	git add *
-	git commit -m'Production asset optimization'
+	git commit -m 'Production asset optimization'
 
 deploy-production:
 	git push origin
