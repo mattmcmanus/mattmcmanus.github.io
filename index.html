@@ -2,75 +2,35 @@
 layout: homepage
 ---
 <!-- header -->
+{% include navigation.html %}
 <header id="header" class="home accelerated" role="banner">
-  <div class="background-image"></div>
-  <div class="background-image-foreground">
-    <div class="row">
-      <hgroup class="small-6 columns">
-        <h1><a href="{{ root_url }}/">
-          <small>Hey friend, my name is</small>
-          Matt McManus
-        </a></h1>
-      </hgroup>
-      {% include navigation.html %}
-    </div>
+  <hgroup class="small-6 columns">
+    <h1>
+      Hey friend, my name is Matt McManus
+    </h1>
 
-    <div class="row">
-      <div class="large-10 large-offset-1 columns section-tagline lettering">
-        <p><small>For over a decade I’ve been</small>
-        Advocating for humans in a world of bytes &amp; pixels</p>
-      </div>
-    </div>
-
-    <div class="row skills">
-      <div class="medium-4 columns ux">
-        <h3>User Experience Design</h3>
-        <p>My experience designing interfaces for large corporations, international non-profits and national universities has honed my skills in reducing big, complicated systems into natural, intuitive interfaces.</p>
-      </div>
-
-      <div class="medium-4 columns">
-        <h3>Full Stack Web Development</h3>
-        <p>Just a fancy way of saying I enjoy tweaking css for pixel perfect typography, writing rich, interactive javascript interfaces and programming the backend application in node.js, ruby or php.</p>
-      </div>
-
-      <div class="medium-4 columns">
-        <h3>DevOps System Administration</h3>
-        <p>I love using code to deploy applications and their infrastructure to the cloud in scalable, secure, and reliable ways.</p>
-      </div>
-    </div>
-  </div>
+    <p class="attention-grabber ">For over a decade I’ve been advocating for humans in a world of bytes &amp; pixels</p>
+  </hgroup>
 </header>
+<hr>
+<blockquote>
+  <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project"</p>
+  <footer><cite>- Joshua Smith</cite></footer>
+</blockquote>
+<hr>
 
-<!-- main -->
-<div id="main" class="row">
-  <div class="large-12 columns">
+<h4>Most Recent Writings <small><a href="/blog" >See all of them</a></small></h4>
 
-    <div class="row testimonials">
-      <div class="large-12 columns">
-        <blockquote>
-          <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project" <cite>Joshua Smith</cite></p>
-        </blockquote>
-      </div>
-    </div>
-
-    <div class="row blog">
-      <div class="large-12 columns">
-
-        <h3>Recent blog posts <small><a href="/blog" >See all of them</a></small></h3>
-        <ul class="block-index large-block-grid-3 small-block-grid-1">
-          {% for post in site.posts limit:3 %}
-            <li class="article {{post.layout}}">
-              <time class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
-              <h2 class="entry-title">
-                <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-              </h2>
-              {% if post.subtitle %}
-                <h4 class="subheader">{{ post.subtitle | titlecase }}</h4>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<ul>
+  {% for post in site.posts limit:3 %}
+  <li>
+    <a href="{{ post.url }}">
+      {{ post.title | titlecase }}
+      {% if post.subtitle %}
+        - <em class="subheader">{{ post.subtitle | titlecase }}</h6>
+      {% endif %}
+    </a>
+     - <small class="uppercase">{{ post.date | date: "%B %-d, %Y" }}</small>
+  </li>
+  {% endfor %}
+</ul>
