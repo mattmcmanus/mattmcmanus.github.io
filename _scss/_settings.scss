@@ -1,11 +1,10 @@
-@import "foundation/functions";
+$base-font-size: 12px;
 
 $divider: #e6e6e6;
 $primary: #243745;
 $primary-color: #243745;
 //$highlight: #467;
 $highlight: #968E62;
-$light-highlight: scale-color($highlight, $lightness: 15%);
 $gray: #888;
 
 $serif: 'Lora', serif;
@@ -23,15 +22,8 @@ $header-bottom-margin: .5rem;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
-$h4-font-size: rem-calc(23);
-$h5-font-size: rem-calc(18);
-$h6-font-size: 1rem;
 
 $subheader-line-height: 1.4;
-$subheader-font-color: scale-color($header-font-color, $lightness: 35%);
 $subheader-font-weight: 300;
 $subheader-top-margin: .2rem;
 $subheader-bottom-margin: 1rem;
@@ -40,7 +32,6 @@ $paragraph-font-family: $sans-serif;
 $paragraph-font-weight: normal;
 $paragraph-font-size: 1.1rem;
 $paragraph-line-height: 1.6;
-$paragraph-aside-font-size: rem-calc(14);
 $paragraph-aside-line-height: 1.35;
 $paragraph-aside-font-style: italic;
 $paragraph-text-rendering: optimizeLegibility;
@@ -49,9 +40,6 @@ $code-color: #333;
 $code-font-family: Consolas, Liberation Mono, Courier, monospace;
 $code-font-weight: normal;
 
-$blockquote-font-color: scale-color($header-font-color, $lightness: 30%);
-$blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: none;
-$blockquote-cite-font-size: rem-calc(16);
 $blockquote-cite-font-color: $header-font-color;
 $blockquote-cite-link-color: $blockquote-cite-font-color;

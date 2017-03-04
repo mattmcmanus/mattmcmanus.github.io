@@ -1,12 +1,15 @@
 title: Matt McManus
 author: Matt McManus
-highlighter: pygments
-
 url: http://www.mcmanus.io
 permalink: /:title
 paginate: 10
 paginate_path: "blog/page:num"
 
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
@@ -14,31 +17,4 @@ kramdown:
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-
-prose:
-  siteurl: 'http://www.mcmanus.io'
-  media: 'images'
-  ignore:
-    - _config.yml
-    - /_layouts
-    - /_includes
-  metadata:
-    _posts:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-      - name: "subtitle"
-        field:
-          element: "text"
-          label: "Sub-title"
-          value: ""
+  - jekyll-paginate
