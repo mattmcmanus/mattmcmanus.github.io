@@ -60,7 +60,7 @@ layout: homepage
         <ul class="block-index large-block-grid-3 small-block-grid-1">
           {% for post in site.posts limit:3 %}
             <li class="article {{post.layout}}">
-              <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
+              <time class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
               <h2 class="entry-title">
                 <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
               </h2>

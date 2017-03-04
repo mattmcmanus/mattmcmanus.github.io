@@ -7,7 +7,7 @@ layout: default
   {% for post in paginator.posts %}
     <article class="{{post.layout}} row">
       <div class="large-3 columns">
-        <time class="post-date">{{ post.date || date: "%B %-d, %Y" }}</time>
+        <time class="post-date">{{ post.date | date: "%B %-d, %Y" }}</time>
       </div>
       <div class="large-9 columns">
         <h2 class="entry-title">
@@ -47,4 +47,3 @@ layout: default
     </ul>
   </div>
 </div>
-
