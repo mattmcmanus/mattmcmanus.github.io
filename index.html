@@ -1,36 +1,40 @@
 ---
-layout: homepage
+layout: blank
 ---
 <!-- header -->
 {% include navigation.html %}
-<header id="header" class="home accelerated" role="banner">
-  <hgroup class="small-6 columns">
-    <h1>
-      Hey friend, my name is Matt McManus
-    </h1>
+<article class='homepage'>
+  <header id="header" class="home accelerated" role="banner">
+    <hgroup class="small-6 columns">
+      <h1>
+        Hey friend, <br> my name is Matt McManus
+      </h1>
 
-    <p class="attention-grabber ">For over a decade I’ve been advocating for humans in a world of bytes &amp; pixels</p>
-  </hgroup>
-</header>
-<hr>
-<blockquote>
-  <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project"</p>
-  <footer><cite>- Joshua Smith</cite></footer>
-</blockquote>
-<hr>
+      <p class="attention-grabber ">For over a decade I’ve been advocating for humans in a world of bytes &amp; pixels</p>
+    </hgroup>
+  </header>
+  <hr>
+  <blockquote>
+    <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project"</p>
+    <footer><cite>- Joshua Smith</cite></footer>
+  </blockquote>
+  <hr>
 
-<h4>Most Recent Writings <small><a href="/blog" >See all of them</a></small></h4>
+  <h4>Most Recent Writings <small><a href="/blog" >See all of them</a></small></h4>
 
-<ul>
-  {% for post in site.posts limit:3 %}
-  <li>
-    <a href="{{ post.url }}">
-      {{ post.title | titlecase }}
-      {% if post.subtitle %}
-        - <em class="subheader">{{ post.subtitle | titlecase }}</h6>
-      {% endif %}
-    </a>
-     - <small class="uppercase">{{ post.date | date: "%B %-d, %Y" }}</small>
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+    <li>
+      <h4>
+      <a class="post-link" href="{{ post.url }}">
+        <small class="uppercase">{{ post.date | date: "%B %-d, %Y" }}</small>
+        {{ post.title | titlecase }}
+        {% if post.subtitle %}
+          <em class="subheader">{{ post.subtitle | titlecase }}</em>
+        {% endif %}
+      </a>
+      </h4>
+    </li>
+    {% endfor %}
+  </ul>
+</article>

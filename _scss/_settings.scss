@@ -1,45 +1,8 @@
 $base-font-size: 12px;
 
 $divider: #e6e6e6;
-$primary: #243745;
-$primary-color: #243745;
+$primary: #3E5E75;
+$primary-light: #798792;
 //$highlight: #467;
 $highlight: #968E62;
 $gray: #888;
-
-$serif: 'Lora', serif;
-$sans-serif: "Work Sans", sans-serif;
-
-$body-font-family: $sans-serif;
-
-$header-font-family: $serif;
-$header-font-weight: bold;
-$header-font-style: normal;
-$header-font-color: #444;
-$header-line-height: 1.2;
-$header-top-margin: .2rem;
-$header-bottom-margin: .5rem;
-$header-text-rendering: optimizeLegibility;
-
-// We use these to control header font sizes
-
-$subheader-line-height: 1.4;
-$subheader-font-weight: 300;
-$subheader-top-margin: .2rem;
-$subheader-bottom-margin: 1rem;
-
-$paragraph-font-family: $sans-serif;
-$paragraph-font-weight: normal;
-$paragraph-font-size: 1.1rem;
-$paragraph-line-height: 1.6;
-$paragraph-aside-line-height: 1.35;
-$paragraph-aside-font-style: italic;
-$paragraph-text-rendering: optimizeLegibility;
-
-$code-color: #333;
-$code-font-family: Consolas, Liberation Mono, Courier, monospace;
-$code-font-weight: normal;
-
-$blockquote-border: none;
-$blockquote-cite-font-color: $header-font-color;
-$blockquote-cite-link-color: $blockquote-cite-font-color;

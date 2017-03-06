@@ -1,56 +1,8 @@
 ---
 ---
-@import "gutenberg"
-// @import 'webfonts';
-
-// Global Foundation Settings
-// @import "settings";
-//
-// h3 {
-//   font-family: $sans-serif;
-//   font-weight: 700;
-// }
-//
-// a {
-//   transition: all 150ms ease-out;
-// }
-//
-// a:hover {
-//   text-decoration: underline;
-// }
-//
-// // @import 'header';
-// //
-// // @import 'article';
-// //
-// // @import 'homepage';
-//
-//
-// .pagination { margin-top: 1.5em; }
-//
-// // Footer
-//
-// #footer {
-//   color: $primary;
-//   padding-top: 21px;
-//   margin-top: 12px;
-//   border-top: 1px solid #eee;
-//
-//   .hello {
-//     font-size: 1.3em;
-//   }
-//
-//   .copyright { font-size: .8em; margin-top: 2em; color: $gray; }
-//
-//   a { display: inline-block; padding: 0 5px; }
-//
-//   .social {
-//     text-align: center;
-//     font-size: 3em;
-//     a {
-//       width: 100px;
-//       margin: 1em 1em .5em;
-//       &:hover { color: $highlight; }
-//     }
-//   }
-// }
+@import "settings";
+@import "gutenberg";
+@import 'header';
+@import 'footer';
+@import 'article';
+@import 'homepage';

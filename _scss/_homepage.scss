@@ -1,74 +1,37 @@
-body.homepage {
-  #header {
-    .subtitle {
-      font-weight: 100;
-      color: #fff;
-      font-size: 1.3em;
-      margin:0;
-    }
-    .background-image {
-      height: 750px;
-      background: transparent url(/images/mattmcmanus-background.jpg) no-repeat center 40%;
-      background-size: cover;
-    }
-    .background-image-foreground {
-      padding: 80px 0 40px;
-      background: rgba($primary,.6);
-      @include background-image(linear-gradient(rgba($primary,.5), rgba($highlight,.5)));
-    }
+.post-list {
+  padding: 0;
+  li {
+    list-style: none;
+    @include margin-bottom(1);
+  }
+}
 
-    .section-tagline p {
-      font-size: 2em;
-      border-top: 1px solid rgba(255,255,255,.3);
-      border-bottom: 1px solid rgba(255,255,255,.3);
-      margin:4em 0 1em;
-      padding:.6em 0;
-      font-family: $serif;
-      text-align: center;
-      font-weight: 700;
-      small {
-        display: block;
-        font-weight: 400;
-        font-family: $sans-serif;
-        color: #ccc;
-      }
-    }
-
-    .skills {
-      margin-top: 1em;
-
-      h3 {
-        font-size: 1.8em;
-        line-height: 1em;
-      }
-
-      .ux .word1 { display: block; }
-    }
+.post-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 
-  .testimonials {
-    padding: 2em 0;
-
-    p { font-size: 1.3em; }
-    cite { text-align: right; padding: .5em 2em}
+  small, em {
+    display: block;
+    margin: 0;
+    line-height: inherit;
   }
 
-  .blog {
-    small a { color: $gray; margin: 0 1em;}
+  small {
+    color: $color-font-light;
+    font-size: .7em;
+    font-weight: 100;
   }
 
-  #main .article {
-    time {
-      font-size: .7em;
-      color: $gray;
-    }
-    h2 {
-      font-size: 1.5em;
-      line-height: 1em;
-      font-weight: 700;
-    }
-    h4 {
-      font-size: 1em;
+  em {
+    color: $primary;
+    font-size: .8em;
+  }
+
+  &:visited {
+    em {
+      color: $primary-light;
     }
   }
 }

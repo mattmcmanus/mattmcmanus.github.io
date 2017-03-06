@@ -1,24 +1,7 @@
 {% include head.html %}
 
-  <!-- header -->
-  <header id="header" class="accelerated" role="banner" style="">
-    <div class="background-image"></div>
-    <div class="background-image-foreground">
-    <div class="row">
-      <hgroup class="small-6 columns">
-        <h1>
-          <small>Hey friend, my name is</small>
-          <a href="{{ root_url }}/">Matt McManus </a>
-        </h1>
-      </hgroup>
-      {% include navigation.html %}
-    </div>
+{% include navigation.html %}
 
-    </div>
-  </header>
-  <!-- main -->
-  <div id="main" class="row">
-    {{ content }}
-  </div>
+{{ content }}
 
 {% include footer.html %}

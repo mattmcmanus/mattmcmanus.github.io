@@ -1,0 +1,18 @@
+#footer {
+  text-align: center;
+
+  .social-icon {
+    display: inline-block;
+    margin: 0 2em;
+
+    &:hover svg {
+      fill: $color-font-body;
+    }
+  }
+
+  svg {
+    height: 48px;
+    width: 48px;
+    fill: $primary;
+  }
+}

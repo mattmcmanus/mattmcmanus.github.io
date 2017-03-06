@@ -1,0 +1,9 @@
+- name: Github
+  link: https://github.com/mattmcmanus
+  svg: github.svg
+- name: Twitter
+  link: https://twitter.com/mattmcmanus
+  svg: twitter.svg
+- name: LinkedIn
+  link: https://linkedin.com/mattmcmanus
+  svg: linkedin.svg

@@ -1,24 +1,10 @@
   <footer id="footer" role="contentinfo">
-    <div class="row">
-      <div class="large-12 columns">
-        <p class="text-center hello">
-          Say Hello!
-          <a rel="me" href="mailto:matt@mcmanus.io">matt@mcmanus.io</a>
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns social">
-        <a rel="me" class="ss-icon" href="https://github.com/mattmcmanus">Octocat</a>
-        <a rel="me" class="ss-icon" href="https://twitter.com/mattmcmanus">Twitter</a>
-        <a rel="me" class="ss-icon" href="https://linkedin.com/in/mattmcmanus">Linkedin</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <p class="copyright text-center">Copyright 2014 Matt McManus. All Rights Reserved.</p>
-      </div>
-    </div>
+    <hr>
+    {% for profile in site.data.social_profiles %}
+      <a rel="me" class="social-icon" href="{{ profile.link }}" target="_blank">
+        {% include {{ profile.svg | prepend: 'svgs/' }} %}
+      </a>
+    {% endfor %}
   </footer>
 
   <script>
