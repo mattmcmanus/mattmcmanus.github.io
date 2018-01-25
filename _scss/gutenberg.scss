@@ -15,6 +15,14 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 @import 'mixins/margin';
 @import 'mixins/padding';
 
+@import 'layout/aside';
+// @import 'layout/base';
+@import 'layout/footer';
+// @import 'layout/header';
+// @import 'layout/main';
+@import 'layout/section';
+
+
 // @import 'modules/anchor';
 // @import 'modules/article';
 @import 'modules/audio';
@@ -24,7 +32,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 @import 'modules/figure';
 // @import 'modules/form';
 // @import 'modules/heading';
-@import 'modules/horizontal-rule';
+// @import 'modules/horizontal-rule';
 @import 'modules/image';
 @import 'modules/list';
 @import 'modules/navigation';
