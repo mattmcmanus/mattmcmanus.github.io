@@ -1,13 +1,16 @@
 #main-header {
   max-width: 100%;
-  position: relative;
-  @include padding(1, 1);
-  background: #fafafa;
 
   .logo {
     color: $primary;
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
+  }
+
+  .row {
+    border-bottom: 1px solid $divider;
+    position: relative;
+    @include padding(1, 1);
   }
 
   nav {
@@ -16,8 +19,10 @@
     top: 1.625rem;
 
     a {
+      @extend .uppercase;
       font-size: .8em;
       margin: 0 .5em;
+      text-decoration: none;
     }
   }
 }
