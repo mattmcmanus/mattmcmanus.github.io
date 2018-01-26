@@ -104,6 +104,7 @@ sub {
 // Attention grabber
 .attention-grabber {
   @include font-size(1.2);
+  color: $primary;
 }
 
 @media screen and (min-width: #{ $max-width + 5 + 'em'}) {

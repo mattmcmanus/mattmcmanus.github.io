@@ -9,6 +9,21 @@ article.hentry {
     font-size:.8em;
     text-align: center;
   }
+
+  .category {
+    @include padding(.05, .5);
+    border-radius: 45px;
+    border: 1px solid rgba($highlight, .2);
+    color: $primary;
+    display: inline-block;
+    font-size: .8rem;
+    margin: 0 1rem;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $highlight;
+    }
+  }
 }
 
 // body.post.withCover #header {
