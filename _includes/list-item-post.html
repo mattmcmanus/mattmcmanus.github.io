@@ -1,0 +1,9 @@
+<h4>
+  <a class="post-link" href="{{ include.post.url }}">
+    <small class="uppercase">{{ include.post.date | date: "%B %-d, %Y" }}</small>
+    {{ include.post.title | titlecase }}
+    {% if include.post.subtitle %}
+    <em class="subheader">{{ include.post.subtitle | titlecase }}</em>
+    {% endif %}
+  </a>
+</h4>
