@@ -2,19 +2,23 @@
 layout: default
 ---
 <div class="row">
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <h4>
-        <a class="post-link" href="{{ post.url }}">
-          <small class="uppercase">{{ post.date | date: "%B %-d, %Y" }}</small>
-          {{ post.title | titlecase }}
-          {% if post.subtitle %}
-          <em class="subheader">{{ post.subtitle | titlecase }}</em>
-          {% endif %}
-        </a>
-      </h4>
-    </li>
-    {% endfor %}
-  </ul>
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+    <h2>{{ year.name }}</h2>
+    <ul class="post-list">
+      {% for post in year.items %}
+      <li>
+        <h4>
+          <a class="post-link" href="{{ post.url }}">
+            <small class="uppercase">{{ post.date | date: "%B %-d, %Y" }}</small>
+            {{ post.title | titlecase }}
+            {% if post.subtitle %}
+            <em class="subheader">{{ post.subtitle | titlecase }}</em>
+            {% endif %}
+          </a>
+        </h4>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
 </div>
