@@ -4,8 +4,7 @@ title: "Introducing my ode to Spurgeon's Morning and Evening"
 subtitle: "Hooray public domain!"
 date: 2012-03-31 17:10
 comments: true
-categories:
-  - Things I've Made
+categories: dev
 ---
 <a href="http://morningandevening.me">
 <img src="/images/posts/morningandevening.png" class="full" />

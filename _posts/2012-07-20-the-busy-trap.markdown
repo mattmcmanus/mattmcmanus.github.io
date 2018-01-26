@@ -3,8 +3,7 @@ layout: post
 title: "The Busy Trap"
 linked: http://opinionator.blogs.nytimes.com/2012/06/30/the-busy-trap/
 comments: true
-categories:
-  - SlowTech
+categories: human
 ---
 The anti-busy train keeps on rolling. I love this article by Tim Kreider. It's a thought provoking and challenging look at what fuels our constant business.
 

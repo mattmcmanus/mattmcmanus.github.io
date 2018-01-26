@@ -4,9 +4,7 @@ title: "We are all too busy and distracted. SlowTech to the rescue?"
 subtitle: "Can we build tools that help us slow down and engage?"
 date: 2012-07-13 13:44
 comments: true
-categories:
-  - SlowTech
-  - Accountability
+categories: human
 ---
 I recently read a phenominal article by Joe Kraus called "[We're creating a culture of distraction](http://joekraus.com/were-creating-a-culture-of-distraction)." In it, he talks about the importance of "gap" time and how our anxiety over being unstimulated robs us of good relationships and creativity. What stuck out to me the most though was this quote by Sherry Turkle:
 

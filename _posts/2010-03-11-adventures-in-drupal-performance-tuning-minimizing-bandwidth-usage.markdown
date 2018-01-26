@@ -7,8 +7,7 @@ comments: true
 redirect_from:
   - /article/adventures-drupal-performance-tuning-minimizing-bandwidth-usage
   - /2010/03/adventures-in-drupal-performance-tuning-minimizing-bandwidth-usage/
-categories:
- - Drupal
+categories: dev
 ---
 Now that we've successfully learned how to [speed up our site on the sever end with cache](http://mattmcman.us/article/adventures-drupal-performance-tuning-php-caching) the next step, in my mind, is to learn about different ways we can increase the speed in which a client downloads your site.  We can do this by reducing the quantity and size of the files that are downloaded.
 

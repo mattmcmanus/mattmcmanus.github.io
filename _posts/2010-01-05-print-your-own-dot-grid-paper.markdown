@@ -7,7 +7,7 @@ comments: true
 redirect_from:
  - /article/print-your-own-dot-grid-paper
  - /2010/01/print-your-own-dot-grid-paper
-categories:
+categories: dev
 ---
 <img class="full" src="/images/posts/dotgrid-in-action.jpg" />
 

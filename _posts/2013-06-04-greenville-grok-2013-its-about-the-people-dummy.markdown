@@ -4,7 +4,7 @@ title: Greenville Grok 2013
 subtitle: Reflections on a couple days with some amazing folks in Greenville, South Carolina
 date: 2013-06-04 21:56
 comments: true
-categories: Life
+categories: human
 cover: http://i.imgur.com/PAewI0f.jpg
 redirect_from:
   - /2013/06/greenville-grok-2013-its-about-the-people-dummy/

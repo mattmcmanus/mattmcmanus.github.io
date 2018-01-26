@@ -4,7 +4,7 @@ title: "Introducing Hypergenesis"
 subtitle: "The missing first step to an automated development environment"
 date: 2013-06-11 15:29
 comments: true
-categories: Work
+categories: dev
 redirect_from:
   - /2013/06/introducing-hypergenesis-missing-first-step-to-an-automated-development-environment/
 ---

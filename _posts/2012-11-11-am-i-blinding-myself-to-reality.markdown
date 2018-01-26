@@ -3,9 +3,7 @@ layout: post
 title: "Am I Blinding Myself to Reality?"
 date: 2012-11-11 16:32
 comments: true
-categories: 
-  - Life
-  - Note to Self
+categories: human
 ---
 Lately, I've been trying to make sense of our toxic political climate. I've been wondering what is at the root of the constant misunderstandings in our political conversations. In the end, I realized I needed to ask myself a few simple questions and they apply to much more than just politics:
 
