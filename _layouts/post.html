@@ -26,6 +26,15 @@ type: post
       <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
     </small>
     </p>
+
+    {%- if page.categories -%}
+      <p class="alignCenter">
+        {% for category in page.categories %}
+          {% assign details = site.category_details | where:"slug", category | first %}
+            <a href={{category | prepend:'/category/'}} class="category">{{details.title}}</a>
+        {% endfor %}
+      </p>
+    {%- endif -%}
   </header>
   <hr>
 

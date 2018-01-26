@@ -2,9 +2,20 @@ title: Matt McManus
 author: Matt McManus
 url: http://www.mcmanus.io
 description: In which I attempt to share my thoughts on how to be human
-permalink: /:title
+permalink: /:year/:title
 paginate: 10
 paginate_path: "blog/page:num"
+
+collections:
+  category_details:
+    output: true
+    permalink: /category/:name
+
+defaults:
+  - scope:
+      type: "category_details"
+    values:
+      layout: "category"
 
 sass:
   sass_dir: _scss
