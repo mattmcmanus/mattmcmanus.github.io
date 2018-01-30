@@ -7,9 +7,9 @@ $color-link-active: #f00;
 $color-link-visited: $color-font-light;
 
 a {
-  background: transparent;
+  background-color: transparent;
   color: $color-link-normal;
-  transition: all .3s;
+  transition: color 300ms ease-in-out;
 
   &:active,
   &:hover {

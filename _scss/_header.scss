@@ -1,27 +1,43 @@
 #main-header {
   max-width: 100%;
 
+  .row {
+    @include padding(1, 0);
+    border-bottom: 1px solid $divider;
+    display: flex;
+    flex-flow: row wrap;
+
+    @media (max-width: $screen-xs-min) {
+      flex-direction: column;
+    }
+  }
+
+  .logo, nav a {
+    margin: 0 12px;
+  }
+
   .logo {
     color: $primary;
     font-weight: 700;
     text-decoration: none;
+    width: 150px;
   }
 
-  .row {
-    border-bottom: 1px solid $divider;
-    position: relative;
-    @include padding(1, 0);
-  }
 
   nav {
-    position: absolute;
-    right: 1.625rem;
-    top: 1.625rem;
+    flex: 1 0 auto;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: $screen-xs-min) {
+      justify-content: flex-start;
+    }
 
     a {
+      @include line-height(1);
       @extend .uppercase;
       font-size: .7em;
-      margin: 0 .5em;
       text-decoration: none;
     }
   }
