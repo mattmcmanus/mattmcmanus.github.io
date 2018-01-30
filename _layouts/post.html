@@ -1,7 +1,5 @@
 ---
 layout: default
-single: true
-type: post
 ---
 <!-- {% if page.cover %}
   <style>
@@ -13,28 +11,26 @@ type: post
   </style>
 {% endif %} -->
 
-<article class="hentry {%if page.cover%}withCover{%endif%}" role="article">
+<article class="Post hentry {%if page.cover%}withCover{%endif%}" role="article">
 
   <header>
     <h1>{{ page.title | titlecase }}</h1>
+
     {% if page.subtitle %}
       <p class="attention-grabber">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</p>
     {% endif %}
 
     <p>
-    <small class="meta">
+    <small class=".Post-meta">
       <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
     </small>
     </p>
 
-    {%- if page.categories -%}
+    {% if page.categories %}
       <p class="alignCenter">
-        {% for category in page.categories %}
-          {% assign details = site.category_details | where:"slug", category | first %}
-            <a href={{category | prepend:'/category/'}} class="category">{{details.title}}</a>
-        {% endfor %}
+        {% include categories.html categories=page.categories class="Post-category" %}
       </p>
-    {%- endif -%}
+    {% endif %}
   </header>
   <hr>
 

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="Post--review hentry {%if page.cover%}withCover{%endif%}" role="article">
+  <header class="Post-header">
+    {% include img.html class="Post-cover" src=page.cover_url alt=page.title %}
+    <div class="Post-reviewHeader">
+      <h1 class="Post-title">
+        {{ page.title | titlecase }}
+        <small class="Post-year">{{ page.book_published }}</small>
+      </h1>
+
+      <p class="Post-byline attention-grabber">By {{ page.author | titlecase }}</p>
+
+      <p class="Post-rating">{% for num in (1..page.rating) %}★{% endfor %}</p>
+
+      <p class="Post-meta">
+        <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+      </p>
+    </div>
+  </header>
+  <hr>
+
+  <div class="entry-content e-content">{{ content }}</div>
+</article>

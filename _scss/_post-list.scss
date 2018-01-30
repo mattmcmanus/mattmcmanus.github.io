@@ -1,38 +1,63 @@
 .post-list {
   padding: 0;
+
   li {
-    list-style: none;
     @include margin-bottom(1);
+    list-style: none;
   }
 }
 
-.post-link {
+.ListItem {
+  display: block;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 1rem;
+  position: relative;
   text-decoration: none;
+  transition: background-color 400ms cubic-bezier(.23,1,.32,1);
 
   &:hover {
-    text-decoration: underline;
+    background-color: #f9f9f9;
   }
 
-  small, em {
-    display: block;
-    margin: 0;
-    line-height: inherit;
-  }
-
-  small {
+  &-date {
     color: $color-font-light;
-    font-size: .55em;
+    display: block;
+    font-size: .55rem;
     font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 0 0.1rem 0;
+    text-transform: uppercase;
   }
 
-  em {
+  h4 {
+    margin: 0;
+  }
+
+  &-subheader {
     color: $primary;
-    font-size: .8em;
+    font-size: .8rem;
+    margin: 0;
+    line-height: 1.6;
   }
 
-  &:visited {
-    em {
-      color: $primary-light;
-    }
+  &--review {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &-cover {
+    width: 65px;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  &-reviewHeader {
+    margin: 0 0 0 0.5rem;
+  }
+
+  &-rating {
+    line-height: 1;
   }
 }

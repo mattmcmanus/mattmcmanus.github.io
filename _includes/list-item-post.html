@@ -1,9 +1,9 @@
-<h4>
-  <a class="post-link" href="{{ include.post.url }}">
-    <small class="uppercase">{{ include.post.date | date: "%B %-d, %Y" }}</small>
+<a class="ListItem ListItem--post" href="{{ include.post.url }}">
+  <small class="ListItem-date">{{ include.post.date | date: "%B %-d, %Y" }}</small>
+  <h4>
     {{ include.post.title | titlecase }}
-    {% if include.post.subtitle %}
-    <em class="subheader">{{ include.post.subtitle | titlecase }}</em>
-    {% endif %}
-  </a>
-</h4>
+  </h4>
+  {% if include.post.subtitle %}
+  <p class="ListItem-subheader">{{ include.post.subtitle | titlecase }}</p>
+  {% endif %}
+</a>

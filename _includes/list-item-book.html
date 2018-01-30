@@ -1,0 +1,12 @@
+{% assign post = include.post %}
+<a class="ListItem ListItem--review" href="{{ post.url }}">
+  {% include img.html class="ListItem-cover" src=post.cover_url alt=post.title %}
+  <div class="ListItem-reviewHeader">
+    <small class="ListItem-date">
+      {{ include.post.date | date: "%B %-d, %Y" }}
+      <span class="ListItem-rating">{% for num in (1..include.post.rating) %}★{% endfor %}</span>
+    </small>
+    <h4>{{ include.post.title | titlecase }}</h4>
+    <p class="ListItem-subheader">By {{ include.post.author | titlecase }}</p>
+  </div>
+</a>
