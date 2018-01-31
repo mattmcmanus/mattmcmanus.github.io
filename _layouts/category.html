@@ -8,4 +8,10 @@ layout: default
 
   {% assign posts = site.categories[page.slug] %}
   {% include post-list-by-year.html posts=posts %}
+  <hr>
+  <p class="alignCenter">
+    {% for category in site.category_details %}
+      <a class="category" href="{{category.url}}">{{category.title}}</a>
+    {% endfor %}
+  </p>
 </div>

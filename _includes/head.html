@@ -26,4 +26,4 @@
   <style type="text/css">{{ critical_scss | scssify }}</style>
 </head>
 
-<body class="{{ page.layout }} {{ page.type }} {% if page.cover %}withCover{% endif %}" {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+<body class="layout-{{ page.layout }} type-{{ page.type }} {% if page.cover %}withCover{% endif %}" {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>

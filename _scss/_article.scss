@@ -4,9 +4,6 @@
     margin: .4rem 0;
   }
 
-  &-header p {
-  }
-
   &-title { line-height: 1.1; }
   &-year { color: $gray; }
 
@@ -51,14 +48,18 @@
 }
 
 .category {
-  @include padding(.05, .5);
-  border-radius: 45px;
+  @include padding(0, .3);
+  border-radius: 6px;
   border: 1px solid rgba($highlight, .2);
   color: $primary;
   display: inline-block;
   font-size: .8rem;
-  margin: 0 1rem;
+  margin: .5rem 0;
   text-decoration: none;
+
+  + .category {
+    margin-left: .5rem;
+  }
 
   &:hover {
     border-color: $highlight;

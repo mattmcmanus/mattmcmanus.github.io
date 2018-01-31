@@ -2,4 +2,4 @@
 title: On Being Human
 slug: human
 ---
-Trying to live
+<p class="attention-grabber">Trying to live</p>

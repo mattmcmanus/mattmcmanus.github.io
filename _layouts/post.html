@@ -1,16 +1,6 @@
 ---
 layout: default
 ---
-<!-- {% if page.cover %}
-  <style>
-    .background-image { background-image:url({{page.cover}}) }
-    {% if page.coverHeight %}
-      .background-image { height: {{page.coverHeight | plus: 30 }}px }
-      .background-image-foreground { height: {{page.coverHeight}}px }
-    {% endif %}
-  </style>
-{% endif %} -->
-
 <article class="Post hentry {%if page.cover%}withCover{%endif%}" role="article">
 
   <header>
@@ -36,3 +26,12 @@ layout: default
 
   <div class="entry-content e-content">{{ content }}</div>
 </article>
+<hr>
+<h3>Recent posts</h3>
+<ul class="post-list">
+  {% for post in site.posts limit:3 %}
+  <li>
+    {% include {{post.layout | prepend:'list-item-' | append:'.html'}} post=post %}
+  </li>
+  {% endfor %}
+</ul>

@@ -1,5 +1,5 @@
 ---
-title: Reviews
+title: On Books
 slug: review
 ---
-Reading is important.
+<p class="attention-grabber">Words are important</p>
