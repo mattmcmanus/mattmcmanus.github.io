@@ -1,16 +1,12 @@
 ---
 layout: default
-type: post
 ---
+<article class="Page">
+  <header>
+    <h1>{{ page.title | titlecase }}</h1>
+  </header>
+  <hr>
 
-<div class="large-12 columns">
-  <article role="article">
-    {% if page.title %}
-    <header>
-      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-      {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
-    </header>
-    {% endif %}
-    {{ content }}
-  </article>
-</div>
+  <div class="entry-content e-content">{{ content }}</div>
+
+</article>
