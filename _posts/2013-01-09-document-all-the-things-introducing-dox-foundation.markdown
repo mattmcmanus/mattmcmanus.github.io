@@ -5,9 +5,8 @@ subtitle: "Auto-generate API documentation for fun and profit"
 date: 2013-01-09 19:56
 comments: true
 categories: dev
-redirect_from:
-  - /2013/01/document-all-the-things-introducing-dox-foundation/
-  - /document-all-the-things-introducing-dox-foundation/
+
+
 ---
 <img src="/images/posts/dox-foundation.png" class="full" />
 

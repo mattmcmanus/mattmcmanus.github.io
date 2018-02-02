@@ -6,8 +6,7 @@ date: 2013-01-28 20:50
 comments: true
 categories: human
 published: false
-redirect_from:
-  - /unity-is-hard/
+
 ---
 I am a person whose instinctual view of the world is black and white. You're either a good guy or a bad guy. You're either for this or against it. I work very hard to temper that instinct so that I don't miss the truth that often lies in the gray areas. There are, however, certain times and certain subjects where the clarity of a black and white view of the world is incredibly valuable. It can serve to keep you pointed in the right direction when emotional reactions threaten to pull you apart.
 

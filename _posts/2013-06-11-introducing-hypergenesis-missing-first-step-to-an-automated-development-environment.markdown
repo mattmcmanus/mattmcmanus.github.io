@@ -5,8 +5,7 @@ subtitle: "The missing first step to an automated development environment"
 date: 2013-06-11 15:29
 comments: true
 categories: dev
-redirect_from:
-  - /2013/06/introducing-hypergenesis-missing-first-step-to-an-automated-development-environment/
+
 ---
 I'm a big fan of devops. Using code to configure servers makes their setup predictable and infinitely repeatable. This makes setting up new servers fast, cheap (time = money) and ultimately results in *peace of mind*. So like many nerds, I was excited to see that Github released a tool, [boxen](https://github.com/boxen), that applies these principles to development machines. However, things weren't as beautiful and care-free as I was hoping. As their website itself says, Boxen is "a dangerously opinionated framework" and I ultimately gave up using it citing a clinically diagnosed case of framework fatigue.
 

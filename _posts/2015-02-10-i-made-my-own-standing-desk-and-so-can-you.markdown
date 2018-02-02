@@ -6,8 +6,7 @@ date: "2015-02-10 15:29"
 published: true
 categories:
   - making
-redirect_from:
-  - /i-made-my-own-standing-desk-and-so-can-you/
+
 
 ---
 

@@ -4,10 +4,6 @@ title: "Adventures in Drupal performance tuning: PHP caching"
 subtitle: "Setting up PHP APC for some serious speed increases"
 date: 2010-02-27 17:13
 comments: true
-redirect_from:
-  - /article/adventures-drupal-performance-tuning-php-caching
-  - /2010/02/adventures-in-drupal-performance-tuning-php-caching/
-  - /adventures-in-drupal-performance-tuning-php-caching/
 categories: dev
 ---
 I recently switched all of my drupal installs from shared hosting (Dreamhost) to the wonderful [webbynode VPS](http://webbynode.com). This was very exciting and I approached the change with a hearty dose of naivete. "My sites are going to be blazing fast!" I giggled to myself as I worked on the basic configuration to get things up and running. Then reality hit and my sites were crawling, just like before. I have learned many things since those first moments, and I'm going to spend some time writing about them in a series I'm calling **"Adventures in Drupal performance tuning"**.  And now, I'll begin by discussing how to set up the php caching system, APC.

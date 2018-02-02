@@ -5,8 +5,7 @@ subtitle: "It's been a season of significant life changes, so I'm changing thing
 date: 2012-07-08 19:47
 comments: true
 categories: update
-redirect_from:
-  - /how-much-change-would-one-man-choose-if-one-man-could-choose-change/
+
 ---
 Marcella and I have had a year for the history books. Since last July our lease was abruptly ended, so we quickly bought our first house. Twelve hours after we signed the papers Tropical storm Lee dumped almost 5 feet of water _inside_ that house. Then four days after moving into the house, we learned we were expecting a baby in June. Over the course of the winter I almost joined a startup with my best friend...but decided against it. Shortly thereafter I was unexpectedly promoted at my current job. While adjusting to being a manager, I also considered the possibility of relocating for a potential job at a startup in San Francisco...but decided against that too. And finally, four weeks ago my wife gave birth to an [amazing baby boy named James](/2012/06/im-a-papa-bear-say-hello-to-james/). Because I'm slightly insane, I've signed up for another big change in the near future...more on that to come...
 

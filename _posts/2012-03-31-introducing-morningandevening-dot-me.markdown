@@ -5,8 +5,6 @@ subtitle: "Hooray public domain!"
 date: 2012-03-31 17:10
 comments: true
 categories: dev
-redirect_from:
-  - /introducing-morningandevening-dot-me/
 ---
 <a href="http://morningandevening.me">
 <img src="/images/posts/morningandevening.png" class="full" />

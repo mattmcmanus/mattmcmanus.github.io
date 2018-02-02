@@ -5,9 +5,8 @@ subtitle: "Notes and Links on Guns, Violence and Children"
 date: 2012-12-28 16:26
 comments: true
 categories: human
-redirect_from:
-  - "/2012/12/reflections-on-the-shooting-in-newtown/"
-  - "/reflections-on-the-shooting-in-newtown/"
+
+
 ---
 When I was in college, I took great pride in what I perceived as a fortress of righteous conviction that I built for myself. I built it to protect myself from what I perceived as moral and mental weakness. I let that pride construct a rigid worldview and I clung to quotes like that of G.K. Chesterton: "Tolerance is the virtue of a man without convictions." Fast forward 10 years and my heart is humbled to realized that the walls that I had built protected me not from external, societal weakness but from truth, reality and how it would confront my own personal weakness.
 

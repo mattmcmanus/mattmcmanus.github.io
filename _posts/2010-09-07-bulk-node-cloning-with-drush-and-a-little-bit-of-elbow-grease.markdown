@@ -3,10 +3,6 @@ layout: post
 title: "Bulk node cloning with drush and a little bit of elbow grease"
 date: 2010-09-07 13:47
 comments: true
-redirect_from:
-  - /article/bulk-node-cloning-drush-and-little-bit-elbow-grease
-  - /2010/09/bulk-node-cloning-with-drush-and-a-little-bit-of-elbow-grease/
-  - /bulk-node-cloning-with-drush-and-a-little-bit-of-elbow-grease/
 categories: dev
 ---
 I recently came across the need to clone a large amount of content in a Drupal site that I manage for Arcadia. It's an online course calendar and a new academic year was quickly approaching. Instead of manually entering new courses where 95% of the info will be the same as last year, I wrote a drush script that made the process quick and easy. So I figured I'd do a little write up on how it works because there isn't much information out there on duplicating content.

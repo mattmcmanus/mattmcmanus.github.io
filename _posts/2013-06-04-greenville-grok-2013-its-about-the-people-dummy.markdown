@@ -6,8 +6,7 @@ date: 2013-06-04 21:56
 comments: true
 categories: human
 cover: http://i.imgur.com/PAewI0f.jpg
-redirect_from:
-  - /2013/06/greenville-grok-2013-its-about-the-people-dummy/
+
 ---
 I had the opportunity to spend four days this past week in beautiful Greenville, South Carolina attending [Grok](http://www.theironyard.com/events/grok). What makes Grok great? Think of it as a SlowTech conference. It's a "tech" conference that focuses on relationships and doing work with a purpose.
 
