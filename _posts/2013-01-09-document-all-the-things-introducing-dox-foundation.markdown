@@ -7,6 +7,7 @@ comments: true
 categories: dev
 redirect_from:
   - /2013/01/document-all-the-things-introducing-dox-foundation/
+  - /document-all-the-things-introducing-dox-foundation/
 ---
 <img src="/images/posts/dox-foundation.png" class="full" />
 

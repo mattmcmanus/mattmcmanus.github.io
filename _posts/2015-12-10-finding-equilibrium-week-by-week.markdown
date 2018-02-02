@@ -4,6 +4,8 @@ title: Finding Equilibrium, Week by Week
 subtitle: Looking at the ways we approach each week to create a greater sense of peace
 date: 2015-12-01
 categories: human
+redirect_from:
+  - /finding-equilibrium-week-by-week/
 ---
 [In my first post](/finding-equilibrium-through-ritual/), I laid out my vision for work/life equilibrium. The basic premise is that you achieve balance by intentionally pushing back against the forces in life that tend to take over. At the end of the post I asked you to consider the rhythms and patterns of your week. Where do you have some space? Where do you tend to get stressed? In this post, I’m going to walk you through my own process of personal understanding and hopefully your own will fit in along side.
 

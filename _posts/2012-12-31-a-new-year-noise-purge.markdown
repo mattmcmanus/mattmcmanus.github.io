@@ -6,6 +6,8 @@ date: 2012-12-31 17:35
 comments: true
 redirect_from: "/2012/12/a-new-year-noise-purge/"
 categories: human
+redirect_from:
+  - /a-new-year-noise-purge/
 ---
 The internet is awesome. However, along with a myriad of problems it introduces, we waste a shocking amount of time following, liking, filtering and subscribing. I've become increasingly uncomfortable with this fact and how these companies turn what seems like such a simple act into a commodity that they use to make a lot of money.
 

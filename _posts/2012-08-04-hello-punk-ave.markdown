@@ -5,8 +5,10 @@ subtitle: "It's time to make some websites"
 date: 2012-08-04 11:02
 comments: true
 cover: /images/posts/punkave.jpg
-redirect_from: "/2012/08/hello-punk-ave/"
 categories: update
+redirect_from:
+ - "/2012/08/hello-punk-ave/"
+ - "/hello-punk-ave/"
 ---
 Opportunities are challenging. They're like a lightning bolt that startles you awake and brings with it a whole new sense of perspective. I recently came across such an opportunity and it was too good to pass up. As a result, I just wrapped up my second week as the newest developer at [P'unk Ave](http://punkave.com).
 

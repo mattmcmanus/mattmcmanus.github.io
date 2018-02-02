@@ -4,6 +4,8 @@ title: Finding equilibrium through ritual
 subtitle: Looking to our life’s rhythms and routines to bring things into balance
 date: 2015-11-23
 categories: human
+redirect_from:
+  - /finding-equilibrium-through-ritual/
 ---
 There has been an increasing amount of conversation around work/life balance, and this is fantastic. It’s a conversation we need to continue to have because, if you’ve tried to follow along, there are a million different ways to approach it. I’d like to write about some ways that I’ve been able to tap into existing rhythms of my life and use them as a consistent force against stress and distraction.
 

@@ -6,6 +6,9 @@ linked: http://lessig.tumblr.com/post/40347463044/prosecutor-as-bully
 date: 2013-01-13 09:02
 comments: true
 categories: human
+redirect_from:
+  - /2013/01/we-need-a-better-sense-of-justice/
+  - /we-need-a-better-sense-of-justice/
 ---
 Read [this article](http://lessig.tumblr.com/post/40347463044/prosecutor-as-bully) for more on who he was and what happened. Also read [RIP, Aaron Swartz](http://boingboing.net/2013/01/12/rip-aaron-swartz.html) for more information.
 

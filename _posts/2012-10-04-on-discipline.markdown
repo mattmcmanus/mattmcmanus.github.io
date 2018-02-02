@@ -5,6 +5,9 @@ linked: http://joshuablankenship.com/blog/2012/10/01/on-discipline-and-shortcuts
 date: 2012-10-04 10:16
 comments: true
 categories: human
+redirect_from:
+  - /2012/10/on-discipline/
+  - /on-discipline/
 ---
 Honest, intimate thoughts out the stuggles of discipline. Clearly thought and well spoken.
 

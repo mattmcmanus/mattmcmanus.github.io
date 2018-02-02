@@ -6,6 +6,9 @@ date: "2015-02-10 15:29"
 published: true
 categories:
   - making
+redirect_from:
+  - /i-made-my-own-standing-desk-and-so-can-you/
+
 ---
 
 My home office had not changed much for nearly 6 years and I decided it was time to to make some ergonomic and professional upgrades. I deserve it! At the heart of this upgrade was finally following through with my dream of an adjustable height standing desk. I had let the many words of [the Wirecutters standing desk review](http://thewirecutter.com/reviews/the-best-standing-desks/) soak deeply in to my brain and I was convinced I needed to be able to quickly and easily adjust my desk. "I need this!", I declared. So like anyone under the influence of someone else's opinions, I was dead set on [their recommendation, the NextDesk Terra](http://www.nextdesks.com/). I had convinced myself that $1500 is not too much to pay for something as important as this!

@@ -4,6 +4,8 @@ title: "A New Year Noise Purge 2014"
 subtitle: "Like with all worthy traditions, it's time for a slight evolution on the decluttering of my mind"
 date: 2015-01-16
 categories: human
+redirect_from:
+  - /new-year-noise-purge-2014/
 ---
 Back in 2012, I did my [first new years noise purge](/a-new-year-noise-purge). It was an incredibly helpful exercise and one that I've looked forward to doing again. To quickly recap, I wanted to reduce the amount of noise in my day-to-day life, and as someone who spends most Of his day online, it involved cutting the people I follow on twitter/instagram/facebook/RSS feeds in half, I removed social media apps from my phone and I decided to post less on those services. Two years later, I still happily keep social media apps off of my phone and all but eliminated my usage of Facebook and instagram. Hooray!
 

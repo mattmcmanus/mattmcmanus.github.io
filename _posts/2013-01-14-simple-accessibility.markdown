@@ -5,6 +5,8 @@ subtitle: "Open Source collaboration at it's best"
 date: 2013-01-14 14:29
 comments: true
 categories: dev
+redirect_from:
+  - /simple-accessibility/
 ---
 I was sitting at home friday night feeling pretty beat up. I had spent the entire week trying to find a bug in a large peice of code that I help support at [P'unk Ave](http://punkave.com) and made no progress. I was aching to write some code that worked and I was proud of. I then pulled out my phone to check twitter and saw this tweet:
 

@@ -4,6 +4,8 @@ title: "I'm a papa bear! Say hello to James"
 date: 2012-06-26 17:09
 comments: true
 categories: update
+redirect_from:
+  - /im-a-papa-bear-say-hello-to-james/
 ---
 There are many reasons I don't really post on here anymore. One of the big ones is this:
 
