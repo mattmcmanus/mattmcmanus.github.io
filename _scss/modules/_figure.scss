@@ -45,39 +45,4 @@ figure.floatRight {
 
   }
 
-  blockquote {
-
-    @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-      $leading: $leading-desktop;
-      $leading-rem: $leading-rem-desktop;
-
-      @import '../mixins/margin';
-      @import '../mixins/padding';
-
-      @include padding-equal(0);
-      text-align: left;
-
-      @if $paragraph-indent == true {
-        @include margin-top(1);
-      }
-
-    }
-
-    p {
-
-      @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-        $leading: $leading-desktop;
-        $leading-rem: $leading-rem-desktop;
-
-        @import '../mixins/font-size';
-        @import '../mixins/line-height';
-
-        @include font-size(1.2);
-        @include line-height(1);
-      }
-
-    }
-
-  }
-
 }
