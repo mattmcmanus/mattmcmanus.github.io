@@ -1,5 +1,5 @@
 title: Matt McManus
-author: Matt McManus
+author: Matt McManus <matt@mcmanus.io>
 url: http://www.mcmanus.io
 description: In which I attempt to share my thoughts on how to be human
 permalink: /:year/:title
@@ -21,16 +21,27 @@ sass:
   sass_dir: _scss
   style: :compressed
 
+autoprefixer:
+  only_production: true
+  browsers:
+    - last 2 versions
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
 
-gems:
+twitter:
+  username: mattmcmanus
+
+plugins:
+  - jekyll-autoprefixer
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-default-layout
 
 feed:
   path: atom.xml
