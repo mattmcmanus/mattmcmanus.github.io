@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="Post--review hentry {%if page.cover%}withCover{%endif%}" role="article">
   <header class="Post-header">
-    {% include img.html class="Post-cover" src=page.cover_url alt=page.title %}
+    {% include img.html class="Post-cover" src=page.image alt=page.title %}
     <div class="Post-reviewHeader">
       <h1 class="Post-title">
         {{ page.title | titlecase }}

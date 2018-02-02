@@ -1,6 +1,6 @@
 {% assign post = include.post %}
 <a class="ListItem ListItem--review" href="{{ post.url }}">
-  {% include img.html class="ListItem-cover" src=post.cover_url alt=post.title %}
+  {% include img.html class="ListItem-cover" src=post.image alt=post.title %}
   <div class="ListItem-reviewHeader">
     <small class="ListItem-date">
       {{ include.post.date | date: "%B %-d, %Y" }}
