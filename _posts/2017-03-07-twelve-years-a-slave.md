@@ -3,7 +3,7 @@ layout: book
 date: 2017-03-07
 categories: review
 title: Twelve Years a Slave
-author: Ted Chiang
+book_author: Ted Chiang
 book_published: 1853
 rating: 5
 image: /images/twelve-years-a-slave.jpg

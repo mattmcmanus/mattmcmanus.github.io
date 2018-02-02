@@ -10,7 +10,7 @@ layout: default
         <small class="Post-year">{{ page.book_published }}</small>
       </h1>
 
-      <p class="Post-byline attention-grabber">By {{ page.author | titlecase }}</p>
+      <p class="Post-byline attention-grabber">By {{ page.book_author | titlecase }}</p>
 
       <p class="Post-rating">{% for num in (1..page.rating) %}★{% endfor %}</p>
 

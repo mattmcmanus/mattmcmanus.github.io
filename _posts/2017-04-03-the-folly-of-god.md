@@ -3,7 +3,7 @@ layout: book
 date: 2017-04-03
 categories: review
 title: "The Folly of God: A Theology of the Unconditional"
-author: John D. Caputo
+book_author: John D. Caputo
 book_published: 2015
 rating: 4
 image: https://images.gr-assets.com/books/1443875235l/26857504.jpg

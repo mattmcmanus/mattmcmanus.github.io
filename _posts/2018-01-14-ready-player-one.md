@@ -3,7 +3,7 @@ layout: book
 date: 2018-01-14
 categories: review
 title: Ready Player One
-author: Ernest Cline
+book_author: Ernest Cline
 book_published: 2011
 rating: 3
 image: https://images.gr-assets.com/books/1390275705l/20603758.jpg

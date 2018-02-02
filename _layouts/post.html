@@ -4,7 +4,7 @@ layout: default
 <article class="Post hentry {%if page.cover%}withCover{%endif%}" role="article">
 
   <header>
-    <h1>{{ page.title | titlecase }}</h1>
+    <h1>{{ page.title | titlecase | smartify }}</h1>
 
     {% if page.subtitle %}
       <p class="attention-grabber">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</p>
