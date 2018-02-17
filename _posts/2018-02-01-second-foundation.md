@@ -1,8 +1,9 @@
 ---
 layout: book
-date: 2018-01-14
+date: 2018-02-01
 categories: review
-title: Second Foundation
+title: "Book Review: Second Foundation by Isaac Asimov"
+book_title: Second Foundation
 book_author: Isaac Asimov
 book_published: 1953
 rating: 3

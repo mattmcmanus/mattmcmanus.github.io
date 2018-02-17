@@ -6,7 +6,7 @@
       {{ include.post.date | date: "%B %-d, %Y" }}
       <span class="ListItem-rating">{% for num in (1..include.post.rating) %}★{% endfor %}</span>
     </small>
-    <h4>{{ include.post.title | titlecase }}</h4>
+    <h4>{{ include.post.book_title | titlecase }}</h4>
     <p class="ListItem-subheader">By {{ include.post.book_author | titlecase }}</p>
   </div>
 </a>
