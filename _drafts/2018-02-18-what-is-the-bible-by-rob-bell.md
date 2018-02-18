@@ -13,7 +13,7 @@ book_url: >-
   https://www.goodreads.com/book/show/31706459-what-is-the-bible?ac=1&from_search=true
 ---
 
-Rob Bell is excited. He's excited about a lot of things, but what he is most excited about is the Bible. To those outside of the church the Bible most likely seems rigid and violent. Even those inside of the church have a complicated relationship with it. What is the Bible? is a breath of fresh air that tries to cast a vision of the Bible that is bright, hopeful, provocative, and inspiring.
+Rob Bell is excited about a lot of things, but what he is most excited about is the Bible. To those outside of the church there is the perception that the Bible is rigid and violent. Even those inside of the church have a complicated relationship with it. This book by Rob Bell is a breath of fresh air that tries to cast a vision of the Bible that is bright, hopeful, provocative, and inspiring.
 
 > Why bother with such a strange, old book? Because it’s a book about them, then, that somehow speaks to you and me, here and now, and it can change the way you think and feel about everything.
 
