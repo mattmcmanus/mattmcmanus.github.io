@@ -2,6 +2,7 @@
 /2012/09/reflecting-on-intermingled-extremes/ /2012/reflecting-on-intermingled-extremes
 /reflecting-on-intermingled-extremes/ /2012/reflecting-on-intermingled-extremes
 /im-a-papa-bear-say-hello-to-james/ /2012/im-a-papa-bear-say-hello-to-james
+/2012/06/im-a-papa-bear-say-hello-to-james/ /2012/im-a-papa-bear-say-hello-to-james
 /2013/01/we-need-a-better-sense-of-justice/ /2013/we-need-a-better-sense-of-justice
 /we-need-a-better-sense-of-justice/ /2013/we-need-a-better-sense-of-justice
 /2012/12/a-new-year-noise-purge/ /2012/a-new-year-noise-purge
@@ -14,7 +15,8 @@
 /2012/10/on-discipline/ /2012/on-discipline
 /on-discipline/ /2012/on-discipline
 /article/print-your-own-dot-grid-paper /2010/print-your-own-dot-grid-paper
-/print-your-own-dot-grid-paper /2010/01/print-your-own-dot-grid-paper
+/print-your-own-dot-grid-paper /2010/print-your-own-dot-grid-paper
+/2010/01/print-your-own-dot-grid-paper/ /2010/print-your-own-dot-grid-paper
 /how-much-change-would-one-man-choose-if-one-man-could-choose-change/ /2012/how-much-change-would-one-man-choose-if-one-man-could-choose-change
 /the-busy-trap/ /2012/the-busy-trap
 /a-lenten-fast-from-media/ /2017/a-lenten-fast-from-media
@@ -41,6 +43,7 @@
 /2013/01/document-all-the-things-introducing-dox-foundation/ /2013/document-all-the-things-introducing-dox-foundation
 /document-all-the-things-introducing-dox-foundation/ /2013/document-all-the-things-introducing-dox-foundation
 /we-are-all-too-busy-and-distracted-slowtech-to-the-rescue/ /2012/we-are-all-too-busy-and-distracted-slowtech-to-the-rescue
+/2012/07/we-are-all-too-busy-and-distracted-slowtech-to-the-rescue/ /2012/we-are-all-too-busy-and-distracted-slowtech-to-the-rescue
 /2012/11/learning-to-appreciate/ /2012/learning-to-appreciate
 /learning-to-appreciate/ /2012/learning-to-appreciate
 /2012/08/hello-punk-ave/ /2012/hello-punk-ave
