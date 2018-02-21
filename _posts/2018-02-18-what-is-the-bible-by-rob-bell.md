@@ -17,7 +17,7 @@ Rob Bell is excited about a lot of things, but what he is most excited about is 
 
 > Why bother with such a strange, old book? Because it’s a book about them, then, that somehow speaks to you and me, here and now, and it can change the way you think and feel about everything.
 
-To those who are unfamiliar with Rob's work, some back story is helpful. He was an evangelical pastor and author. He is a personality who at his very core is a pot stirrer. Like most interesting people who are doing worthwhile work, you will have an opinion about him. He became considered an outsider, and even a heritic, as a result of some of his writings. That hasn't stopped him from continuing to explore what it means to be a Christian in the 21st century.
+To those who are unfamiliar with Rob's work, some back story is helpful. He was an evangelical pastor and author. He is a personality who at his very core is a pot stirrer. Like most interesting people who are doing worthwhile work, you will have an opinion about him. He became considered an outsider, and even a heretic, as a result of some of his writings. That hasn't stopped him from continuing to explore what it means to be a Christian in the 21st century.
 
 His work over the last several years has focused on speaking to those who are outside of the "Church." It could be those who have never been in it or those who have left it. If you are a content Christian, Rob will seem dangerous to you. I do not think I can convince you otherwise. This book is for those that look at the Church and despair. For those that feel like the Church and the Bible has nothing to offer. For those who are a part of it, but struggle to make the pieces fit and find reason to stay.
 
