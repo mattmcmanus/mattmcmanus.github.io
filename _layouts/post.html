@@ -26,12 +26,16 @@ layout: default
 
   <div class="entry-content e-content">{{ content }}</div>
 </article>
+
 <hr>
-<h3>Recent posts</h3>
-<ul class="post-list">
-  {% for post in site.posts limit:3 %}
-  <li>
-    {% include {{post.layout | prepend:'list-item-' | append:'.html'}} post=post %}
-  </li>
-  {% endfor %}
-</ul>
+
+<div class="row">
+  <h3>Recent posts</h3>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+    <li>
+      {% include {{post.layout | prepend:'list-item-' | append:'.html'}} post=post %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
