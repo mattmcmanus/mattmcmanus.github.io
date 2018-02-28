@@ -2,4 +2,4 @@
 title: On Being Human
 slug: human
 ---
-<p class="attention-grabber">Trying to live</p>
+<p class="attention-grabber">Technology has made things more wonderful and difficult than we could have ever imagined. I spend a lot of time thinking about how to maintin my humanity in a world of pixels &amp; bytes</p>
