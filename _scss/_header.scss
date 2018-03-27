@@ -33,7 +33,7 @@
     margin: 0;
     display: flex;
     justify-content: flex-end;
-    max-width: auto;
+    max-width: 100%;
 
     @media (max-width: $screen-xs-min) {
       justify-content: flex-start;
