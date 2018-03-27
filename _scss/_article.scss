@@ -56,10 +56,7 @@
   font-size: .8rem;
   margin: .5rem 0;
   text-decoration: none;
-
-  + .category {
-    margin-left: .5rem;
-  }
+  margin-right: .5rem;
 
   &:hover {
     border-color: $highlight;
