@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mattmcmanus
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mcmanus.io
+  * I am mattmcmanus (https://keybase.io/mattmcmanus) on keybase.
+  * I have a public key ASBNgOCuzydebzK0n7nbBbqZDHyoaH6KR8yhLnoKCbMLtAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ad6f7c53116ac31c9f161d47194a6ddfb4a6fa92bad329e1c7346825a98b6bce0a",
+      "host": "keybase.io",
+      "kid": "01204d80e0aecf275e6f32b49fb9db05ba990c7ca8687e8a47cca12e7a0a09b30bb40a",
+      "uid": "9cd43534cf104f2d03669e9b8eb7cd00",
+      "username": "mattmcmanus"
+    },
+    "merkle_root": {
+      "ctime": 1523139618,
+      "hash": "ff37c9ad453f81c83aa49334af650bb78c89f2fed61a7705107027628f68bc2ea4beb29b5f68b4576863338fe939b3b913d3446f2ce9d6842c401ca66fe1b88d",
+      "hash_meta": "4c058c6f17b1d32585dc9c1046bf6463c0c261e661f54148b9506bdd9f03a1f0",
+      "seqno": 2352750
+    },
+    "service": {
+      "entropy": "yGebF2mYxmygJ+y11d7i18KJ",
+      "hostname": "mcmanus.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1523139645,
+  "expire_in": 504576000,
+  "prev": "1b65fb0c87136fd55d31b04b2d1e11d93fd42e890685303aea1b01aa3f614139",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTYDgrs8nXm8ytJ+52wW6mQx8qGh+ikfMoS56CgmzC7QKp3BheWxvYWTESpcCC8QgG2X7DIcTb9VdMbBLLR4R2T/ULokGhTA66hsBqj9hQTnEIA3tfI897zYUOzLEon836zT9GAGFwEmpP/chm4axNmo/AgHCo3NpZ8RASf7Ls9aIISpePdT1nI9uqnCuS0DdMsA9g9HNI9tMKS4m9zJi934duqp7POxJWPKqHzaJI1x7GyL+LLhJ+B3RBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIeE0fb5fjApO/debN9UbhV5YNUESfXGDqU2JwT02PsVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mattmcmanus
+
+==================================================================
