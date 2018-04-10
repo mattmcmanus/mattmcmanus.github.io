@@ -2,7 +2,7 @@
 layout: book
 categories:
   - review
-title: Anathem by Neal Stephenson
+title: 'Book Review: Anathem by Neal Stephenson'
 book_title: Anathem
 book_author: Neal Stephenson
 book_published: 2008
