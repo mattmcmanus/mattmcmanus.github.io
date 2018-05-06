@@ -1,12 +1,13 @@
 ---
-layout: book
+layout: post
 categories:
-  - review
+  - human
 title: The challenge of perspective and the utility of fasting
-book_title: Anathem
-book_author: Neal Stephenson
-book_published: 2008
-rating: 4
-image: /images/anathem.jpg
-book_url: 'https://www.goodreads.com/book/show/2845024-anathem'
+book_title:
+book_author:
+book_published:
+rating:
+image:
+book_url:
 ---
+
