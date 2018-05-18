@@ -1,5 +1,5 @@
 ---
-title: #EmberJS2018: Improve the interoperability of the community and the framework
+title: "#EmberJS2018: Improve the interoperability of the community and the framework"
 category: dev
 ---
 This article is in response to the Ember core team's “Call for blog posts” to propose goals and direction for framework and community in the remainder of 2018. Before I get started, Its seems useful to give a bit of context about my relationship to Ember, which instructs how I came to the points below. I’m a user interface designer and full stack developer (with an unrepentant bent towards the front end). I’ve been developing apps with ember, full time, since version 1.11 (released early 2015). I came to it after several years of developing backbone & react. I was drawn to the ergonomics of it’s component api and the promise of having models/routing/building that just worked. What I care most about is building things that people will use, not really the specifics of what rendering engine, build tool, etc.
@@ -17,7 +17,7 @@ I think one of the most unintentionally detrimental things the ember community h
 * Once you do get in, how do you find answers? There is no history and so questions need to be asked over and over again
 * Slack can be intimidating for new users without any social capital in the community. 
 
-Meanwhile, all of our talent, knowledge and experience is not present in public, searchable channels. That does not serve existing or potential ember developers.
+*Meanwhile, all of our talent, knowledge and experience is not present in public, searchable channels.* That does not serve existing or potential ember developers.
 
 My hope for the rest of 2018 is to see a continued embrace of truly public channels for communication. I think the discourse forum is an excellent choice for that. It’s open source, completely public, encourages good community, and it has many features to increase signal (top posts, post summarization, useful activity emails). Making that shift will require intentional actions on behalf of the leaders of the community and a while lot of inertia.
 
