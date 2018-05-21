@@ -2,38 +2,40 @@
 title: "#EmberJS2018: Improve the interoperability of the community and the framework"
 category: dev
 ---
-This article is in response to the Ember core team's “Call for blog posts” to propose goals and direction for framework and community in the remainder of 2018. Before I get started, Its seems useful to give a bit of context about my relationship to Ember, which instructs how I came to the points below. I’m a user interface designer and full stack developer (with an unrepentant bent towards the front end). I’ve been developing apps with ember, full time, since version 1.11 (released early 2015). I came to it after several years of developing backbone & react. I was drawn to the ergonomics of it’s component api and the promise of having models/routing/building that just worked. What I care most about is building things that people will use, not really the specifics of what rendering engine, build tool, etc.
+I am writing in response to the Ember core team's “Call for blog posts”. In it, they've asked members of the community to propose goals and direction for the remainder of 2018. Before I get started, it seems useful to give a bit of context about my relationship to Ember. This instructs how I came to the points below. I’m a user interface designer and full stack developer (with an unrepentant bent towards the front end). I’ve been developing apps with ember, full time, since version 1.11 (released early 2015). I came to it after several years of developing backbone & react. The frameworks component ergonomics and the promise of having models/routing/building that "just worked" are what drew me. At the end of the day though, what I care most about is building things that people will use, not so much how I will build it. I trust folks smarter than me to figure out the technical details. 
 
-My hope for Ember for 2018 (and the future) is improving it’s interoperability as a community and as a framework.
+My hope is that Ember will continue to be an investment worth making. I see a growing, diverse community with lots of fresh faces as an essential part of that. So, for 2018 and beyond, I hope Ember will continue to improve its interoperability as a community and as a technology within the larger javascript ecosystem. This will make Ember easier and more successful for the new and curious, which benefits all of us. 
 
 ## Improving our interoperability as a community
 
-It’s no secret, from the outside, ember is viewed as a declining framework and an insular community. When you honestly evaluate the signals people would use to make this judgement (stackoverflow, our forum, conference talks, etc), it’s not a surprise. Since EmberConf in March, I’ve seen the community start the process of grappling this in a concerted way and I’ve been very encouraged by the results. Jen Weber and NAME work around StackOverflow, the discussion to address our use of slack and a community driven effort around submitting talks to general JS conferences to name just a few. 
+It’s no secret, the view from the outside is that Ember is a declining framework and an insular community. This is not a surprise when we consider the signals that lead people to such a conclusion (StackOverflow, our forum, conference talks, etc). I'm not describing a new or unknown problem though. Since EmberConf in March, the community has started (or likely continued) the process of grappling with this in a concerted way.  I'm encouraged by the results. Jen Weber and NAME's work around StackOverflow questions, the discussion around our use of slack, and the community-driven effort around submitting talks to general JS conferences are a few initiatives. 
 
-I think one of the most unintentionally detrimental things the ember community has done is making slack it’s primary tool for communication. 
+Even so, there is more work to do! One of the most unintentionally detrimental things the Ember community has done is making slack it’s primary tool for communication. There are several things at play here:
 
-* Slack is a propriety walled garden that you need to create an account for to even read
-* The signal to noise ratio in slack, like any chat room, is entirely inefficient. Simultaneous conversations, inconsistent use of threads
-* Once you do get in, how do you find answers? There is no history and so questions need to be asked over and over again
-* Slack can be intimidating for new users without any social capital in the community. 
+* Slack is a proprietary walled garden that you can't even access without an account.
+* The signal to noise ratio in slack, like any chat room, is entirely inefficient. Simultaneous conversations, inconsistent use of threads, and poor asynchronous conversation attribute to this.
+* Once you do get in, how do you find answers? There is no practical history. Even if an answer is still accessible, finding a single message in a sea of conversations takes a lot of work
+* Slack can be intimidating for new users without any social capital in the community
 
-*Meanwhile, all of our talent, knowledge and experience is not present in public, searchable channels.* That does not serve existing or potential ember developers.
+Certainly, Slack is a well-made tool that makes many things simpler. The end result though is all our talent, knowledge, and experience is not present in public, searchable channels. Our back and forth and collective learning should generate useful artifacts. Our use of slack does not do that and it puts a burden on our guides that they can never fully bear. We should not settle for such a status quo.
 
-My hope for the rest of 2018 is to see a continued embrace of truly public channels for communication. I think the discourse forum is an excellent choice for that. It’s open source, completely public, encourages good community, and it has many features to increase signal (top posts, post summarization, useful activity emails). Making that shift will require intentional actions on behalf of the leaders of the community and a while lot of inertia.
+My hope for the rest of 2018 is to see a continued embrace of truly public channels for communication. The Discourse forum is an excellent choice for that. It’s open source, completely public, encourages good community, and it has many features to increase signal (top posts, post summarization, useful activity emails). It is not a perfect solution, but I consider the tradeoffs worthwhile. Making that shift will require intentional actions on behalf of the leaders of the community and a whole lot of inertia. To make this a reality, several things need to happen:
 
-* Most questions asked in slack should be redirected to the discourse. The core team members especially should be leading this push
-* I think the core teams moving their discussions, meetings notes and plans into discourse will increase the perception of it’s usefulness
-* I think one of the reasons slack is so popular (while discourse and StackOverflow aren’t) is it’s not merely a support tool. Discussion, planning and announcements make it feel more like a community place. The structure of discourse should be setup to encourage those things as well. To that end, I’ve proposed a restructuring of the categories
+* The core team members, along with everyone else, should redirect questions in slack to Discourse as much as possible
+* One of the reasons slack is so popular is it’s not merely a support tool. Discussion, planning, and announcements make it feel more like a community, rather than a burden. The structure of Discourse should be set up to encourage those things as well. To that end, I’ve proposed a restructuring of the categories
+* I know I'm asking a lot here, but the core teams should move their discussions, meetings notes, and plans into Discourse as well. This will increase its usefulness and generally add to the forums inertia
 
 ## Improving the interoperability of ember’s technology
 
-The complete, all or nothing buy in required to use Ember, while a necessary component of the strength and longevity of the framework, is also the biggest roadblock to people using it. While I am excited about the “build your way to ember” path discussed in the EmberConf 2017 keynote, I do not see that as a solution to the issues around perception. 
+Ember is a hard sell because it's a big ask. "Buy in completely to our way of thinking and you will be productive for a long time." The compete buy-in is part of the framework's strength and I don't want to lose that vision. I see ways we might work to reduce the risk of trying Ember and ease the transition to the framework. We can do so by increasing the surface area of shared knowledge within the larger JS ecosystem. 
 
-I think we need to increase the surface area of shared knowledge with the larger JS community. This will increase potential inroads and reduce friction for people experimenting with the framework. For example:
+The more potential inroads there are, the more we reduce friction for people experimenting with the framework. For example:
 
-* This has been mentioned in several other posts, but making use of npm modules as easy as “ember installing” would be amazing
-* Increasing “official” awareness and support of other data layers like Redux, Orbit, Apollo. This reduces the perception of “risk” related to total buy in. It also provides developers experienced in those tools a sense of grounding while the learn other parts of the framework
-* Proper WebComponent could also open the door to a larger community
+* Drop dead easy use of npm modules. Many have mentioned this and it would be a huge win.
+* Increasing “official” awareness of other data layers like Redux, Orbit, Apollo. Though we should continue to be unrepentant about our preference toward ember-data, we should not implicitly communicate the exclusive use of it. We should provide cookbooks or clear guidelines about the availability and use of these other data layers.
+* Proper WebComponent support would increase the potential ember developer base. This would encourage cross-pollination of ideas and make it easier to consider the framework.
 * Support for widely used tools like Storybook.js could provide a less intimidating way for folks to explore component APIs while maintaining workflow continuity for parts of their team
 
-There have been many great posts circling around and I hope my thoughts contribute productively to the conversation. 
+There have been many great posts circling around and I hope my thoughts contribute productively to the conversation. I know many may not come to the same conclusions on Slack or the importance of technical interoperability. 
+
+There have been many great words written in this "Call for Blog Posts." It gives me a lot of hope and excitement around Ember's future. Like all of us, I hope the continued success of this tool. Helping new developers succeed and making it easier to explore the framework are critical to a thriving community. The beautiful thing about that work is that everyone, new and old, benefit from it. I hope my thoughts contribute productively toward that end.
