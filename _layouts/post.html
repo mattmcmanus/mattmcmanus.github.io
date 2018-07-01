@@ -1,33 +1,35 @@
 ---
 layout: default
 ---
+{%- if page.image -%}
+  {% include img.html class="Post-hero" src=page.image alt=page.title %}
+{%- endif -%}
+
 <article class="Post hentry {%if page.cover%}withCover{%endif%}" role="article">
 
   <header>
+    <small class="Post-meta">
+      <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    </small>
+
     <h1>{{ page.title | titlecase | smartify }}</h1>
 
     {% if page.subtitle %}
       <p class="attention-grabber">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</p>
     {% endif %}
 
-    <p>
-    <small class="Post-meta">
-      <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
-    </small>
-    </p>
-
-    {% if page.categories %}
-      <p class="alignCenter">
-        {% include categories.html categories=page.categories class="Post-category" %}
-      </p>
-    {% endif %}
   </header>
   <hr>
 
   <div class="entry-content e-content">{{ content }}</div>
-</article>
 
-<hr>
+{% if page.categories %}
+  <p class="alignCenter">
+    {% include categories.html categories=page.categories class="Post-category" %}
+  </p>
+{% endif %}
+
+</article>
 
 <div class="row">
   <h3>Recent posts</h3>
