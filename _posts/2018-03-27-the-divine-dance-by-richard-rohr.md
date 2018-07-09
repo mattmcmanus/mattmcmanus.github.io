@@ -13,20 +13,20 @@ book_url: https://www.goodreads.com/book/show/29885731-the-divine-dance
 The Christian doctrine of the Trinity is a mystery; a commonly accepted Christian truth that is rationally incomprehensible. In The Divine Dance, Richard Rohr attempts to explain it in a way that feels both familiar and completely foreign. Rather than the mystery being the end of the conversation, he uses it as an invitation to deeper understanding.  
 
 > God for us, we call you Father.
-   God alongside us, we call you Jesus.
-   God within us, we call you Holy Spirit.
-   You are the eternal mystery that enables, enfolds, and enlivens all things,  
-   Even us and even me. Every name falls short of your goodness and greatness.
-   We can only see who you are in what is.
-   We ask for such perfect seeing—
-   As it was in the beginning, is now, and ever shall be.
-   Amen.
+  God alongside us, we call you Jesus.
+  God within us, we call you Holy Spirit.
+  You are the eternal mystery that enables, enfolds, and enlivens all things,  
+  Even us and even me. Every name falls short of your goodness and greatness.
+  We can only see who you are in what is.
+  We ask for such perfect seeing—
+  As it was in the beginning, is now, and ever shall be.
+  Amen.
 
 The book is profound and insightful. Rohr puts words to your unconscious and intuitive understanding of the nature of God. But he does not try to make it a comprehensive, systematic explanation. It never completely settles on the rational side of things. His instruction adds confidence and clarity to your experiential intuition over your logical.
 
 > Rational certitude is exactly what the Scriptures do not offer us. They offer us something much better and an entirely different way of knowing: an intimate relationship, a dark journey, a path where we must discover for ourselves that grace, love, mercy, and forgiveness are absolutely necessary for survival—in an always and forever uncertain world.
 
-The traditional understanding of the Trinity is that it consists of three distinct beings existing in perfect relationship. The emphasis on the beings. Rohr emphasizes how the relationship, the space between the members of the Trinity, is the foundational component.
+The traditional understanding of the Trinity is that it consists of three distinct beings existing in perfect relationship. The implicit emphasis is on the individual beings of the trinity: Father, Son, and Holy Spirit. Rohr emphasizes how the relationship, the space between the members, is the foundational component.
 
 > Whatever is going on in God is a flow, a radical relatedness, a perfect communion between Three—a circle dance of love.
 
