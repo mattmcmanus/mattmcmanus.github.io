@@ -12,12 +12,4 @@ layout: default
   {%- else -%}
     {% include post-list-by-year.html posts=posts %}
   {%- endif -%}
-
-  <hr>
-
-  <p class="alignCenter">
-    {% for category in site.category_details %}
-      <a class="category" href="{{category.url}}">{{category.title}}</a>
-    {% endfor %}
-  </p>
 </div>
