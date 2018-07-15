@@ -7,8 +7,14 @@ layout: default
   {{content}}
 
   {% assign posts = site.categories[page.slug] %}
-  {% include post-list-by-year.html posts=posts %}
+  {%- if page.slug == 'review' -%}
+    {% include book-list.html reviews=posts %}
+  {%- else -%}
+    {% include post-list-by-year.html posts=posts %}
+  {%- endif -%}
+
   <hr>
+
   <p class="alignCenter">
     {% for category in site.category_details %}
       <a class="category" href="{{category.url}}">{{category.title}}</a>

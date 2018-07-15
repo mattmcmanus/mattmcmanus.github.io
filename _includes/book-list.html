@@ -1,0 +1,13 @@
+</div>
+<div class="BookList">
+  {%- if include.limit -%}
+    {% for review in include.reviews | limit: include.limit%}
+      {% include book-thumb.html book=review %}
+    {% endfor %}
+  {%- else -%}
+    {% for review in include.reviews %}
+      {% include book-thumb.html book=review %}
+    {% endfor %}
+  {%- endif -%}
+</div>
+<div class="row">

@@ -7,10 +7,12 @@ layout: default
     <div class="Post-reviewHeader">
       <h1 class="Post-title">
         {{ page.book_title | titlecase }}
-        <small class="Post-year">{{ page.book_published }}</small>
       </h1>
 
-      <p class="Post-byline attention-grabber">By {{ page.book_author | titlecase }}</p>
+      <p class="Post-byline attention-grabber">
+        By {{ page.book_author | titlecase }}
+        <small class="Post-year">{{ page.book_published }}</small>
+      </p>
 
       <p class="Post-rating">{% for num in (1..page.rating) %}★{% endfor %}</p>
 
@@ -23,3 +25,10 @@ layout: default
 
   <div class="entry-content e-content">{{ content }}</div>
 </article>
+<hr>
+
+<div class="row">
+  <h4>Latest from the books shelf <small><a href="/category/review" >See all of them</a></small></h4>
+  {% assign reviews = site.posts | where_exp:"item", "item.categories contains 'review'"%}
+  {% include book-list.html reviews=reviews limit=5 %}
+</div>

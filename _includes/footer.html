@@ -1,5 +1,12 @@
   <footer id="footer" role="contentinfo">
     <hr>
+    <div class="row">
+      <p>
+        {% for category in site.category_details %}
+          <a class="category" href="{{category.url}}">{{category.title}}</a>
+        {% endfor %}
+      </p>
+    </div>
     {% for profile in site.data.social_profiles %}
       <a rel="me" class="social-icon" href="{{ profile.link }}" target="_blank">
         {% include {{ profile.svg | prepend: 'svgs/' }} %}

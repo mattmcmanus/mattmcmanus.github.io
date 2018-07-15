@@ -1,5 +1,5 @@
 ---
-title: On Me
+title: Personal Updates
 slug: update
 ---
-<p class="attention-grabber">If you care, some stuff about me</p>
+<p class="attention-grabber">Infrequent updates on more personal matters</p>

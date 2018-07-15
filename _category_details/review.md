@@ -1,8 +1,7 @@
 ---
-title: On Books
+title: Book Reviews
 slug: review
 ---
-
 I spend a lot of my spare time reading these days. I'm trying to make it a more thoughtful exercise by writing about it.
 {: .attention-grabber}
 

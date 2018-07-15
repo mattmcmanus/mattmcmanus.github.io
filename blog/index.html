@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="row">
-  <h1>My Writings</h1>
+  <h1>Blog</h1>
 
   <p>
     {% for category in site.category_details %}
@@ -10,5 +10,6 @@ layout: default
     {% endfor %}
   </p>
 
-  {% include post-list-by-year.html posts=site.posts %}
+  {% assign posts = site.posts | where_exp:"item", "item.categories[0] != 'review'" %}
+  {% include post-list-by-year.html posts=posts %}
 </div>
