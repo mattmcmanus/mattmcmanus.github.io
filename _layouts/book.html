@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article class="Post--review hentry {%if page.cover%}withCover{%endif%}" role="article">
-  <header class="Post-header">
-    {% include img.html class="Post-cover" src=page.image alt=page.title %}
+<article class="Post--review h-review {%if page.cover%}withCover{%endif%}" role="article">
+  <header class="Post-header p-item h-product">
+    {% include img.html class="Post-cover u-photo" src=page.image alt=page.title %}
     <div class="Post-reviewHeader">
-      <h1 class="Post-title">
+      <h1 class="Post-title p-name">
         {{ page.book_title | titlecase }}
       </h1>
 
@@ -14,16 +14,18 @@ layout: default
         <small class="Post-year">{{ page.book_published }}</small>
       </p>
 
-      <p class="Post-rating">{% for num in (1..page.rating) %}★{% endfor %}</p>
+      <p class="Post-rating">
+        <data class="p-rating" value={{page.rating}}>{% for num in (1..page.rating) %}★{% endfor %}</data>
+      </p>
 
       <p class="Post-meta">
-        <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+        <time class="dt-published uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
       </p>
     </div>
   </header>
   <hr>
 
-  <div class="entry-content e-content">{{ content }}</div>
+  <div class="entry-content e-content p-review">{{ content }}</div>
 </article>
 <hr>
 
