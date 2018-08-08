@@ -9,7 +9,7 @@ rating: 5
 image: /images/New_Seeds_Of_Contemplation.jpg
 book_url: https://www.goodreads.com/book/show/1145854.New_Seeds_of_Contemplation
 ---
-I owe a great debt to Thomas Merton. His book, The Seven Story Mountain set me on a path towards the reconstruction of my faith. There are few authors who have challenged my understanding of the world and myself more than he has.
+I owe a great debt to Thomas Merton. His book, [The Seven Story Mountain](https://www.goodreads.com/book/show/175078.The_Seven_Storey_Mountain) set me on a path towards the reconstruction of my faith. There are few authors who have challenged my understanding of the world and myself more than he has.
 
 This book, New Seeds of Contemplation, is his attempt to explain the unexplainable. In it he explores the nature of God and how we become one with him through contemplation. What is contemplation? How is it different than prayer? Prayer tends to be very explicit and focused on the self. “I need help with...” “Give me...” “Give X to...” Contemplation is the emptying of one’s self and a bending of the will towards God, to share in and become one with his love.
 
