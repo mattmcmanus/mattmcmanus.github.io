@@ -34,3 +34,28 @@ layout: default
   {% assign reviews = site.posts | where_exp:"item", "item.categories contains 'review'"%}
   {% include book-list.html reviews=reviews limit=5 %}
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Book",
+  "image": "{{page.image}}",
+  "name": "{{ page.book_title | titlecase }}",
+  "author": "{{ page.book_author | titlecase }}",
+  "datePublished": "{{page.book_published}}",
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "{{page.rating}}"
+    },
+    "name": "{{page.book_title}}",
+    "author": {
+      "@type": "Person",
+      "name": "Matt McManus"
+    },
+    "datePublished": "{{page.date}}",
+    "reviewBody": "{{content}}"
+  }
+}
+</script>
