@@ -34,6 +34,14 @@ kramdown:
 twitter:
   username: mattmcmanus
 
+social:
+  name: Matt McManus
+  links:
+    - https://twitter.com/mattmcmanus
+    - https://www.linkedin.com/in/mattmcmanus
+    - https://github.com/mattmcmanus
+    - https://keybase.io/mattmcmanus
+
 plugins:
   - jekyll-autoprefixer
   - jekyll-redirect-from
