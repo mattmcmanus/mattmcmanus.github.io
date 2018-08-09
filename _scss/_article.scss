@@ -46,16 +46,44 @@
   }
   &-cover {
     flex: 1 1 50%;
-    padding-right: 1rem;
+    margin-right: 1rem;
+
+    img {
+      box-shadow: $book-shadow
+    }
   }
   &-reviewHeader {
     flex: 1 1 50%;
   }
 
   @media (max-width: $screen-xs-min) {
+    &--review &-header img {
+      max-height: 300px;
+    }
     &--review &-header {
       flex-direction: column;
       align-items: center;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &--review &-header {
+      max-width: 100%;
+      @include margin-bottom(2);
+    }
+    &--review &-reviewHeader {
+      margin-bottom: 0;
+    }
+    &--review &-cover {
+      order: 1;
+      margin: 0 0 0 2rem;
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: row-reverse;
+
+      img {
+        max-height: 500px;
+      }
     }
   }
 }

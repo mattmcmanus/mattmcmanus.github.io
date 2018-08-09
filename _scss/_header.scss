@@ -3,7 +3,6 @@
 
   .row {
     @include padding(1, 0);
-    border-bottom: 1px solid $divider;
     display: flex;
     flex-flow: row wrap;
 

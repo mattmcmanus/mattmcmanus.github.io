@@ -17,6 +17,7 @@ defaults:
     values:
       layout: "category"
 
+logo: /siteicon.png
 sass:
   sass_dir: _scss
   style: :compressed
