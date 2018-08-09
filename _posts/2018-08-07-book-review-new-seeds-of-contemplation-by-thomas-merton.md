@@ -4,7 +4,7 @@ categories: review
 title: 'Book Review: New Seeds of Contemplation by Thomas Merton'
 book_title: New Seeds of Contemplation
 book_author: Thomas Merton
-book_published: 1962
+book_published: 196 2
 rating: 5
 image: /images/New_Seeds_Of_Contemplation.jpg
 book_url: https://www.goodreads.com/book/show/1145854.New_Seeds_of_Contemplation
@@ -13,7 +13,7 @@ I owe a great debt to Thomas Merton. His book, [The Seven Story Mountain](https:
 
 This book, New Seeds of Contemplation, is his attempt to explain the unexplainable. In it he explores the nature of God and how we become one with him through contemplation. What is contemplation? How is it different than prayer? Prayer tends to be very explicit and focused on the self. “I need help with...” “Give me...” “Give X to...” Contemplation is the emptying of one’s self and a bending of the will towards God, to share in and become one with his love.
 
-In many ways, this topic and experience feel like the strange esoteric exercises of hermits and monks. Yet, I’m compelled to explore the topic. When I read the thoughts and experiences of Merton (among others) I’ve started to see experiences in my past with a new understanding.
+I understand that sounds a bit strange. This topic can feel like the strange esoteric exercises of hermits and monks. In spite of this, I find myself compelled to continue to explore it. When I read the thoughts and experiences of Merton (among others) I begin to see experiences in my past with a new understanding.
 
 For example, I often talk and write about how I nearly left the Christian faith. For a long time I considered that a bad thing, a result of weakness.  I also viewed my coming to a new understanding of faith the correcting of a wrong. However, Merton describes a similar experience with a dramatically different evaluation of its quality:
 
@@ -29,6 +29,6 @@ Part of why I considered my struggle so bad, was that I viewed my doubt as a fai
 >
 > <cite>Merton, Thomas. New Seeds of Contemplation (pp. 107-108). New Directions. Kindle Edition.</cite>
 
-It might be easy to dismiss this as someone in crisis seeking anything to make things seem a little easier and to feel less guilty. This is most certainly not true! I am now years into this process and I can say now that my perspective has truly changed and I have Merton to thank. I see that period not as one of failure, but one of darkness. It did not come as a result of failure, but perhaps from a loving God whose wisdom and strength allow for true growth born out of struggle. My understanding of who I was and what I thought my faith should be were hindrances to loving God more completely. When it was taken all away, for a time, I was left with nothing.
+It might be easy to dismiss all this by saying I was in crisis and was seeking anything to make things seem a little easier and to feel less guilty. I've wondered this myself. However, I am now years into this process and I can say now that my perspective has truly changed and I have Merton to thank. I see that period in my past not as one of failure, but one of darkness. It did not come as a result of failure, but from a loving God whose wisdom allows for growth to be born out of struggle. My understanding of who I was and what I thought my faith should be were hindrances to loving God more completely. When it was taken all away, for a time, I was left with nothing, which allowed me to start to see things as they could be.
 
-That is why Merton’s work on contemplation is so compelling. You cannot talk about contemplation without embracing the reality of darkness and how God can use it. I cannot tell you that I had a true contemplative experience on this day or that. But when I read accounts of those who have devoted their life to the practice, I hear and feel echos of my own experience. Not flashes of experience here and there, but some of the most acute and painful moments of my life. I still don’t fully understand it all, but I know as I continue down this path, I am encouraged and motivated, and I will continue to trust that good will come of it.
+That is why Merton’s work on contemplation is so compelling. You cannot talk about contemplation without embracing the reality of darkness and unknowing. My previous understanding of faith had no room for that. Even so, I cannot tell you where I have had a true contemplative experience. But when I read accounts of those who have devoted their life to the practice, I hear and feel echos of my own experience. Not trivial flashes of emotion here and there, but some of the most acute and painful moments of my life. I still don’t fully understand it all, but I know as I continue down this path, I am encouraged and I hope good will come of it.
