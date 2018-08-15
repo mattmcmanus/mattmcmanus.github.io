@@ -6,6 +6,9 @@ permalink: /:year/:title
 # paginate: 100
 # paginate_path: "blog/page:num"
 
+include:
+  - _redirects
+
 collections:
   category_details:
     output: true
