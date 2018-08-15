@@ -1,0 +1,14 @@
+@mixin pill {
+  @include padding(0, .3);
+  border-radius: 6px;
+  border: 1px solid rgba($highlight, .2);
+  color: $primary;
+  font-size: .8rem;
+  margin: .5rem 0;
+  text-decoration: none;
+  margin-right: .5rem;
+
+  &:hover {
+    border-color: $highlight;
+  }
+}

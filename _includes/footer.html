@@ -1,17 +1,41 @@
+  <hr>
   <footer id="footer" role="contentinfo">
-    <hr>
-    <div class="row">
-      <p>
-        {% for category in site.category_details %}
-          <a class="category" href="{{category.url}}">{{category.title}}</a>
+    <section class="h-card">
+      <h4>Hey friend,</h2>
+      <p>My name is <a href="https://mcmanus.io" rel="me" class="p-name u-url">Matt McManus</a>. I'm a web developer & interface designer with over 15 years experience. Right now I'm focused on ember.js, rails, hot sauce, reading & my family.</p>
+      <p><a href="mailto:matt@mcmanus.io" class="u-email">Say hello!</a></p>
+    </section>
+
+    <section>
+      <h4>Around the internet</h4>
+      <ul>
+        {% for profile in site.data.social_profiles %}
+        <li>
+          <a rel="me" href="{{ profile.link }}" class="profile-link" target="_blank">
+            {{profile.name}}
+          </a>
+        </li>
         {% endfor %}
+      </ul>
+    </section>
+
+    <section>
+      <h4>RSS</h4>
+      <p>
+        <a href="/atom.xml" rel="me" class="profile-link">Everything</a>
       </p>
-    </div>
-    {% for profile in site.data.social_profiles %}
-      <a rel="me" class="social-icon" href="{{ profile.link }}" target="_blank">
-        {% include {{ profile.svg | prepend: 'svgs/' }} %}
-      </a>
-    {% endfor %}
+
+      <h4>Site Categories</h4>
+      <p>
+        <ul>
+        {% for category in site.category_details %}
+          <li>
+            <a class="category" href="{{category.url}}">{{category.title}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </p>
+    </section>
   </footer>
 
   <script defer src="/js/site.js" charset="utf-8"></script>

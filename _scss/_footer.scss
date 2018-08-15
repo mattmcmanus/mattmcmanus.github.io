@@ -1,18 +1,31 @@
 #footer {
-  text-align: center;
+  display: flex;
 
-  .social-icon {
-    display: inline-block;
-    margin: 0 2em;
-
-    &:hover svg {
-      fill: $color-font-body;
-    }
+  @media (max-width: $screen-xs-min) {
+    flex-direction: column;
   }
 
-  svg {
-    height: 48px;
-    width: 48px;
-    fill: $primary;
+  section {
+    flex: 1 1;
+    padding: .5rem 1rem;
+
+    ul { padding: 0; }
+    li { list-style: none; }
+  }
+
+  h4 {
+    font-family: $custom-font-body;
+    margin-top: 0;
+    @include line-height(1);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: $primary;
+  }
+
+  .profile-link {
+    @include pill;
+    display: inline-block;
+
   }
 }

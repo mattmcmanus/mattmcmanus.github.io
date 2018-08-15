@@ -1,9 +1,8 @@
+- name: Goodreads
+  link: https://goodreads.com/mattmcmanus
 - name: Github
-  link: 'https://github.com/mattmcmanus'
-  svg: github.svg
+  link: https://github.com/mattmcmanus
 - name: Twitter
-  link: 'https://twitter.com/mattmcmanus'
-  svg: twitter.svg
+  link: https://twitter.com/mattmcmanus
 - name: LinkedIn
-  link: 'https://www.linkedin.com/in/mattmcmanus/'
-  svg: linkedin.svg
+  link: https://www.linkedin.com/in/mattmcmanus/
