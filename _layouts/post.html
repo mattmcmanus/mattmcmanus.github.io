@@ -23,12 +23,7 @@ layout: default
 
   <div class="entry-content e-content">{{ content }}</div>
 
-    <p class="alignCenter">
-      <a class="u-url pill" href={{page.url}}>Permanent Link</a>
-      {% if page.categories %}
-        {% include categories.html categories=page.categories class="Post-category" %}
-      {% endif %}
-    </p>
+  {% include byline.html %}
 </article>
 
 <div class="row">

@@ -1,0 +1,11 @@
+<div class="row byline">
+  <p class="alignCenter uppercase meta">
+    Written by <a href="http://mcmanus.io" class="h-card p-author" rel="author">Matt McManus</a> - <a class="u-url" href={{page.url}}>Permanent Link</a>
+  </p>
+
+  <p class="alignCenter">
+    {% if page.categories %}
+    {% include categories.html categories=page.categories class="Post-category" %}
+    {% endif %}
+  </p>
+</div>

@@ -1,3 +1,14 @@
+.byline {
+  .meta {
+    font-size: .7rem;
+    color: $gray;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 .Post {
   background-color: rgba(255, 255, 255, .96);
 

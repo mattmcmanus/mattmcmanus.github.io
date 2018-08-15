@@ -19,14 +19,14 @@ layout: default
       </p>
 
       <p class="Post-meta">
-        <time class="dt-published uppercase" datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
+        <time class="uppercase dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
       </p>
     </div>
   </header>
 
   <div class="entry-content e-content p-review">{{ content }}</div>
 
-  <p class="alignCenter"><a class="u-url pill" href={{page.url}}>Permanent Link</a></p>
+  {% include byline.html %}
 </article>
 <hr>
 
