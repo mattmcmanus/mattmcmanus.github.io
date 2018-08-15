@@ -5,11 +5,11 @@ layout: default
   {% include img.html class="Post-hero" src=page.image alt=page.title %}
 {%- endif -%}
 
-<article class="Post hentry {%if page.cover%}withCover{%endif%}" role="article">
+<article class="Post h-entry {%if page.cover%}withCover{%endif%}" role="article">
 
   <header>
     <small class="Post-meta">
-      <time class="uppercase" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+      <time class="uppercase dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
     </small>
 
     <h1>{{ page.title | titlecase | smartify }}</h1>
@@ -23,12 +23,12 @@ layout: default
 
   <div class="entry-content e-content">{{ content }}</div>
 
-{% if page.categories %}
-  <p class="alignCenter">
-    {% include categories.html categories=page.categories class="Post-category" %}
-  </p>
-{% endif %}
-
+    <p class="alignCenter">
+      <a class="u-url pill" href={{page.url}}>Permanent Link</a>
+      {% if page.categories %}
+        {% include categories.html categories=page.categories class="Post-category" %}
+      {% endif %}
+    </p>
 </article>
 
 <div class="row">

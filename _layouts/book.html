@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="Post--review h-review {%if page.cover%}withCover{%endif%}" role="article">
+<article class="Post--review h-entry h-review {%if page.cover%}withCover{%endif%}" role="article">
   <header class="Post-header p-item h-product">
     {% include img.html class="Post-cover u-photo" src=page.image alt=page.title %}
     <div class="Post-reviewHeader">
@@ -25,6 +25,8 @@ layout: default
   </header>
 
   <div class="entry-content e-content p-review">{{ content }}</div>
+
+  <p class="alignCenter"><a class="u-url pill" href={{page.url}}>Permanent Link</a></p>
 </article>
 <hr>
 

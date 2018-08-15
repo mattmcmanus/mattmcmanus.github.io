@@ -3,10 +3,11 @@
   border-radius: 6px;
   border: 1px solid rgba($highlight, .2);
   color: $primary;
+  display: inline-block;
   font-size: .8rem;
+  margin-right: .5rem;
   margin: .5rem 0;
   text-decoration: none;
-  margin-right: .5rem;
 
   &:hover {
     border-color: $highlight;

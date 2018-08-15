@@ -27,3 +27,7 @@ a {
     color: $color-link-active;
   }
 }
+
+a.pill {
+  @include pill;
+}
