@@ -1,4 +1,7 @@
 {
+  "scripts" : {
+    "tailwind": "tailwind build _scss/tailwind.css -c ./tailwind.js -o _scss/_generated_tailwind.scss"
+  },
   "devDependencies": {
     "tailwindcss": "^0.6.5"
   }
