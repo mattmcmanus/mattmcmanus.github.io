@@ -35,6 +35,41 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
+.row, article {
+  @apply max-w-lg mx-auto my-0;
+}
+
+#main-header nav a {
+  @apply text-xs uppercase no-underline mx-3 tracking-wide text-grey-dark
+}
+
+.attention-grabber {
+  @apply text-xl text-blue;
+}
+
+p {
+  @apply mb-7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif text-grey-darkest leading-tight;
+}
+
+h1 {
+  @apply text-5xl mt-24 mb-6;
+}
+
+h2 {
+  @apply text-3xl mt-16 mb-3;
+}
+
+h3 {
+  @apply text-2xl mt-12 mb-3;
+}
+
+h4 {
+  @apply text-xl mt-10 mb-3;
+}
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

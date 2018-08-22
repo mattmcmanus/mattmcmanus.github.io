@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Lora:400i,700,700i" rel="stylesheet">
-  <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+  <!-- <link rel="preload" href="/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+  <link rel="stylesheet" href="/tailwind.css">
+  <!-- <noscript><link rel="stylesheet" href="/styles.css"></noscript> -->
   {% feed_meta %}
-  <script type="text/javascript"> {% include js/loadcss.js %} </script>
+  <!-- <script type="text/javascript"> {% include js/loadcss.js %} </script> -->
   {% seo %}
 </head>
 
-<body class="layout-{{ page.layout }} type-{{ page.type }} {% if page.image %}has-image{% endif %}" {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+<body class="font-sans leading-normal layout-{{ page.layout }} type-{{ page.type }} {% if page.image %}has-image{% endif %}" {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>

@@ -663,7 +663,8 @@ table {
  * @import "components/forms";
  */
 
-.row {
+.row,
+article {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
@@ -672,13 +673,57 @@ table {
 }
 
 #main-header nav a {
-  font-size: .875rem;
+  font-size: .75rem;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-left: .75rem;
+  margin-right: .75rem;
   letter-spacing: .1em;
   color: #8795a1;
+}
+
+.attention-grabber {
+  font-size: 1.25rem;
+  color: #3e5e75;
+}
+
+p {
+  margin-bottom: 1.7222222222rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lora, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  color: #444;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-top: 4rem;
+  margin-bottom: .75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: .75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: .75rem;
 }
 
 /**
@@ -1048,7 +1093,7 @@ table {
 }
 
 .leading-normal {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .m-0 {
@@ -1077,6 +1122,10 @@ table {
 
 .m-6 {
   margin: 1.5rem;
+}
+
+.m-7 {
+  margin: 1.7222222222rem;
 }
 
 .m-8 {
@@ -1183,6 +1232,16 @@ table {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.my-7 {
+  margin-top: 1.7222222222rem;
+  margin-bottom: 1.7222222222rem;
+}
+
+.mx-7 {
+  margin-left: 1.7222222222rem;
+  margin-right: 1.7222222222rem;
 }
 
 .my-8 {
@@ -1385,6 +1444,22 @@ table {
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.7222222222rem;
+}
+
+.mr-7 {
+  margin-right: 1.7222222222rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.7222222222rem;
+}
+
+.ml-7 {
+  margin-left: 1.7222222222rem;
 }
 
 .mt-8 {
@@ -2234,7 +2309,7 @@ table {
 }
 
 .text-grey-darkest {
-  color: #3d4852;
+  color: #444;
 }
 
 .text-grey-darker {
@@ -2334,7 +2409,7 @@ table {
 }
 
 .hover\:text-grey-darkest:hover {
-  color: #3d4852;
+  color: #444;
 }
 
 .hover\:text-grey-darker:hover {
@@ -2434,7 +2509,7 @@ table {
 }
 
 .focus\:text-grey-darkest:focus {
-  color: #3d4852;
+  color: #444;
 }
 
 .focus\:text-grey-darker:focus {
@@ -3060,7 +3135,7 @@ table {
   }
 
   .sm\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .sm\:m-0 {
@@ -3089,6 +3164,10 @@ table {
 
   .sm\:m-6 {
     margin: 1.5rem;
+  }
+
+  .sm\:m-7 {
+    margin: 1.7222222222rem;
   }
 
   .sm\:m-8 {
@@ -3195,6 +3274,16 @@ table {
   .sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .sm\:my-7 {
+    margin-top: 1.7222222222rem;
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .sm\:mx-7 {
+    margin-left: 1.7222222222rem;
+    margin-right: 1.7222222222rem;
   }
 
   .sm\:my-8 {
@@ -3397,6 +3486,22 @@ table {
 
   .sm\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .sm\:mt-7 {
+    margin-top: 1.7222222222rem;
+  }
+
+  .sm\:mr-7 {
+    margin-right: 1.7222222222rem;
+  }
+
+  .sm\:mb-7 {
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .sm\:ml-7 {
+    margin-left: 1.7222222222rem;
   }
 
   .sm\:mt-8 {
@@ -4536,7 +4641,7 @@ table {
   }
 
   .md\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .md\:m-0 {
@@ -4565,6 +4670,10 @@ table {
 
   .md\:m-6 {
     margin: 1.5rem;
+  }
+
+  .md\:m-7 {
+    margin: 1.7222222222rem;
   }
 
   .md\:m-8 {
@@ -4671,6 +4780,16 @@ table {
   .md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .md\:my-7 {
+    margin-top: 1.7222222222rem;
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .md\:mx-7 {
+    margin-left: 1.7222222222rem;
+    margin-right: 1.7222222222rem;
   }
 
   .md\:my-8 {
@@ -4873,6 +4992,22 @@ table {
 
   .md\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .md\:mt-7 {
+    margin-top: 1.7222222222rem;
+  }
+
+  .md\:mr-7 {
+    margin-right: 1.7222222222rem;
+  }
+
+  .md\:mb-7 {
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .md\:ml-7 {
+    margin-left: 1.7222222222rem;
   }
 
   .md\:mt-8 {
@@ -6012,7 +6147,7 @@ table {
   }
 
   .lg\:leading-normal {
-    line-height: 1.5;
+    line-height: 1.7;
   }
 
   .lg\:m-0 {
@@ -6041,6 +6176,10 @@ table {
 
   .lg\:m-6 {
     margin: 1.5rem;
+  }
+
+  .lg\:m-7 {
+    margin: 1.7222222222rem;
   }
 
   .lg\:m-8 {
@@ -6147,6 +6286,16 @@ table {
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .lg\:my-7 {
+    margin-top: 1.7222222222rem;
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .lg\:mx-7 {
+    margin-left: 1.7222222222rem;
+    margin-right: 1.7222222222rem;
   }
 
   .lg\:my-8 {
@@ -6349,6 +6498,22 @@ table {
 
   .lg\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .lg\:mt-7 {
+    margin-top: 1.7222222222rem;
+  }
+
+  .lg\:mr-7 {
+    margin-right: 1.7222222222rem;
+  }
+
+  .lg\:mb-7 {
+    margin-bottom: 1.7222222222rem;
+  }
+
+  .lg\:ml-7 {
+    margin-left: 1.7222222222rem;
   }
 
   .lg\:mt-8 {
