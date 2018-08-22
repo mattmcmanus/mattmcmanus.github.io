@@ -8,6 +8,8 @@ permalink: /:year/:title
 
 include:
   - _redirects
+exclude:
+  - src
 
 repository: mattmcmanus/mattmcmanus.github.io
 

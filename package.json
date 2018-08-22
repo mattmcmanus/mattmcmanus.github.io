@@ -1,18 +1,10 @@
 {
   "private": true,
   "scripts" : {
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
-    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=webpack.config.js"
+    "tailwind": "tailwind build src/tailwind.css -o _scss/tailwind.scss -c tailwind.js",
+    "watch": "find . -name 'tailwind.*' ! -path '*/[_.]*' ! -path './node_modules*' | entr yarn run tailwind"
   },
   "devDependencies": {
-    "cross-env": "^5.1",
-    "css-loader": "^0.28.7",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "postcss": "^6.0.14",
-    "postcss-loader": "^2.0.8",
-    "style-loader": "^0.19.0",
-    "tailwindcss": "^0.6.5",
-    "webpack": "^3.8.1"
+    "tailwindcss": "^0.6.5"
   }
 }
