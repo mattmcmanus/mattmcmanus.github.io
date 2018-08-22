@@ -1,10 +1,14 @@
 {
   "private": true,
-  "scripts" : {
+  "scripts": {
     "tailwind": "tailwind build src/tailwind.css -o _scss/tailwind.scss -c tailwind.js",
-    "watch": "find . -name 'tailwind.*' ! -path '*/[_.]*' ! -path './node_modules*' | entr yarn run tailwind"
+    "watch": "find . -name 'tailwind.*' ! -path '*/[_.]*' ! -path './node_modules*' | entr yarn run tailwind",
+    "purge": "purgecss --config purgecss.config.js --out _site"
   },
   "devDependencies": {
     "tailwindcss": "^0.6.5"
+  },
+  "dependencies": {
+    "purgecss": "^1.1.0"
   }
 }

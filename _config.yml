@@ -10,6 +10,7 @@ include:
   - _redirects
 exclude:
   - src
+  - node_modules
 
 repository: mattmcmanus/mattmcmanus.github.io
 
