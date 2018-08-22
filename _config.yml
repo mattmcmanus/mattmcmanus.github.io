@@ -9,6 +9,8 @@ permalink: /:year/:title
 include:
   - _redirects
 
+repository: mattmcmanus/mattmcmanus.github.io
+
 collections:
   category_details:
     output: true
