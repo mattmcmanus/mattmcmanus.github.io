@@ -13,9 +13,6 @@
   <noscript><link rel="stylesheet" href="/styles.css"></noscript>
   {% feed_meta %}
   <script type="text/javascript"> {% include js/loadcss.js %} </script>
-
-  {% capture critical_scss %} {% include critical.scss %} {% endcapture %}
-  <style type="text/css">{{ critical_scss | scssify }}</style>
   {% seo %}
 </head>
 
