@@ -49,13 +49,12 @@ social:
     - https://keybase.io/mattmcmanus
 
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-redirect-from
+  # - jekyll-autoprefixer
+  # - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-default-layout
+  # - jekyll-default-layout
 
 feed:
   path: atom.xml
