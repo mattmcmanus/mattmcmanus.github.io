@@ -47,7 +47,7 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
+  'grey-darkest': '#444',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
   'grey': '#b8c2cc',
@@ -302,7 +302,7 @@ module.exports = {
   leading: {
     // 'none': 1,
     'tight': 1.25,
-    'normal': 1.5,
+    'normal': 1.7,
     // 'loose': 2,
   },
 
@@ -322,7 +322,7 @@ module.exports = {
   tracking: {
     // 'tight': '-0.05em',
     'normal': '0',
-    'wide': '0.05em',
+    'wide': '0.1em',
   },
 
 
@@ -686,6 +686,7 @@ module.exports = {
     '4': '1rem',
     '5': '1.25rem',
     '6': '1.5rem',
+    '7': '1.7222222222rem',
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
