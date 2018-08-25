@@ -932,6 +932,9 @@ module.exports = {
       // center: true,
       // padding: '1rem',
     }),
+    require('glhd-tailwindcss-transitions')({
+      transitionPrefix: '.t'
+    })
   ],
 
 

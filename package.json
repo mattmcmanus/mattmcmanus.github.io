@@ -9,6 +9,7 @@
     "tailwindcss": "^0.6.5"
   },
   "dependencies": {
+    "glhd-tailwindcss-transitions": "^0.3.0",
     "purgecss": "^1.1.0"
   }
 }
