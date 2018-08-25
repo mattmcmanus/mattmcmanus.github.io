@@ -1,3 +1,5 @@
 Jekyll::Hooks.register(:site, :post_write) do |_site|
-  system("yarn run purge")
+  if ENV['JEKYLL_ENV'] == 'production'
+    system("yarn run purge")
+  end
 end
