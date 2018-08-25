@@ -46,14 +46,14 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
-  'grey-darkest': '#444',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'black': '#22222',
+  'grey-darkest': '#444444',
+  'grey-darker': '#5C5C5C',
+  'grey-dark': '#999999',
+  'grey': '#CCCCCC',
+  'grey-light': '#DDDDD',
+  'grey-lighter': '#EEEEEE',
+  'grey-lightest': '#F6F6F6',
   'white': '#ffffff',
 
   // 'red-darkest': '#3b0d0c',
@@ -248,6 +248,7 @@ module.exports = {
   */
 
   textSizes: {
+    'xxs': '.6rem',
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
@@ -355,10 +356,7 @@ module.exports = {
   |
   */
 
-  backgroundColors: {
-    transparent: 'transparent',
-    white: "#fffff"
-  },
+  backgroundColors: colors,
 
   /*
   |-----------------------------------------------------------------------------
@@ -395,10 +393,10 @@ module.exports = {
 
   borderWidths: {
     default: '1px',
-    // '0': '0',
-    // '2': '2px',
-    // '4': '4px',
-    // '8': '8px',
+    '0': '0',
+    '2': '2px',
+    '4': '4px',
+    '8': '8px',
   },
 
 
@@ -419,7 +417,7 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, {}),
+  borderColors: colors,
 
 
   /*
@@ -439,11 +437,11 @@ module.exports = {
   */
 
   borderRadius: {
-    // 'none': '0',
-    // 'sm': '.125rem',
+    'none': '0',
+    'sm': '.125rem',
     default: '.25rem',
-    // 'lg': '.5rem',
-    // 'full': '9999px',
+    'lg': '.5rem',
+    'full': '9999px',
   },
 
 
@@ -719,7 +717,7 @@ module.exports = {
     // '1': '0.25rem',
     // '2': '0.5rem',
     // '3': '0.75rem',
-    // '4': '1rem',
+    '4': '1rem',
     // '5': '1.25rem',
     // '6': '1.5rem',
     // '8': '2rem',
@@ -750,8 +748,9 @@ module.exports = {
 
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    // 'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+    'lg': '0 2px 4px rgba(12,12,12,0.5), 0 7px 30px rgba(34,34,34,0.5)',
+    'huge': '0 7px 15px rgba(12,12,12,0.5), 0 12px 35px rgba(34,34,34,0.5)',
     // 'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
     'outline': '0 0 0 3px rgba(52,144,220,0.5)',
     'none': 'none',
@@ -863,14 +862,14 @@ module.exports = {
 
   modules: {
     appearance: false,
-    backgroundAttachment: false,
+    backgroundAttachment: [],
     backgroundColors: ['hover', 'focus'],
     backgroundPosition: [],
-    backgroundRepeat: false,
-    backgroundSize: false,
+    backgroundRepeat: [],
+    backgroundSize: [],
     borderCollapse: [],
     borderColors: ['hover', 'focus'],
-    borderRadius: false,
+    borderRadius: ['responsive'],
     borderStyle: [],
     borderWidths: [],
     cursor: [],
@@ -887,7 +886,7 @@ module.exports = {
     maxWidth: ['responsive'],
     minHeight: false,
     minWidth: ['responsive'],
-    negativeMargin: false,
+    negativeMargin: ['responsive'],
     opacity: [],
     outline: ['focus'],
     overflow: ['responsive'],
@@ -909,7 +908,7 @@ module.exports = {
     visibility: false,
     whitespace: false,
     width: ['responsive'],
-    zIndex: false,
+    zIndex: [],
   },
 
 
