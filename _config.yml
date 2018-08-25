@@ -11,6 +11,7 @@ include:
 exclude:
   - src
   - node_modules
+  - .sass-cache
 
 repository: mattmcmanus/mattmcmanus.github.io
 
@@ -57,7 +58,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - octopress-minify-html
   # - jekyll-default-layout
 
 feed:
   path: atom.xml
+
+env: production
