@@ -1,12 +1,10 @@
 {% assign book = include.book %}
 
-<a class="BookThumb" href="{{ book.url }}">
-  {% include img.html class="BookThumb-cover" src=book.image alt=book.title %}
-  <div class="BookThumb-reviewHeader">
-    <div class="BookThumb-rating">
-      {% for num in (1..include.book.rating) %}★{% endfor %}
-    </div>
+<a class="flex-no-shrink flex-no-grow w-32 px-1 mx-2 no-underline my-2 flex flex-col justify-end " href="{{ book.url }}">
+  {% include img.html class="rounded-sm t-fast t-property-shadow t-timing-ease-out shadow-lg hover:shadow-huge overflow-hidden m-0" src=book.image alt=book.title %}
+  <div class="text-center text-yellow">
+    {% for num in (1..include.book.rating) %}★{% endfor %}
+  </div>
     <!-- <h4>{{ book.book_title | titlecase }}</h4>
     <p class="BookThumb-subheader">By {{ book.book_author | titlecase }}</p> -->
-  </div>
 </a>

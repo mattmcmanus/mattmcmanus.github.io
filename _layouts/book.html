@@ -1,25 +1,25 @@
 ---
 layout: default
 ---
-<article class="Post--review h-entry h-review {%if page.cover%}withCover{%endif%}" role="article">
-  <header class="Post-header">
-    {% include img.html class="Post-cover u-photo" src=page.image alt=page.title %}
-    <div class="Post-reviewHeader">
-      <h1 class="Post-title p-name">
+<article class="h-entry h-review {%if page.image%}{%endif%}" role="article">
+  <header class="mb:mx-w-full sm:mb-12 flex flex-col items-center sm:flex-row sm:items-end">
+    {% include img.html class="u-photo md:flex-row-reverse sm:mr-8 md:flex-no-shrink md:mr-0 md:ml-8 sm:mb-0 md:order-last" imgClass="max-h-20 sm:max-h-full md:max-h-30 shadow-lg" src=page.image alt=page.title %}
+    <div class="flex-1 md:w-1/2">
+      <h1 class="p-name mt-6 mb-1">
         {{ page.book_title | titlecase }}
       </h1>
 
-      <p class="Post-byline attention-grabber">
+      <p class="mb-1">
         By {{ page.book_author | titlecase }}
         <small class="Post-year">{{ page.book_published }}</small>
       </p>
 
-      <p class="Post-rating">
-        <data class="p-rating" value={{page.rating}}>{% for num in (1..page.rating) %}★{% endfor %}</data>
+      <p class="mb-2">
+        <data class="p-rating text-yellow text-lg" value={{page.rating}}>{% for num in (1..page.rating) %}★{% endfor %}</data>
       </p>
 
-      <p class="Post-meta">
-        <time class="uppercase dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+      <p class="mb-0">
+        <time class="uppercase text-grey-dark text-sm dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
       </p>
     </div>
   </header>

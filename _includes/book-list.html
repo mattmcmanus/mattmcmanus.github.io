@@ -1,5 +1,5 @@
 </div>
-<div class="BookList">
+<div class="flex flex-wrap justify-center max-w-full">
   {%- if include.limit -%}
     {% for review in include.reviews | limit: include.limit%}
       {% include book-thumb.html book=review %}

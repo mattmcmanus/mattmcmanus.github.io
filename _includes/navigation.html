@@ -1,11 +1,13 @@
 <header id="main-header">
-  <div class="row py-6 flex flex-row flex-wrap">
+  <div class="row py-6 flex flex-col sm:flex-row flex-wrap">
     <a class="logo text-md font-bold text-blue no-underline" href="{{ root_url }}/">Matt McManus</a>
 
-    <nav class="justify-end flex-grow flex-no-shrink flex">
-      <a href="/blog/">Posts</a>
-      <a href="/category/review">Bookshelf</a>
-      <a rel="me" href="mailto:matt@mcmanus.io">Say Hello!</a>
+    <nav class="sm:justify-end flex-grow flex-no-shrink flex">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" class="text-xs uppercase no-underline tracking-wide text-grey-dark leading-crazy">
+          {{item.name}}
+        </a>
+      {% endfor %}
     </nav>
   </div>
 </header>

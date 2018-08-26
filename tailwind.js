@@ -48,13 +48,14 @@ let colors = {
 
   'black': '#22222',
   'grey-darkest': '#444444',
-  'grey-darker': '#5C5C5C',
+  'grey-darker': '#777777',
   'grey-dark': '#999999',
   'grey': '#CCCCCC',
   'grey-light': '#DDDDD',
   'grey-lighter': '#EEEEEE',
   'grey-lightest': '#F6F6F6',
   'white': '#ffffff',
+  'white-translucent': 'rgba(255, 255, 255, .95)',
 
   // 'red-darkest': '#3b0d0c',
   'red-darker': '#74331B',
@@ -170,7 +171,7 @@ module.exports = {
     'sm': '576px',
     'md': '768px',
     'lg': '992px',
-    // 'xl': '1200px',
+    'xl': '1200px',
   },
 
 
@@ -252,7 +253,7 @@ module.exports = {
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
-    // 'lg': '1.125rem',   // 18px
+    'lg': '1.125rem',   // 18px
     'xl': '1.25rem',    // 20px
     '2xl': '1.5rem',    // 24px
     '3xl': '1.875rem',  // 30px
@@ -304,7 +305,8 @@ module.exports = {
     // 'none': 1,
     'tight': 1.25,
     'normal': 1.7,
-    // 'loose': 2,
+    'loose': 2,
+    'crazy': 3
   },
 
 
@@ -493,6 +495,8 @@ module.exports = {
     '4/5': '80%',
     '1/6': '16.66667%',
     '5/6': '83.33333%',
+    '9/10': '90%',
+    '95/100': '95%',
     'full': '100%',
     'screen': '100vw'
   },
@@ -621,6 +625,9 @@ module.exports = {
   */
 
   maxHeight: {
+    '20': '20rem',
+    '30': '30rem',
+    '40': '40rem',
     'full': '100%',
     'screen': '100vh',
   },
@@ -714,19 +721,20 @@ module.exports = {
   negativeMargin: {
     'px': '1px',
     '0': '0',
-    // '1': '0.25rem',
-    // '2': '0.5rem',
-    // '3': '0.75rem',
+    '1': '0.25rem',
+    '2': '0.5rem',
+    '3': '0.75rem',
     '4': '1rem',
-    // '5': '1.25rem',
-    // '6': '1.5rem',
-    // '8': '2rem',
-    // '10': '2.5rem',
-    // '12': '3rem',
-    // '16': '4rem',
-    // '20': '5rem',
-    // '24': '6rem',
-    // '32': '8rem',
+    '5': '1.25rem',
+    '6': '1.5rem',
+    '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '18': '4.5rem',
+    '20': '5rem',
+    '24': '6rem',
+    '32': '8rem',
   },
 
 

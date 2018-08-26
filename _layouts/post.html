@@ -5,17 +5,17 @@ layout: default
   {% include img.html class="Post-hero u-photo" src=page.image alt=page.title %}
 {%- endif -%}
 
-<article class="Post h-entry {%if page.cover%}withCover{%endif%}" role="article">
+<article class="Post h-entry {%if page.image%}-mt-32 bg-white-translucent z-10 relative shadow w-95/100 p-4 sm:px-8 sm:py-6{%endif%}" role="article">
 
-  <header>
-    <small class="Post-meta">
+  <header class="content {%if page.image%}-mt-12{%endif%}">
+    <small class="mt-16 -mb-12 md:mt-24 md:-mb-18 block text-grey-dark text-sm">
       <time class="uppercase dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
     </small>
 
     <h1 class="p-name">{{ page.title | titlecase | smartify }}</h1>
 
     {% if page.subtitle %}
-      <p class="attention-grabber">{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</p>
+      <p>{% if site.titlecase %}{{ page.subtitle | titlecase }}{% else %}{{ page.subtitle }}{% endif %}</p>
     {% endif %}
 
   </header>
@@ -26,12 +26,13 @@ layout: default
   {% include byline.html %}
 </article>
 
+<hr>
 <div class="row">
   <h3>Related Posts</h3>
-  <ul class="post-list">
+  <ul class="content list-reset">
     {% assign posts = site.posts | where_exp:"item", "item.categories contains page.categories[0]" %}
     {% for post in posts limit:3 %}
-    <li>
+    <li class="mb-4">
       {% include {{post.layout | prepend:'list-item-' | append:'.html'}} post=post %}
     </li>
     {% endfor %}
