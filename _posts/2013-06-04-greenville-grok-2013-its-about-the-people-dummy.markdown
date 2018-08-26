@@ -22,7 +22,7 @@ If you're interested, I've made a [twitter list](https://twitter.com/mattmcmanus
 
 Much of what was discussed at Grok revolved around taking risks and learning hard lessons. One of the keynotes was by this incredible guy named [Bryan Martin](https://twitter.com/bryanrmartin). This video is a good summary of what he talked about:
 
-<iframe src="http://player.vimeo.com/video/65173322" width="100%" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/65173322">Bryan Martin, Designer &amp; Illustrator</a> from <a href="http://vimeo.com/98c">9/8 Central</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<iframe src="https://player.vimeo.com/video/65173322" width="100%" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="https://vimeo.com/65173322">Bryan Martin, Designer &amp; Illustrator</a> from <a href="https://vimeo.com/98c">9/8 Central</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 
 As a risk (and mistake) adverse introvert, this conference was a wake up call and a huge, healthy dose of encouragement. Doing something you care about is worth all the necessary risks and mistakes.
 
