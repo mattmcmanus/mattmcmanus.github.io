@@ -4,7 +4,7 @@ categories: review
 title: 'Book Review: New Seeds of Contemplation by Thomas Merton'
 book_title: New Seeds of Contemplation
 book_author: Thomas Merton
-book_published: 196 2
+book_published: 1962
 rating: 5
 image: /images/New_Seeds_Of_Contemplation.jpg
 book_url: https://www.goodreads.com/book/show/1145854.New_Seeds_of_Contemplation
