@@ -17,4 +17,7 @@
   {% seo %}
 </head>
 
-<body class="font-sans leading-normal layout-{{ page.layout }} type-{{ page.type }} {% if page.image %}has-image{% endif %}" {% if page.body_id %} id="{{ page.body_id }}" {% endif %}>
+<body
+  {% if page.body_id %} id="{{ page.body_id }}" {% endif %}
+  class="font-sans text-base md:text-lg leading-normal text-grey-darkest layout-{{ page.layout }} type-{{ page.type }} {% if page.image %}has-image{% endif %}"
+>

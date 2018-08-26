@@ -1,0 +1,6 @@
+- name: Posts
+  link: /blog
+- name: Bookshelf
+  link: /category/review
+- name: Say Hello!
+  link: /#footer

@@ -1,11 +1,11 @@
-<div class="row byline">
-  <p class="alignCenter uppercase meta">
-    Written by <a href="http://mcmanus.io" class="h-card p-author" rel="author">Matt McManus</a> - <a class="u-url" href={{page.url}}>Permanent Link</a>
+<div class="row">
+  <p class="text-center tracking-wide uppercase text-xs text-grey-dark">
+    Written by <a href="http://mcmanus.io" class="h-card p-author no-underline" rel="author">Matt McManus</a> - <a class="u-url" href={{page.url}}>Permanent Link</a>
   </p>
 
-  <p class="alignCenter">
+  <p class="text-center">
     {% if page.categories %}
-    {% include categories.html categories=page.categories class="Post-category p-category" %}
+    {% include categories.html categories=page.categories class="pill p-category" %}
     {% endif %}
   </p>
 </div>
