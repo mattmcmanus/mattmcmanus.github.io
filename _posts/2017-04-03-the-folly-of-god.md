@@ -7,7 +7,7 @@ book_title: "The Folly of God: A Theology of the Unconditional"
 book_author: John D. Caputo
 book_published: 2015
 rating: 4
-image: https://images.gr-assets.com/books/1443875235l/26857504.jpg
+image: /images/the-folly-of-god.jpg
 book_url: https://www.goodreads.com/book/show/26857504-the-folly-of-god
 ---
 This little book took me a lot longer to read that I expected. Caputo explores this concept of the "unconditional" that was new and surprising to me. I found myself asking "but why does this distinction matter" often throughout the book, but as some of his thoughts have settled in my head, I'm understanding the answer to that question a bit more.

@@ -8,7 +8,7 @@ book_title: What is the Bible?
 book_author: Rob Bell
 book_published: 2017
 rating: 4
-image: 'https://images.gr-assets.com/books/1488400827l/31706459.jpg'
+image: /images/what-is-the-bible.jpg
 book_url: >-
   https://www.goodreads.com/book/show/31706459-what-is-the-bible?ac=1&from_search=true
 ---

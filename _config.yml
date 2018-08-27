@@ -59,9 +59,18 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - octopress-minify-html
+  - jekyll-webp
   # - jekyll-default-layout
 
 feed:
   path: atom.xml
 
 env: production
+
+webp:
+  enabled: true
+  quality: 60
+  img_dir: ["/images"]
+  formats: [".jpeg", ".jpg", ".png"]
+  regenerate: false
+  exclude: []

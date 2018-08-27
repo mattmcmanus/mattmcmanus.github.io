@@ -1,5 +1,8 @@
   <figure class="Image {{include.class}}">
-    <img data-src="{{ include.src }}" alt="{{ include.alt }}" class="block max-w-full {{include.imgClass}}">
+    <picture>
+      <source data-srcset="{{ include.src | replace:'jpg','webp' | replace:'png','webp' }}" type="image/webp">
+      <img data-src="{{ include.src }}" alt="{{ include.alt }}" class="block max-w-full {{include.imgClass}}">
+    </picture>
     {% if include.caption %}
       <figcaption>{{include.caption}}</figcaption>
     {% endif %}
