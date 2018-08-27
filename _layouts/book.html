@@ -4,7 +4,8 @@ layout: default
 <article class="h-entry h-review {%if page.image%}{%endif%}" role="article">
   <header class="mb:mx-w-full sm:mb-12 flex flex-col items-center sm:flex-row sm:items-end">
     {% include img.html class="u-photo md:flex-row-reverse sm:mr-8 md:flex-no-shrink md:mr-0 md:ml-8 sm:mb-0 md:order-last" imgClass="max-h-20 sm:max-h-full md:max-h-30 shadow-lg" src=page.image alt=page.title %}
-    <div class="flex-1 md:w-1/2">
+
+    <div class="flex-1 w-full mb-8 md:mb-0 md:w-1/2">
       <h1 class="p-name mt-6 mb-1">
         {{ page.book_title | titlecase }}
       </h1>
