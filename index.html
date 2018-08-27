@@ -19,7 +19,9 @@ layout: blank
 </article>
 <hr>
 
-<h4 class="row">Latest from the bookshelf <small><a href="/category/review" >See all of them</a></small></h4>
+<div class="row">
+  <h4>Latest from the bookshelf <small><a href="/category/review" >See all of them</a></small></h4>
+</div>
 {% assign reviews = site.posts | where_exp:"item", "item.categories contains 'review'"%}
 {% include book-list.html reviews=reviews limit=5 %}
 
