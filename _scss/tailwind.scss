@@ -4555,6 +4555,14 @@ cite:before {
   content: "- ";
 }
 
+code {
+  color: #444;
+  background-color: #eee;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-radius: .25rem;
+}
+
 .pill {
   display: inline-block;
   padding-top: .25rem;

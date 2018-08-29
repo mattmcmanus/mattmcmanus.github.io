@@ -86,6 +86,10 @@ cite:before {
   content: "- ";
 }
 
+code {
+  @apply text-grey-darkest bg-grey-lighter px-2 rounded
+}
+
 .pill {
   @apply inline-block py-1 px-2 mb-2 text-sm text-blue rounded-lg border border-grey-lightest no-underline
 }
