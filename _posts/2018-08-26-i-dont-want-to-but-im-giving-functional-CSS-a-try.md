@@ -37,3 +37,7 @@ But I need to be honest with you. The first 10 times I tried to consider tailwin
 All in all, I’m pleased with the outcome. I like how DRY and fast the CSS is. I LOVE how nicely it works with `purgecss`. I like how quickly I can sketch out designs. The big learning curve for me, and the thing that gives me the most pause, is [how gnarly the templates can get](https://github.com/mattmcmanus/mattmcmanus.github.io/blob/master/_layouts/book.html#L6).I think the framework’s component approach by using `@apply` is critical to address things. However, there is a subtlety to how and when to use it that’s still not completely clear to me.
 
 Will I be switching any big apps to it anytime soon? No. Will I evaluate it on a new project? Definitely.
+
+### Acknowledgments
+
+Thanks to [Sam Selikoff](https://twitter.com/samselikoff) and [Luke Melia](https://twitter.com/lukemelia) for the feedback on this post.
