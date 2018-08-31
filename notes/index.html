@@ -1,0 +1,16 @@
+---
+layout: default
+pagination:
+  enabled: true
+  collection: notes
+  sort_field: 'date'
+  sort_reverse: true
+---
+<div class="row">
+  <h1>Notes</h1>
+  <p>Shorter thoughts, links, quotes. Think Twitter or Tumblr</p>
+</div>
+
+{% for note in paginator.posts %}
+  {% include note.html note=page %}
+{% endfor %}

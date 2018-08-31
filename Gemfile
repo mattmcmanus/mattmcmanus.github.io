@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'octopress-minify-html'
   gem 'jekyll-webp'
+  gem 'jekyll-paginate-v2'
 end
