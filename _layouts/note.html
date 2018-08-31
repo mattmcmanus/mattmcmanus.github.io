@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article class="h-entry" role="article">
+  <div class="entry-content e-content">{{ content }}</div>
+  <time class="uppercase dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+</article>
+{% include note.html note=page %}
