@@ -26,8 +26,10 @@ export default class MicropubRequest {
     let res;
     try {
       res = await fetch(TOKEN_ENDPOINT, {
-        'Accept': 'application/json',
-        // 'Authorization': bearer
+        headers: {
+          'Accept': 'application/json',
+          'Authorization': bearer
+        }
       });
     } catch (e) {
       console.error(e)
