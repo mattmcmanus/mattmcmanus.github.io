@@ -10,6 +10,10 @@ exclude:
   - src
   - node_modules
   - .sass-cache
+  - Paw.paw
+  - tailwind.js
+  - yarn.lock
+  - functions-src
 
 repository: mattmcmanus/mattmcmanus.github.io
 
