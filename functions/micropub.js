@@ -27247,13 +27247,14 @@ class IndieAuthToken {
           }
         });
         json = yield res.json();
-        console.log("TOKEN RESPONSE", json);
       } catch (e) {
         console.error('IndieAuthToken ERROR', e);
         return false;
       }
 
-      return json.me === MICROPUB_ME_URL;
+      //TODO: Throw Me and Scope specific errors
+
+      return json.me === MICROPUB_ME_URL && json.scope.includes('create');
     })();
   }
 }

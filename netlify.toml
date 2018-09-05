@@ -9,4 +9,4 @@
   GITHUB_USERNAME="mattmcmanus"
   GITHUB_REPO="mattmcmanus.github.io"
   MICROPUB_TOKEN_ENDPOINT="https://tokens.indieauth.com/token"
-  MICROPUB_TOKEN_ME="https://mcmanus.io"
+  MICROPUB_ME_URL="https://mcmanus.io/"
