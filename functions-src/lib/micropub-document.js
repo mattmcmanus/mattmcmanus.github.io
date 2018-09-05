@@ -17,6 +17,7 @@ export default class MicropubDocument {
   setupFrontmatter() {
     this.frontmatter = _.chain(this.rawObject)
                         .omit('content')
+                        .omit('access_token')
                         .omit('h')
                         .pickBy(_.identity)
                         .value();

@@ -31628,7 +31628,7 @@ class MicropubDocument {
   }
 
   setupFrontmatter() {
-    this.frontmatter = _lodash2.default.chain(this.rawObject).omit('content').omit('h').pickBy(_lodash2.default.identity).value();
+    this.frontmatter = _lodash2.default.chain(this.rawObject).omit('content').omit('access_token').omit('h').pickBy(_lodash2.default.identity).value();
   }
 
   toYAML() {
