@@ -2,7 +2,7 @@
 title: 'Antigua, Guatemala'
 subtitle: "This is a story of how Matt started an adventure, and found himself doing and saying things altogether unexpected"
 layout: post
-category: update
+categories: [update]
 image: /images/ronald-cuyan-534984-unsplash.jpg
 ---
 In a few days, I will be leaving with my wife and two kids on an adventure. For two months we will be living and working in Antigua, Guatemala. An opportunity crossed our paths that was too good to pass up! I work remotely for my company so why not take advantage?

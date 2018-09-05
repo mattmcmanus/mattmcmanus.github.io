@@ -4,7 +4,7 @@ title: "On Discipline, Shortcuts & Building Something Worthwhile Over Time"
 linked: http://joshuablankenship.com/blog/2012/10/01/on-discipline-and-shortcuts/
 date: 2012-10-04 10:16
 comments: true
-categories: human
+categories: [human]
 
 
 ---

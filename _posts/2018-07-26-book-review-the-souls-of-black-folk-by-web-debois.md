@@ -1,6 +1,6 @@
 ---
 layout: book
-categories: review
+categories: [review]
 title: 'Book Review: The Souls of Black Folk by W.E.B. Du Bois'
 book_title: The Souls of Black Folk
 book_author: W.E.B. Du Bois

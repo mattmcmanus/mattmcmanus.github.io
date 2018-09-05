@@ -1,7 +1,6 @@
 ---
 layout: book
-categories:
-  - review
+categories: [review]
 title: 'Book Review: Anathem by Neal Stephenson'
 book_title: Anathem
 book_author: Neal Stephenson

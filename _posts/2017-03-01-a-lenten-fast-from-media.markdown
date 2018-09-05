@@ -2,7 +2,7 @@
 layout: post
 title: A Lenten fast from media
 date: 2017-03-01
-categories: human
+categories: [human]
 
 ---
 The news, Facebook, Twitter, Netflix, YouTube, and many others fill our daily lives with a cacophony of voices and thoughts. Since January, it’s reached a point of utter chaos with politics threatening to consume every ounce of our attention and energy. I’ve struggled to tell where my thoughts end and some else’s begin. I don’t think I’m alone in [thinking that it’s unhealthy](http://www.apa.org/news/press/releases/stress/2017/technology-social-media.PDF), ineffective and unsustainable.

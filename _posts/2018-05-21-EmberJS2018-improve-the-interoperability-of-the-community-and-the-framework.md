@@ -2,7 +2,7 @@
 title: "#EmberJS2018"
 subtitle: "Improve the interoperability of the community and the framework"
 layout: post
-category: dev
+categories: [dev]
 ---
 I am writing in response to the [Ember core team's “Call for blog posts”](https://emberjs.com/blog/2018/05/02/ember-2018-roadmap-call-for-posts.html). In it, they've asked members of the community to propose goals and direction for the remainder of 2018. Before I get started, it seems useful to give a bit of context about my relationship to Ember. This instructs how I came to the points below. I’m a user interface designer and full stack developer (with an unrepentant bent towards the front end). I’ve been developing apps with Ember full-time since version 1.11 (released early 2015). I came to it after several years of using Backbone & React. The framework's component ergonomics and the promise of having models/routing/building that "just worked" are what drew me to it. At the end of the day though, what I care most about is building things that people will use, not so much how I will build it. I trust folks smarter than me to figure out the technical details.
 

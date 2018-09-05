@@ -2,7 +2,7 @@
 title: I don't want to but I'm giving functional CSS a try
 subtitle: I need to stop telling new CSS tech to get off my lawn...
 layout: post
-categories: dev
+categories: [dev]
 published: true
 ---
 I’ve been writing CSS for a long time. I like it and it makes sense to me. I’m often bewildered by folks who have such a hard time with it. I was raised on Eric Meyer's and Jeffery Zeldman’s Web standards and semantic html purity laws. Those ideas are buried deep in my psyche. However, you may not have noticed, but web development has changed a lot in the last 20 years! I’ve learned many new things over that time, but it’s been a long time since I’ve evaluated where I stand with CSS. For this post, I’m not going to do a detailed how-to or deep dive. I’m going to walk you through some thoughts and observations I’ve had as I take my first stab at functional css. Let’s begin!

@@ -4,7 +4,7 @@ title: Greenville Grok 2013
 subtitle: Reflections on a couple days with some amazing folks in Greenville, South Carolina
 date: 2013-06-04 21:56
 comments: true
-categories: human
+categories: [human]
 cover: http://i.imgur.com/PAewI0f.jpg
 
 ---

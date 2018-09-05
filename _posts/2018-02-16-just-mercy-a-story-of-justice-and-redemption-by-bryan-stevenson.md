@@ -1,7 +1,7 @@
 ---
 layout: book
 date: 2018-02-16
-categories: review
+categories: [review]
 title: "Book Review: Just Mercy: A Story of Justice and Redemption by Bryan Stevenson"
 book_title: Just Mercy&#58; A Story of Justice and Redemption
 book_author: Bryan Stevenson

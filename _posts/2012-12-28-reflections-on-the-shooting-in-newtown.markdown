@@ -4,7 +4,7 @@ title: "Reflections on the shooting in Newtown"
 subtitle: "Notes and Links on Guns, Violence and Children"
 date: 2012-12-28 16:26
 comments: true
-categories: human
+categories: [human]
 
 
 ---

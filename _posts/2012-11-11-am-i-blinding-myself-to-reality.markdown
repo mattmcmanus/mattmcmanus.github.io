@@ -3,7 +3,7 @@ layout: post
 title: "Am I Blinding Myself to Reality?"
 date: 2012-11-11 16:32
 comments: true
-categories: human
+categories: [human]
 
 
 ---

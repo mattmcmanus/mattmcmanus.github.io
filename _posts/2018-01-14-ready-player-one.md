@@ -1,7 +1,7 @@
 ---
 layout: book
 date: 2018-01-14
-categories: review
+categories: [review]
 title: "Book Review: Ready Player One by Ernest Cline"
 book_title: Ready Player One
 book_author: Ernest Cline

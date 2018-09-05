@@ -1,7 +1,6 @@
 ---
 layout: book
-categories:
-  - review
+categories: [review]
 title: 'Book Review: The Divine Dance: The Trinity and Your Transformation by Richard Rohr and Mike Morell'
 book_title: 'The Divine Dance: The Trinity and Your Transformation'
 book_author: Richard Rohr

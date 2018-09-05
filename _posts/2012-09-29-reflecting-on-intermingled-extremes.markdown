@@ -4,7 +4,7 @@ title: "Reflecting on intermingled extremes"
 subtitle: "Thoughts on our perspective, the beginning and the end of life"
 date: 2012-09-29 15:37
 comments: true
-categories: human
+categories: [human]
 
 
 ---

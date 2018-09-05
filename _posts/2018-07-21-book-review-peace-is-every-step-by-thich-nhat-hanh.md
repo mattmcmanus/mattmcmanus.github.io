@@ -1,6 +1,6 @@
 ---
 layout: book
-categories: review
+categories: [review]
 title: 'Book Review: Peace is Every Step by Thích Nhất Hạnh'
 book_title: Peace is Every Step
 book_author: Thích Nhất Hạnh

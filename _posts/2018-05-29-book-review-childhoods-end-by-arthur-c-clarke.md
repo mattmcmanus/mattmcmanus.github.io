@@ -1,7 +1,6 @@
 ---
 layout: book
-categories:
-  - review
+categories: review
 title: "Book Review: Childhood's End by Arthur C. Clarke"
 date: 2018-05-28 20:19:00
 book_title: Childhood's End

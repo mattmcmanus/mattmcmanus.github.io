@@ -1,7 +1,7 @@
 ---
 layout: book
 date: 2017-03-07
-categories: review
+categories: [review]
 title: "Book Review: Twelve Years a Slave by Solomon Northup"
 book_title: Twelve Years a Slave
 book_author: Solomon Northup

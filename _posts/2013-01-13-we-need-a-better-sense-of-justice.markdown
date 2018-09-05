@@ -5,7 +5,7 @@ subtitle: "On the death of Aaron Swartz"
 linked: http://lessig.tumblr.com/post/40347463044/prosecutor-as-bully
 date: 2013-01-13 09:02
 comments: true
-categories: human
+categories: [human]
 
 
 ---

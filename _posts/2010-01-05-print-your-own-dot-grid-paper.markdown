@@ -4,7 +4,7 @@ title: "Print your own dot grid paper"
 subtitle: "Why use a boring regular grid when you could use your own dot grid?"
 date: 2010-01-05 16:19
 comments: true
-categories: dev
+categories: [dev]
 ---
 <img class="full" src="/images/posts/dotgrid-in-action.jpg" />
 

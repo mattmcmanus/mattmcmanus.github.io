@@ -1,7 +1,7 @@
 ---
 layout: book
 date: 2018-02-01
-categories: review
+categories: [review]
 title: "Book Review: Second Foundation by Isaac Asimov"
 book_title: Second Foundation
 book_author: Isaac Asimov

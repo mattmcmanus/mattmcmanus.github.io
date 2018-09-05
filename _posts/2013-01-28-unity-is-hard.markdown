@@ -4,7 +4,7 @@ title: "Unity is hard"
 subtitle: "When you live in a society that values the individual, it's hard to "
 date: 2013-01-28 20:50
 comments: true
-categories: human
+categories: [human]
 published: false
 
 ---

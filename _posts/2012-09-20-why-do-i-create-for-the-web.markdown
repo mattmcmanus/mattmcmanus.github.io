@@ -3,7 +3,7 @@ layout: post
 title: "Why do I create for the web?"
 date: 2012-09-20 19:32
 comments: true
-categories: dev
+categories: [dev]
 
 ---
 I have had to answer this question, in it's various forms, a couple times recently. I realized it would be a good exercise to write down my thoughts for good and all.
