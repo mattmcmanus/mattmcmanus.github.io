@@ -27247,6 +27247,7 @@ class IndieAuthToken {
           }
         });
         json = yield res.json();
+        console.log("TOKEN RESPONSE", json);
       } catch (e) {
         console.error('IndieAuthToken ERROR', e);
         return false;
