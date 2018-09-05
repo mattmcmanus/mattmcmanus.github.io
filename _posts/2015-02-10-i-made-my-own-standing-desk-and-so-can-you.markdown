@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+categories: [blog]
 title: "I made my own wall mounted standing desk and so can you!"
 date: "2015-02-10 15:29"
 published: true

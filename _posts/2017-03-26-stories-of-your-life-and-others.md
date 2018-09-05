@@ -1,7 +1,7 @@
 ---
 layout: book
 date: 2017-03-26
-categories: review
+categories: [review]
 title: "Book Review: Stories of Your Life and Others by Ted Chiang"
 book_title: Stories of Your Life and Others
 book_author: Ted Chiang

@@ -3,7 +3,7 @@ layout: post
 title: "I'm a papa bear! Say hello to James"
 date: 2012-06-26 17:09
 comments: true
-categories: update
+categories: [update]
 ---
 There are many reasons I don't really post on here anymore. One of the big ones is this:
 

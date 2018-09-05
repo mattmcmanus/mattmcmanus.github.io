@@ -1,7 +1,6 @@
 ---
 layout: book
-categories:
-  - review
+categories: [review]
 title: 'Book Review: Mother Night by Kurt Vonnegut'
 date: 2018-05-28 19:19:00
 book_title: Mother Night

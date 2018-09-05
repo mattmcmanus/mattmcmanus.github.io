@@ -4,7 +4,7 @@ title: "Document all the things! Introducing dox-foundation"
 subtitle: "Auto-generate API documentation for fun and profit"
 date: 2013-01-09 19:56
 comments: true
-categories: dev
+categories: [dev]
 
 
 ---

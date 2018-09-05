@@ -1,6 +1,6 @@
 ---
 layout: book
-categories: review
+categories: [review]
 title: 'Book Review: New Seeds of Contemplation by Thomas Merton'
 book_title: New Seeds of Contemplation
 book_author: Thomas Merton

@@ -1,8 +1,7 @@
 ---
 layout: book
 date: 2018-02-18 00:00:00
-categories:
-  - review
+categories: [review]
 title: 'Book Review: What is the Bible? by Rob Bell'
 book_title: What is the Bible?
 book_author: Rob Bell
