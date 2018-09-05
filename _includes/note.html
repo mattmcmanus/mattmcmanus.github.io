@@ -1,7 +1,13 @@
+{% assign note = include.note %}
+
 <article class="mb-16 h-entry" role="article">
   <div class="entry-content e-content">{{ note.content | markdownify}}</div>
   <p class="-mt-4">
-    <a href="{{note.url}}" class="no-underline block"><time class=" text-grey-dark text-xs uppercase dt-published" datetime="{{ note.date }}">{{ note.date | date_to_string }}</time></a>
+    <a href="{{note.url}}" class="no-underline block">
+      <time class=" text-grey-dark text-xs uppercase dt-published" datetime="{{ note.date }}">
+        {{ note.date | date_to_string }}
+      </time>
+    </a>
     <!-- {%- for tag in note.tags -%}
       {{ tag }}
     {%- endfor -%} -->
