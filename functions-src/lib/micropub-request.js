@@ -1,6 +1,4 @@
 import busboy from 'busboy';
-import dateformat from 'dateformat';
-import matter from 'gray-matter';
 import _ from 'lodash';
 
 export default class MicropubRequest {
@@ -12,22 +10,6 @@ export default class MicropubRequest {
 
   isPost() {
     return this.method === 'POST';
-  }
-
-  async publish() {
-    console.log("PUBLISH");
-    let payload = await this.toYAML();
-    console.log("YAML", payload);
-  }
-
-  async toYAML() {
-    let body = await this.parseBody();
-    body['date'] = dateformat(new Date(),'yyyy-mm-dd HH:MM:ss');
-    console.log('BODY', body);
-
-    let frontMatter = _.omit(body, 'content');
-
-    return matter.stringify(body.content, frontMatter);
   }
 
   async parseBody() {
@@ -49,11 +31,6 @@ export default class MicropubRequest {
 
       bb.end(body);
     });
-
-  }
-
-  async publishToGithub() {
-
   }
 }
 
