@@ -4,11 +4,9 @@
   # This is where we will look for your lambda functions
   functions = "functions"
 
-[context.production]
-  environment = { 
-    JEKYLL_ENV = "production",
-    GITHUB_USERNAME="mattmcmanus",
-    GITHUB_REPO="mattmcmanus.github.io",
-    MICROPUB_TOKEN_ENDPOINT="https://tokens.indieauth.com/token",
-    MICROPUB_TOKEN_ME="https://mcmanus.io",
-   }
+[context.production.environment]
+  JEKYLL_ENV = "production"
+  GITHUB_USERNAME="mattmcmanus"
+  GITHUB_REPO="mattmcmanus.github.io"
+  MICROPUB_TOKEN_ENDPOINT="https://tokens.indieauth.com/token"
+  MICROPUB_TOKEN_ME="https://mcmanus.io"
