@@ -11,6 +11,7 @@ const { GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO } = process.env;
 export async function handler(event, context, callback) {
   console.log("EVENT", event)
   console.log("CONTEXT", context)
+  console.log("ENV", process.env);
 
   let authorized = await new IndieAuthToken(event, context).verify();
 
@@ -36,7 +37,6 @@ export async function handler(event, context, callback) {
       callback(null, { statusCode: 201, body: '' });
     } else {
       console.error('GITHUB PUBLISHING FAILED', published);
-      
     }
 
   } else {

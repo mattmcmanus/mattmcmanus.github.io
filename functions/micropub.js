@@ -23286,6 +23286,7 @@ let handler = exports.handler = (() => {
   var _ref = _asyncToGenerator(function* (event, context, callback) {
     console.log("EVENT", event);
     console.log("CONTEXT", context);
+    console.log("ENV", process.env);
 
     let authorized = yield new _indieAuthToken2.default(event, context).verify();
 
@@ -27238,19 +27239,22 @@ class IndieAuthToken {
       }
 
       let { authorization } = _this.event.headers;
-      let json = {};
+      let res;
       try {
-        let res = yield (0, _nodeFetch2.default)(MICROPUB_TOKEN_ENDPOINT, {
+        console.log('Verifying IndieAuthToken at', MICROPUB_TOKEN_ENDPOINT);
+        res = yield (0, _nodeFetch2.default)(MICROPUB_TOKEN_ENDPOINT, {
           headers: {
             'Accept': 'application/json',
             'Authorization': authorization
           }
         });
-        json = yield res.json();
       } catch (e) {
         console.error('IndieAuthToken ERROR', e);
         return false;
       }
+
+      let json = yield res.json();
+      console.log("IndieAuthToken TOKEN Response", json);
 
       //TODO: Throw Me and Scope specific errors
 

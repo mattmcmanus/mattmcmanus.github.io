@@ -19,20 +19,23 @@ export default class IndieAuthToken {
     if (this.devMode) { return true; }
 
     let { authorization } = this.event.headers;
-    let json = {};
+    let res;
     try {
-      let res = await fetch(MICROPUB_TOKEN_ENDPOINT, {
+      console.log('Verifying IndieAuthToken at', MICROPUB_TOKEN_ENDPOINT);
+      res = await fetch(MICROPUB_TOKEN_ENDPOINT, {
         headers: {
           'Accept': 'application/json',
           'Authorization': authorization
         }
       });
-      json = await res.json();
-      
     } catch (e) {
       console.error('IndieAuthToken ERROR', e);
       return false;
     }
+
+    let json = await res.json();
+    console.log("IndieAuthToken TOKEN Response", json);
+    
 
     //TODO: Throw Me and Scope specific errors
 
