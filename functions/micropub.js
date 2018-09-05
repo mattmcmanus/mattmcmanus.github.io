@@ -31640,7 +31640,10 @@ class MicropubDocument {
   }
 
   slug() {
-    return this.frontmatter.name || (0, _slugify2.default)(this.content.split('\n')[0]).toLowerCase();
+    const MAX_SLUG_LENGTH = 20;
+    let firstSentenceArray = this.content.split('\n')[0].split(' ');
+    let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH);
+    return this.frontmatter.name || (0, _slugify2.default)(trimmedSentence).toLowerCase();
   }
 }
 exports.default = MicropubDocument;

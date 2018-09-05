@@ -31,6 +31,9 @@ export default class MicropubDocument {
   }
 
   slug() {
-    return this.frontmatter.name || slugify(this.content.split('\n')[0]).toLowerCase();
+    const MAX_SLUG_LENGTH = 20;
+    let firstSentenceArray = this.content.split('\n')[0].split(' ');
+    let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH);
+    return this.frontmatter.name || slugify(trimmedSentence).toLowerCase();
   }
 }
