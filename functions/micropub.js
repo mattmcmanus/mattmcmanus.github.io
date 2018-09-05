@@ -23285,8 +23285,6 @@ exports.handler = undefined;
 let handler = exports.handler = (() => {
   var _ref = _asyncToGenerator(function* (event, context, callback) {
     console.log("EVENT", event);
-    console.log("CONTEXT", context);
-    console.log("ENV", process.env);
 
     let authorized = yield new _indieAuthToken2.default(event, context).verify();
 
@@ -31618,6 +31616,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+const MAX_SLUG_LENGTH = 20;
+
 class MicropubDocument {
   constructor(object) {
     this.rawObject = object;
@@ -31646,10 +31646,9 @@ class MicropubDocument {
   }
 
   slug() {
-    const MAX_SLUG_LENGTH = 20;
     let firstSentenceArray = this.content.split('\n')[0].split(' ');
-    let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH);
-    return this.frontmatter.name || (0, _slugify2.default)(trimmedSentence).toLowerCase();
+    let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
+    return (0, _slugify2.default)(this.frontmatter.name || trimmedSentence).toLowerCase();
   }
 }
 exports.default = MicropubDocument;

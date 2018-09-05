@@ -3,6 +3,8 @@ import matter from 'gray-matter';
 import _ from 'lodash';
 import slugify from 'slugify';
 
+const MAX_SLUG_LENGTH = 20;
+
 export default class MicropubDocument {
   constructor(object) {
     this.rawObject = object;
@@ -31,9 +33,8 @@ export default class MicropubDocument {
   }
 
   slug() {
-    const MAX_SLUG_LENGTH = 20;
     let firstSentenceArray = this.content.split('\n')[0].split(' ');
-    let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH);
-    return this.frontmatter.name || slugify(trimmedSentence).toLowerCase();
+    let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
+    return slugify(this.frontmatter.name || trimmedSentence).toLowerCase();
   }
 }
