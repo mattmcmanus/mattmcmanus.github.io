@@ -31641,14 +31641,13 @@ class MicropubDocument {
 
   setupFrontmatter() {
     this.frontmatter = _lodash2.default.chain(this.rawObject).pick(VALID_KEYS).pickBy(_lodash2.default.identity).mapKeys((value, key) => KEY_TRANSLATION[key] || key).value();
+    this.frontmatter.date = (0, _dateformat2.default)(this.createdAt, 'yyyy-mm-dd HH:MM:ss');
   }
 
   toYAML() {
     var _this = this;
 
     return _asyncToGenerator(function* () {
-      _this.frontmatter.date = (0, _dateformat2.default)(_this.createdAt, 'yyyy-mm-dd HH:MM:ss');
-
       return _grayMatter2.default.stringify(_this.content, _this.frontmatter);
     })();
   }

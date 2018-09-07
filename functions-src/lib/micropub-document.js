@@ -24,11 +24,10 @@ export default class MicropubDocument {
                         .pickBy(_.identity)
                         .mapKeys((value, key) => KEY_TRANSLATION[key] || key)
                         .value();
+    this.frontmatter.date = dateformat(this.createdAt,'yyyy-mm-dd HH:MM:ss');
   }
 
   async toYAML() {
-    this.frontmatter.date = dateformat(this.createdAt,'yyyy-mm-dd HH:MM:ss');
-
     return matter.stringify(this.content, this.frontmatter);
   }
 
