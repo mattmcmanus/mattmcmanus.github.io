@@ -3,16 +3,12 @@ import fetch from 'node-fetch';
 const { MICROPUB_TOKEN_ENDPOINT, MICROPUB_ME_URL } = process.env;
 
 export default class IndieAuthToken {
-  constructor(event, context) {
+  constructor(event, devMode) {
     if (!event.headers.authorization) {
       throw new Error('No Bearer Token');
     }
-
-    if (Object.keys(context).length == 0) {
-      this.devMode = true;
-    }
-
     this.event = event;
+    this.devMode = devMode;
   }
 
   async verify() {

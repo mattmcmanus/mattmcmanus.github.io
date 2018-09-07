@@ -6,7 +6,10 @@ import slugify from 'slugify';
 const MAX_SLUG_LENGTH = 20;
 const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
-  category: 'tags'
+  note: {
+    category: 'tags'
+  },
+  post: {}
 }
 
 export default class MicropubDocument {
@@ -22,7 +25,7 @@ export default class MicropubDocument {
     this.frontmatter = _.chain(this.rawObject)
                         .pick(VALID_KEYS)
                         .pickBy(_.identity)
-                        .mapKeys((value, key) => KEY_TRANSLATION[key] || key)
+                        .mapKeys((value, key) => KEY_TRANSLATION[this.type][key] || key)
                         .value();
     this.frontmatter.date = dateformat(this.createdAt,'yyyy-mm-dd HH:MM:ss');
   }

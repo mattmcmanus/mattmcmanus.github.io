@@ -11,7 +11,9 @@ const { GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO } = process.env;
 export async function handler(event, context, callback) {
   console.log("EVENT", event)
 
-  let authorized = await new IndieAuthToken(event, context).verify();
+  let devMode = (Object.keys(context).length == 0);
+
+  let authorized = await new IndieAuthToken(event, devMode).verify();
 
   if (!authorized) {
     return callback(null, { statusCode: 403, body: '' });
@@ -27,11 +29,16 @@ export async function handler(event, context, callback) {
     let path = document.path();
     let payload = await document.toYAML();
 
-    let published = await publisher.publish(path, payload, {
-      message: `Publishing ${path}`
-    })
+    let published = false;
+    if (!devMode) {
+      published = await publisher.publish(path, payload, {
+        message: `Publishing ${path}`
+      })
+    } else {
+      console.log('PUBLISH', path, payload);
+    }
 
-    if (published) {
+    if (published || devMode) {
       callback(null, { statusCode: 201, body: '' });
     } else {
       console.error('GITHUB PUBLISHING FAILED', published);

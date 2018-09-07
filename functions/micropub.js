@@ -23286,7 +23286,9 @@ let handler = exports.handler = (() => {
   var _ref = _asyncToGenerator(function* (event, context, callback) {
     console.log("EVENT", event);
 
-    let authorized = yield new _indieAuthToken2.default(event, context).verify();
+    let devMode = Object.keys(context).length == 0;
+
+    let authorized = yield new _indieAuthToken2.default(event, devMode).verify();
 
     if (!authorized) {
       return callback(null, { statusCode: 403, body: '' });
@@ -23302,11 +23304,16 @@ let handler = exports.handler = (() => {
       let path = document.path();
       let payload = yield document.toYAML();
 
-      let published = yield publisher.publish(path, payload, {
-        message: `Publishing ${path}`
-      });
+      let published = false;
+      if (!devMode) {
+        published = yield publisher.publish(path, payload, {
+          message: `Publishing ${path}`
+        });
+      } else {
+        console.log('PUBLISH', path, payload);
+      }
 
-      if (published) {
+      if (published || devMode) {
         callback(null, { statusCode: 201, body: '' });
       } else {
         console.error('GITHUB PUBLISHING FAILED', published);
@@ -27224,16 +27231,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 const { MICROPUB_TOKEN_ENDPOINT, MICROPUB_ME_URL } = process.env;
 
 class IndieAuthToken {
-  constructor(event, context) {
+  constructor(event, devMode) {
     if (!event.headers.authorization) {
       throw new Error('No Bearer Token');
     }
-
-    if (Object.keys(context).length == 0) {
-      this.devMode = true;
-    }
-
     this.event = event;
+    this.devMode = devMode;
   }
 
   verify() {
@@ -31627,7 +31630,10 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 const MAX_SLUG_LENGTH = 20;
 const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
-  category: 'tags'
+  note: {
+    category: 'tags'
+  },
+  post: {}
 };
 
 class MicropubDocument {
@@ -31640,7 +31646,7 @@ class MicropubDocument {
   }
 
   setupFrontmatter() {
-    this.frontmatter = _lodash2.default.chain(this.rawObject).pick(VALID_KEYS).pickBy(_lodash2.default.identity).mapKeys((value, key) => KEY_TRANSLATION[key] || key).value();
+    this.frontmatter = _lodash2.default.chain(this.rawObject).pick(VALID_KEYS).pickBy(_lodash2.default.identity).mapKeys((value, key) => KEY_TRANSLATION[this.type][key] || key).value();
     this.frontmatter.date = (0, _dateformat2.default)(this.createdAt, 'yyyy-mm-dd HH:MM:ss');
   }
 
