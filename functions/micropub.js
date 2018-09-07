@@ -31631,9 +31631,12 @@ const MAX_SLUG_LENGTH = 20;
 const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
   note: {
-    category: 'tags'
+    category: 'tags',
+    name: 'title'
   },
-  post: {}
+  post: {
+    name: 'title'
+  }
 };
 
 class MicropubDocument {

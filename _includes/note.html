@@ -1,6 +1,12 @@
 {% assign note = include.note %}
 
 <article class="mb-16 h-entry" role="article">
+  {% if note.bookmark-of %}
+    <h4>Link: <a class="u-bookmark-of h-cite" href="{{ note.bookmark-of }}">
+      {{ note.title}}   
+    </a></h4>
+  {% endif %}
+
   <div class="entry-content e-content">{{ note.content | markdownify}}</div>
   <p class="-mt-4">
     <a href="{{note.url}}" class="no-underline block">
