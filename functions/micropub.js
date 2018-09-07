@@ -31640,7 +31640,7 @@ class MicropubDocument {
   constructor(object) {
     this.rawObject = object;
     this.content = object.content;
-    this.type = !object.name ? 'note' : 'post';
+    this.type = 'note';
     this.createdAt = new Date();
     this.setupFrontmatter();
   }
