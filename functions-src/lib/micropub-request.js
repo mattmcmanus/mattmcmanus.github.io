@@ -13,7 +13,7 @@ export default class MicropubRequest {
   }
 
   async parseBody() {
-    if (this.headers['content-type'] === 'application/x-www-form-urlencoded') {
+    if (this.headers['content-type'].includes('application/x-www-form-urlencoded')) {
       return await this.parseFormBody(this.request.body);
     } else {
       return JSON.parse(this.request.body);
@@ -25,7 +25,15 @@ export default class MicropubRequest {
     let content = {};
 
     return new Promise(function(resolve, reject) {
-      bb.on('field', (key, val) => content[key] = val)
+      bb.on('field', (key, val) => {
+        if (key.includes('[]') ) {
+          key = key.replace('[]', '');
+          content[key] = content[key] || [];
+          content[key].push(val);
+        } else {
+          content[key] = val
+        }
+        })
         .on('finish', () => resolve(content))
         .on('error', err => reject(err))
 

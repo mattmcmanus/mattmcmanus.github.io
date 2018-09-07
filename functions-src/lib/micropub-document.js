@@ -4,6 +4,10 @@ import _ from 'lodash';
 import slugify from 'slugify';
 
 const MAX_SLUG_LENGTH = 20;
+const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const KEY_TRANSLATION = {
+  category: 'tags'
+}
 
 export default class MicropubDocument {
   constructor(object) {
@@ -16,10 +20,9 @@ export default class MicropubDocument {
 
   setupFrontmatter() {
     this.frontmatter = _.chain(this.rawObject)
-                        .omit('content')
-                        .omit('access_token')
-                        .omit('h')
+                        .pick(VALID_KEYS)
                         .pickBy(_.identity)
+                        .mapKeys((value, key) => KEY_TRANSLATION[key] || key)
                         .value();
   }
 
@@ -36,6 +39,6 @@ export default class MicropubDocument {
   slug() {
     let firstSentenceArray = this.content.split('\n')[0].split(' ');
     let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
-    return slugify(this.frontmatter.name || trimmedSentence).toLowerCase();
+    return slugify(this.frontmatter['mp-slug'] || this.frontmatter.name || trimmedSentence).toLowerCase();
   }
 }

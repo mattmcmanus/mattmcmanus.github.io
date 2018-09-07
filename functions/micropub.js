@@ -23476,7 +23476,7 @@ class MicropubRequest {
     var _this = this;
 
     return _asyncToGenerator(function* () {
-      if (_this.headers['content-type'] === 'application/x-www-form-urlencoded') {
+      if (_this.headers['content-type'].includes('application/x-www-form-urlencoded')) {
         return yield _this.parseFormBody(_this.request.body);
       } else {
         return JSON.parse(_this.request.body);
@@ -23489,7 +23489,15 @@ class MicropubRequest {
     let content = {};
 
     return new Promise(function (resolve, reject) {
-      bb.on('field', (key, val) => content[key] = val).on('finish', () => resolve(content)).on('error', err => reject(err));
+      bb.on('field', (key, val) => {
+        if (key.includes('[]')) {
+          key = key.replace('[]', '');
+          content[key] = content[key] || [];
+          content[key].push(val);
+        } else {
+          content[key] = val;
+        }
+      }).on('finish', () => resolve(content)).on('error', err => reject(err));
 
       bb.end(body);
     });
@@ -31617,6 +31625,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 const MAX_SLUG_LENGTH = 20;
+const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const KEY_TRANSLATION = {
+  category: 'tags'
+};
 
 class MicropubDocument {
   constructor(object) {
@@ -31628,7 +31640,7 @@ class MicropubDocument {
   }
 
   setupFrontmatter() {
-    this.frontmatter = _lodash2.default.chain(this.rawObject).omit('content').omit('access_token').omit('h').pickBy(_lodash2.default.identity).value();
+    this.frontmatter = _lodash2.default.chain(this.rawObject).pick(VALID_KEYS).pickBy(_lodash2.default.identity).mapKeys((value, key) => KEY_TRANSLATION[key] || key).value();
   }
 
   toYAML() {
@@ -31648,7 +31660,7 @@ class MicropubDocument {
   slug() {
     let firstSentenceArray = this.content.split('\n')[0].split(' ');
     let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
-    return (0, _slugify2.default)(this.frontmatter.name || trimmedSentence).toLowerCase();
+    return (0, _slugify2.default)(this.frontmatter['mp-slug'] || this.frontmatter.name || trimmedSentence).toLowerCase();
   }
 }
 exports.default = MicropubDocument;
