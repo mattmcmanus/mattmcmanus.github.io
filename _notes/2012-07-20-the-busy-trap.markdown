@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Busy Trap - New York Times"
 bookmark-of: http://opinionator.blogs.nytimes.com/2012/06/30/the-busy-trap/
 ---

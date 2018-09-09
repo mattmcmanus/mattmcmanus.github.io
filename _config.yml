@@ -35,6 +35,7 @@ defaults:
       type: 'notes'
     values:
       categories: note
+      title: ""
       layout: "note"
 
 logo: /siteicon.png
