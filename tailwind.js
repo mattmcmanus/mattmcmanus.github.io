@@ -195,7 +195,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Lato',
+      'Nunito',
       '-apple-system',
       'Roboto',
       'Oxygen',
@@ -207,7 +207,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
-      'Lora',
+      'Libre Baskerville',
       'Lucida Bright',
       'Lucidabright',
       'Lucida Serif',

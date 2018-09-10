@@ -15,12 +15,12 @@ layout: default
         <small class="Post-year">{{ page.book_published }}</small>
       </p>
 
-      <p class="mb-2">
+      <p class="mb-1">
         <data class="p-rating text-yellow text-lg" value={{page.rating}}>{% for num in (1..page.rating) %}★{% endfor %}</data>
       </p>
 
       <p class="mb-0">
-        <time class="uppercase text-grey-dark text-sm dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+        <time class="uppercase text-grey-dark text-xs tracking-wide dt-published" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
       </p>
     </div>
   </header>
