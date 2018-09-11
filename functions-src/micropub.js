@@ -3,17 +3,26 @@ dotenv.config();
 
 import Request from './lib/request';
 import IndieAuthToken from './lib/indie-auth-token';
+import StaticToken from './lib/static-token';
 import MicropubDocument from './lib/micropub-document';
 import GitHubPublisher from 'github-publish';
 
 const { GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO } = process.env;
 
+async function authorize(event, devMode) {
+  let authorized = await new IndieAuthToken(event, devMode).verify();
+
+  if (!authorized) { // Fallback to check for static token
+    authorized = new StaticToken(event, devMode).verify()
+  }
+
+  return authorized;
+}
+
 export async function handler(event, context, callback) {
   console.log("EVENT", event)
-
   let devMode = (Object.keys(context).length == 0);
-
-  let authorized = await new IndieAuthToken(event, devMode).verify();
+  let authorized = await authorize(event, devMode);
 
   if (!authorized) {
     return callback(null, { statusCode: 403, body: '' });

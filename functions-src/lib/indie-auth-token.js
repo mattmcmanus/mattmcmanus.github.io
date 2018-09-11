@@ -4,15 +4,13 @@ const { MICROPUB_TOKEN_ENDPOINT, MICROPUB_ME_URL } = process.env;
 
 export default class IndieAuthToken {
   constructor(event, devMode) {
-    if (!event.headers.authorization) {
-      throw new Error('No Bearer Token');
-    }
     this.event = event;
     this.devMode = devMode;
   }
 
   async verify() {
     if (this.devMode) { return true; }
+    if (!this.event.headers.authorization) { return false; }
 
     let { authorization } = this.event.headers;
     let res;
@@ -31,7 +29,7 @@ export default class IndieAuthToken {
 
     let json = await res.json();
     console.log("IndieAuthToken TOKEN Response", json);
-    
+
 
     //TODO: Throw Me and Scope specific errors
 
