@@ -4,7 +4,7 @@ import _ from 'lodash';
 import slugify from 'slugify';
 
 const MAX_SLUG_LENGTH = 20;
-const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const VALID_KEYS = ['name', 'title', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
   note: {
     category: 'tags',
@@ -18,7 +18,7 @@ const KEY_TRANSLATION = {
 export default class MicropubDocument {
   constructor(object) {
     this.rawObject = object;
-    this.content = object.content;
+    this.content = object.content || '';
     this.type = 'note';
     this.createdAt = new Date();
     this.setupFrontmatter();
@@ -42,8 +42,13 @@ export default class MicropubDocument {
   }
 
   slug() {
-    let firstSentenceArray = this.content.split('\n')[0].split(' ');
-    let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
-    return slugify(this.frontmatter['mp-slug'] || this.frontmatter.name || trimmedSentence).toLowerCase();
+    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.frontmatter.title;
+    if (slug) {
+      return slugify(slug).toLowerCase();
+    } else {
+      let firstSentenceArray = this.content.split('\n')[0].split(' ');
+      let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
+      return slugify(trimmedSentence).toLowerCase();
+    }
   }
 }

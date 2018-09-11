@@ -27137,7 +27137,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 const MAX_SLUG_LENGTH = 20;
-const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const VALID_KEYS = ['name', 'title', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
   note: {
     category: 'tags',
@@ -27151,7 +27151,7 @@ const KEY_TRANSLATION = {
 class MicropubDocument {
   constructor(object) {
     this.rawObject = object;
-    this.content = object.content;
+    this.content = object.content || '';
     this.type = 'note';
     this.createdAt = new Date();
     this.setupFrontmatter();
@@ -27175,9 +27175,14 @@ class MicropubDocument {
   }
 
   slug() {
-    let firstSentenceArray = this.content.split('\n')[0].split(' ');
-    let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
-    return (0, _slugify2.default)(this.frontmatter['mp-slug'] || this.frontmatter.name || trimmedSentence).toLowerCase();
+    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.frontmatter.title;
+    if (slug) {
+      return (0, _slugify2.default)(slug).toLowerCase();
+    } else {
+      let firstSentenceArray = this.content.split('\n')[0].split(' ');
+      let trimmedSentence = _lodash2.default.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
+      return (0, _slugify2.default)(trimmedSentence).toLowerCase();
+    }
   }
 }
 exports.default = MicropubDocument;
