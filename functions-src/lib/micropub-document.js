@@ -3,8 +3,8 @@ import matter from 'gray-matter';
 import _ from 'lodash';
 import slugify from 'slugify';
 
-const MAX_SLUG_LENGTH = 20;
-const VALID_KEYS = ['name', 'title', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const MAX_SLUG_LENGTH = 10;
+const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
 const KEY_TRANSLATION = {
   note: {
     category: 'tags',
@@ -42,13 +42,11 @@ export default class MicropubDocument {
   }
 
   slug() {
-    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.frontmatter.title;
-    if (slug) {
-      return slugify(slug).toLowerCase();
-    } else {
-      let firstSentenceArray = this.content.split('\n')[0].split(' ');
-      let trimmedSentence = _.take(firstSentenceArray, MAX_SLUG_LENGTH).join(' ');
-      return slugify(trimmedSentence).toLowerCase();
-    }
+    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.content.split('\n')[0];
+    slug = slugify(slug, {remove: /[*+~.,()'"!:@]/g}).toLowerCase();
+    let slugArray = slug.split('-');
+    let trimmedSlug = _.take(slugArray, MAX_SLUG_LENGTH).join('-');
+
+    return trimmedSlug;
   }
 }
