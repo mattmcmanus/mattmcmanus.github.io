@@ -42818,12 +42818,17 @@ let handler = exports.handler = (() => {
   var _ref = _asyncToGenerator(function* (event, context, callback) {
     console.log("EVENT", event);
 
-    let devMode = true;
+    let devMode = Object.keys(context).length == 0;
 
     let request = new _request2.default(event);
 
     if (request.isPost()) {
       let rawObject = yield request.parseBody();
+
+      if (rawObject.token !== WEBHOOK_TOKEN) {
+        return callback(null, { statusCode: 403, body: 'You must provide the correct token' });
+      }
+
       let document = new _micropubDocument2.default(rawObject);
 
       let publisher = new _githubPublish2.default(GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO);
@@ -42876,7 +42881,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 _dotenv2.default.config();
 
-const { GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO, VALID_WEBHOOK_URLS } = process.env;
+const { GITHUB_TOKEN, GITHUB_USERNAME, GITHUB_REPO, WEBHOOK_TOKEN } = process.env;
 
 /***/ })
 /******/ ])));
