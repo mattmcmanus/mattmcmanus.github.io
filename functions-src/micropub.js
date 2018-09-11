@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import MicropubRequest from './lib/micropub-request';
+import Request from './lib/request';
 import IndieAuthToken from './lib/indie-auth-token';
 import MicropubDocument from './lib/micropub-document';
 import GitHubPublisher from 'github-publish';
@@ -19,7 +19,7 @@ export async function handler(event, context, callback) {
     return callback(null, { statusCode: 403, body: '' });
   }
 
-  let request = new MicropubRequest(event);
+  let request = new Request(event);
 
   if (request.isPost()) {
     let rawObject = await request.parseBody();
