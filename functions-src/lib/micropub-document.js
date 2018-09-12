@@ -42,7 +42,7 @@ export default class MicropubDocument {
   }
 
   slug() {
-    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.content.split('\n')[0];
+    let slug = this.frontmatter['mp-slug'] || this.frontmatter.title || this.content.split('\n')[0];
     slug = slugify(slug, {remove: /[*+~.,()'"!:@]/g}).toLowerCase();
     let slugArray = slug.split('-');
     let trimmedSlug = _.take(slugArray, MAX_SLUG_LENGTH).join('-');

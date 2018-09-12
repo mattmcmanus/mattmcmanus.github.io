@@ -31708,7 +31708,7 @@ class MicropubDocument {
   }
 
   slug() {
-    let slug = this.frontmatter['mp-slug'] || this.frontmatter.name || this.content.split('\n')[0];
+    let slug = this.frontmatter['mp-slug'] || this.frontmatter.title || this.content.split('\n')[0];
     slug = (0, _slugify2.default)(slug, { remove: /[*+~.,()'"!:@]/g }).toLowerCase();
     let slugArray = slug.split('-');
     let trimmedSlug = _lodash2.default.take(slugArray, MAX_SLUG_LENGTH).join('-');
