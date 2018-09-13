@@ -95,6 +95,15 @@ code {
 }
 .pill:hover { @apply border-blue-light; }
 
+.video {
+  @apply relative overflow-hidden mb-8;
+  padding-top: 56.25%;
+
+  > iframe {
+    @apply absolute pin w-full h-full;
+  }
+}
+
 @screen md {
   h1 { @apply text-5xl mt-24 mb-6; }
   h1 ~ p { @apply text-xl; }
