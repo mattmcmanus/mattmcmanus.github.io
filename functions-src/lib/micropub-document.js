@@ -4,7 +4,7 @@ import _ from 'lodash';
 import slugify from 'slugify';
 
 const MAX_SLUG_LENGTH = 10;
-const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of'];
+const VALID_KEYS = ['name', 'mp-slug', 'category', 'location', 'in-reply-to', 'repost-of', 'syndication', 'mp-syndicate-to', 'bookmark-of', 'published'];
 const KEY_TRANSLATION = {
   note: {
     category: 'tags',
