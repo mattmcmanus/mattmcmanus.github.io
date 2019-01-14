@@ -11,7 +11,7 @@ book_url: https://www.goodreads.com/book/show/67896.Tao_Te_Ching
 ---
 As I have had the opportunity to read some very old books, the smaller History feels to me. Why? They are can be very relevant and their wisdom can be still practical. The Tao Te Ching, as one of the oldest books I've read (written in ADE 125), further solidifies that belief. 
 
-For the last several years, I read a considerable amount of writing by Christian and Catholic mystics. A consisten stread in these writings is a respect for easter religious practive. Also, in reading modern Buddhist contemplative's I'm surprised to find a reverence for the teachings of Jesus. This is what drew me two want to read the Tao Te Ching. 
+For the last several years, I read a considerable amount of writing by Christian and Catholic mystics. A consisten stread in these writings is a respect for easter religious practive. Also, in reading modern Buddhist contemplative's I'm surprised to find a reverence for the teachings of Jesus. This is what drew me to want to read the Tao Te Ching. 
 
 What would I find in something written close to the time the Christian Gospels? Would there be much overlap? Would there be anything that seems to connect to the heart of God that is revealed in the Bible? How would it express itself?
 
