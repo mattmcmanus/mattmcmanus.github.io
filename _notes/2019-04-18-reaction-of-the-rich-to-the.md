@@ -1,0 +1,18 @@
+---
+title: >-
+  Reaction of the rich to the Notre Dame fire teaches us a lot about the world
+  we live in | JOE.ie
+mp-slug: reaction-of-the-rich-to-the
+tags:
+  - ''
+bookmark-of: 'https://www.joe.ie/life-style/notre-dame-feature-665670'
+date: '2019-04-18 13:47:49'
+---
+I must admin that I was uneasy when I read about the news about how much was donated and how quickly it was donated. The thought never rose above a loosely understood feeling. This essay articulates it precisely.
+> It would be incredibly cheap to suggest that it is in some way wrong to give money for the restoration. There is a value that transcends simple economics in restoring testaments to civilisation. Better that Notre Dame remains a symbol of European history than €300 million rests in a billionaire's bank account.
+>
+>But the immediacy and magnitude of their response tells us something very important about the society we live in.
+>
+>If two men in a world of more than 7 billion people can provide €300million to restore Notre Dame, within six hours, then there is enough money in the world to feed every mouth, shelter every family and educate every child. The failure to do so is a matter of will, and a matter of system.
+>
+>The failure to do so comes from our failure to recognise the mundane emergencies that claims lives all around us every single day. Works of art and architectural history and beauty rely on the ingenuity of people, and it is people who must be protected above all else.
