@@ -1,7 +1,7 @@
 title: Matt McManus
 author: Matt McManus
 url: https://mcmanus.io
-description: In which I attempt to share my thoughts on how to be human
+description: The thoughts and deeds of Matt McManus
 permalink: /:year/:title
 
 include:
@@ -77,9 +77,14 @@ plugins:
 
 feed:
   path: atom.xml
+  categories:
+    - review
+  collections:
+    notes:
+      path: "/feed/notes.xml"
 
 env: production
-# minify_html: false
+minify_html: false
 
 webp:
   enabled: true
