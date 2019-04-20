@@ -3,8 +3,10 @@ layout: default
 pagination:
   enabled: true
   collection: notes
+  permalink: '/page-:num/'
   sort_field: 'date'
   sort_reverse: true
+  per_page: 20
 ---
 <div class="row">
   <h1>Notes</h1>
@@ -15,3 +17,18 @@ pagination:
 {% for note in paginator.posts %}
   {% include note.html note=note %}
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="row flex">
+  <div class="flex-1 text-center">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">👈 Older Notes</a>
+    {% endif %}
+  </div>
+  <div class="flex-1 text-center">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer Notes 👉</a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
