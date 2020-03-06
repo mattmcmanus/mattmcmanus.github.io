@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A Lenten fast from media
-date: {}
 categories:
   - human
 published: true
