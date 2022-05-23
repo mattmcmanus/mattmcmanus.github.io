@@ -1,0 +1,22 @@
+---
+import Head from '../components/Head.astro'
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
+
+import '../styles/base.css'
+const { pageTitle } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<Head pageTitle={pageTitle} />
+	</head>
+
+	<!-- <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} class="font-sans text-base md:text-lg leading-normal text-grey-darkest"> -->
+	<body class="font-sans text-base md:text-lg leading-normal text-grey-darkest">
+		<Navigation />
+
+		<slot />
+
+		<Footer />
+	</body>
+</html>

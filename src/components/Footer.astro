@@ -1,0 +1,28 @@
+---
+import Config from '../config.cjs'
+---
+  <footer id="footer" role="contentinfo" class="bg-grey-lightest text-grey-darker p-4 pb-16 mt-8 text-center">
+    <section class="h-card ">
+      <h3>Hey friend,</h3>
+      <p class="p-note max-w-sm">My name is <a href="https://mcmanus.io" rel="me" class="p-name u-url no-underline">Matt</a>. I'm a product designer &amp; software engineer. For over 15 years I've advocated for <em>humans</em> in a world of bytes &amp; pixels.</p>
+      <ul class="list-reset">
+        <li class="inline-block px-4 py-2"><strong>Email:</strong> <a href="mailto:matt@mcmanus.io" class="u-email">Say hello!</a></li>
+        <li class="inline-block"><strong>RSS:</strong>
+          <a href="/atom.xml" rel="me">All Posts & Book Reviews</a>
+          <a href="/feed/notes.xml" rel="me">Notes</a>
+        </li>
+      </ul>
+      <p> </p>
+    </section>
+
+    <section class="">
+      <h4>Around the internet</h4>
+      {Config.socialLinks.map(({ name, link }) => (
+        <a rel="me" href={ link } class="pill" target="_blank">
+          {name}
+        </a>
+      ))}
+    </section>
+  </footer>
+
+

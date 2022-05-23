@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostPreview from '../components/PostPreview.astro'
+import orderBy from 'lodash/orderBy'
+// import '../styles/global.css';
+// import '../styles/home.css';
+
+const allPosts = await Astro.glob('./posts/**/*.md');
+const sortedPosts = orderBy(allPosts, (p) => new Date(p.frontmatter.date), 'desc');
+---
+<BaseLayout>
+	<article class='homepage'>
+	  <header id="header" class="home accelerated max-w-md mx-auto mx" role="banner">
+	    <hgroup class="small-6 columns">
+	      <h1>Hey friend, <br> my name is Matt McManus</h1>
+	      <p class="p-note">I'm a product designer &amp; software engineer. For over 15 years I've advocated for <em>humans</em> in a world of bytes &amp; pixels.</p>
+	    </hgroup>
+	  </header>
+	  <hr>
+	  <blockquote>
+	    <p>"In my 14 years in the industry, I've never found another full stack developer with the level of core competencies, quality of craftsmanship and unwavering integrity that Matt brings to every project"</p>
+	    <footer><cite>Joshua Smith</cite></footer>
+	  </blockquote>
+	</article>
+	<hr>
+
+	<div class="row">
+	  <h4>Latest from the bookshelf <small><a href="/category/review" >See all of them</a></small></h4>
+	</div>
+
+	<div class="row">
+	  <h4>Most Recent Posts <small><a href="/blog" >See all of them</a></small></h4>
+
+	  <ul class="list-reset content">
+			{sortedPosts.map((p) => <PostPreview post={p} />)}
+	  </ul>
+	</div>
+</BaseLayout>
+

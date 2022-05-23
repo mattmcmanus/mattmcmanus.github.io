@@ -1,14 +1,9 @@
 [build]
-  publish = "_site"
-  command = "jekyll build"
-  # This is where we will look for your lambda functions
-  functions = "functions/"
+  command = "npm run build"
+  publish = "dist"
   
 [build.environment]
   GITHUB_USERNAME = "mattmcmanus"
   GITHUB_REPO = "mattmcmanus.github.io"
   MICROPUB_TOKEN_ENDPOINT = "https://tokens.indieauth.com/token"
   MICROPUB_ME_URL = "https://mcmanus.io/"
-
-[context.production.environment]
-  JEKYLL_ENV = "production"

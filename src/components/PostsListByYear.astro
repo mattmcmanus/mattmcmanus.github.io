@@ -1,0 +1,29 @@
+---
+import orderBy from 'lodash/orderBy'
+import reduce from 'lodash/reduce'
+
+import PostPreview from '../components/PostPreview.astro'
+const { posts } = Astro.props;
+
+const sortedPosts = orderBy(posts, (p) => new Date(p.frontmatter.date), 'desc');
+const postsByYear = [];
+reduce(sortedPosts, (result, post) => {
+  let year = new Date(post.frontmatter.date).getFullYear().toString()
+  let group = result.find(([y]) => y === year);
+  if (group) {
+    group[1].push(post);
+  } else {
+    result.push([year, [post]]);
+  }
+  return result;
+}, postsByYear);
+---
+
+{postsByYear.map(([year, posts]) =>
+  <div>
+    <h2 class="text-grey-darker">{ year }</h2>
+    <ul class="list-reset content">
+      {posts.map(post => <PostPreview post={post} />)}
+    </ul>
+  </div>
+)}

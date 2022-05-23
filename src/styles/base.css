@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @responsive {
+  .order-first { order: -1 }
+  .order-initial { order: 0 }
+  .order-last { order: 1 }
+} */
+
+@layer base {
+  /* a { @apply text-blue-light; }
+  a:hover { @apply no-underline; }
+
+  p, blockquote, h1, h2, h3, h4, h5, h6, ul, .content {
+    @apply max-w-md mx-auto;
+  }
+
+  p, blockquote, ul, figure { 
+    @apply mb-7; 
+  }
+
+  ul { 
+    @apply pl-6; 
+  }
+
+  li {
+    @apply mb-3;
+    font-size: .95em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif leading-tight;
+  }
+  h1 { @apply text-4xl mt-16 mb-3; }
+  h1 ~ p { @apply text-lg text-blue; }
+  h2 { @apply text-2xl mt-12 mb-2; }
+  h3 { @apply text-xl mt-8 mb-2; }
+  h4 { @apply text-lg mt-4 mb-2; }
+
+  hr {
+    @apply my-12 mx-auto text-blue w-24;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 0px, #3E5E75 0px, #3E5E75 4px, transparent 4px, transparent 4px);
+    height: 5px;
+  }
+
+  blockquote {
+    @apply italic pl-4 border-l-2 border-grey-lighter text-grey-darker;
+  }
+  cite {
+    @apply pl-2 text-blue-light text-sm;
+  }
+  cite:before {
+    content: "- ";
+  }
+
+  code {
+    @apply text-grey-darkest bg-grey-lighter px-2 rounded
+  } */
+}
+
+@layer components {
+  /* #main-header nav a ~ a { @apply ml-6; }
+  .row, article {
+    @apply w-9/10 max-w-lg mx-auto my-0;
+  }
+  @screen sm {
+    .row, article { @apply w-4/5; }
+  }
+
+
+  .pill {
+    @apply inline-block py-1 px-2 mb-2 text-sm text-blue rounded-lg border border-grey-lightest no-underline
+  }
+  .pill:hover { @apply border-blue-light; }
+
+  .video {
+    @apply relative overflow-hidden mb-8;
+    padding-top: 56.25%;
+
+    > iframe {
+      @apply absolute pin w-full h-full;
+    }
+  }
+
+  @screen md {
+    h1 { @apply text-5xl mt-24 mb-6; }
+    h1 ~ p { @apply text-xl; }
+    h2 { @apply text-3xl mt-16 mb-3; }
+    h3 { @apply text-2xl mt-12 mb-3; }
+    h4 { @apply text-xl mt-10 mb-3; }
+    blockquote, ul, cite { @apply pl-8; } 
+  } */
+}

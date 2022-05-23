@@ -1,0 +1,16 @@
+---
+export interface Props {
+	post: any;
+}
+
+const { post } = Astro.props;
+---
+<a class="block -mx-4 p-4 no-underline t t-property-bg t-timing-ease-out hover:bg-grey-lightest" href={ post.url }>
+  <small class="block text-grey-dark text-xxs uppercase">
+    {post.frontmatter.date}
+  </small>
+
+  <h4 class="m-0 my-1 text-grey-darkest">{post.frontmatter.title}</h4>
+
+  {(post.frontmatter.subtitle) ?  <p class="text-blue m-0">{post.frontmatter.subtitle}</p> : null }
+</a>

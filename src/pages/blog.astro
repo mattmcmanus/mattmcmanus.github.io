@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostsListByYear from '../components/PostsListByYear.astro'
+const { content } = Astro.props;
+let allPosts = await Astro.glob('./posts/**/*.md');
+---
+<BaseLayout>
+  <div class="row">
+    <h1>Blog</h1>
+
+    <PostsListByYear posts={allPosts} />
+  </div>
+</BaseLayout>

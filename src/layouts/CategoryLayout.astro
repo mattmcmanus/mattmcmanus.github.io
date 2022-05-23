@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+const { content } = Astro.props;
+
+let allPosts = await Astro.glob('../pages/posts/**/*.md');
+allPosts = allPosts
+	.filter(p => p.frontmatter.categories.includes(content.slug))
+  .sort((a, b) => new Date(a.frontmatter.publishDate).valueOf() - new Date(b.frontmatter.publishDate).valueOf());
+
+---
+<BaseLayout>
+  <div class="row">
+    <h1>{content.title}</h1>
+
+    <slot />
+
+  <h1>TODO</h1>
+    <!-- {% assign posts = site.categories[page.slug] %} -->
+    <!-- {%- if page.slug == 'review' -%}
+      {% include book-list.html reviews=posts %}
+    {%- else -%}
+      {% include post-list-by-year.html posts=posts %}
+    {%- endif -%} -->
+  </div>
+</BaseLayout>

@@ -1,25 +1,23 @@
 {
+  "name": "@example/starter",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "tailwind": "tailwind build src/tailwind.css -o _scss/tailwind.scss -c tailwind.js",
-    "watch": "find . -name 'tailwind.*' ! -path '*/[_.]*' ! -path './node_modules*' | entr yarn run tailwind",
-    "purge": "purgecss --config purgecss.config.js --out _site",
-    "build:functions": "netlify-lambda build functions-src",
-    "serve:functions": "netlify-lambda serve functions-src"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "tailwindcss": "^0.6.5"
+    "@astrojs/sitemap": "^0.1.0",
+    "@astrojs/svelte": "^0.1.1",
+    "@astrojs/tailwind": "^0.2.0",
+    "astro": "^1.0.0-beta.12",
+    "svelte": "^3.46.4"
   },
   "dependencies": {
-    "busboy": "^0.2.14",
-    "dateformat": "^3.0.3",
-    "dotenv": "^6.0.0",
-    "github-publish": "^3.0.0",
-    "glhd-tailwindcss-transitions": "^0.3.0",
-    "gray-matter": "^4.0.1",
-    "netlify-lambda": "^0.4.0",
-    "node-fetch": "^2.2.0",
-    "purgecss": "^1.1.0",
-    "slugify": "^1.3.1"
+    "@astrojs/rss": "^0.2.0",
+    "@types/lodash": "^4.14.182",
+    "lodash": "^4.17.21"
   }
 }

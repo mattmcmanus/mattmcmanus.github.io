@@ -1,0 +1,21 @@
+---
+const links = [
+  { label: 'About', url: '/about' }, 
+  { label: 'Posts', url: '/blog' }, 
+  { label: 'Bookshelf', url: '/books' }, 
+  { label: 'Notes', url: '/notes' }
+];
+---
+<header id="main-header">
+  <div class="row py-6 flex flex-col sm:flex-row flex-wrap">
+    <a class="logo text-md font-bold text-blue no-underline" href="/">Matt McManus</a>
+
+    <nav class="sm:justify-end flex-grow flex-no-shrink flex">
+			{links.map((item) =>
+        <a href={item.url} class="text-xs uppercase no-underline tracking-wide text-grey-dark leading-crazy">
+          {item.label}
+        </a>
+      )}
+    </nav>
+  </div>
+</header>
